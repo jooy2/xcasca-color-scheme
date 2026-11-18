@@ -34,6 +34,8 @@
   "sample.colors": "Colors",
   "sample.cjk": "CJK",
   "terminal.label": "A terminal drawn with the selected color scheme. Click it to type.",
+  "terminal.fullscreen": "Full screen",
+  "terminal.exitFullscreen": "Exit full screen (Esc)",
   "palette.label": "Colors",
   "viewer.hint": "Click the terminal to type in it. Click a color to copy its hex value. The highlighted text shows the selection color.",
   "apply.title": "Apply a downloaded scheme",

@@ -592,14 +592,79 @@ main {
 .terminal-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 10px 14px 4px 16px;
+  gap: 8px;
+  padding: 10px 10px 4px 16px;
 }
 
 .terminal-bar .dots {
   display: flex;
   gap: 8px;
+  margin-right: auto;
+}
+
+.fullscreen-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--scheme-fg);
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.fullscreen-toggle:hover {
+  background: color-mix(in srgb, var(--scheme-fg) 10%, transparent);
+  opacity: 1;
+}
+
+.fullscreen-toggle:focus-visible {
+  outline: 2px solid var(--scheme-fg);
+  outline-offset: 1px;
+}
+
+.fullscreen-toggle .icon {
+  width: 15px;
+  height: 15px;
+}
+
+.fullscreen-toggle .icon:last-child,
+.fullscreen-toggle[aria-pressed="true"] .icon:first-child {
+  display: none;
+}
+
+.fullscreen-toggle[aria-pressed="true"] .icon:last-child {
+  display: block;
+}
+
+/* The frame over the whole window; the browser's own full screen, where there is one, adds to it */
+.terminal-frame.is-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.terminal-frame.is-fullscreen .terminal {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+
+.has-fullscreen-terminal,
+.has-fullscreen-terminal body {
+  overflow: hidden;
 }
 
 .terminal-bar .dots i {

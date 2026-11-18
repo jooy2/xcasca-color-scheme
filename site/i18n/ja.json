@@ -34,6 +34,8 @@
   "sample.colors": "カラー",
   "sample.cjk": "CJK",
   "terminal.label": "選択したカラースキームで描画したターミナルです。クリックすると入力できます。",
+  "terminal.fullscreen": "全画面表示",
+  "terminal.exitFullscreen": "全画面表示を終了 (Esc)",
   "palette.label": "色",
   "viewer.hint": "ターミナルをクリックすると入力を試せます。色をクリックすると 16 進数の値をコピーします。ハイライトされた文字は選択範囲の色を示しています。",
   "apply.title": "ダウンロードしたカラースキームを適用する",

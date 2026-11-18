@@ -34,6 +34,8 @@
   "sample.colors": "顏色",
   "sample.cjk": "CJK",
   "terminal.label": "使用所選配色方案繪製的終端機。點一下即可輸入。",
+  "terminal.fullscreen": "全螢幕",
+  "terminal.exitFullscreen": "結束全螢幕 (Esc)",
   "palette.label": "顏色",
   "viewer.hint": "點一下終端機即可試著輸入。點選顏色可複製其十六進位值。醒目標示的文字呈現了選取範圍的顏色。",
   "apply.title": "套用下載的配色方案",

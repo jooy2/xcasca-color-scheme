@@ -211,13 +211,6 @@ const toTheme = (c) => ({
   ...Object.fromEntries(BRIGHT.map((key) => [key, c[key]])),
 })
 
-const fontSizeFor = (width) => {
-  // JetBrains Mono is 0.6 em wide; leave the frame's padding
-  const size = Math.floor(((width - 36) / (COLS * 0.6)) * 2) / 2
-
-  return Math.max(8, Math.min(15, size))
-}
-
 const isWide = (char) => {
   const code = char.codePointAt(0)
 
@@ -246,6 +239,25 @@ export const createPreview = async (frame) => {
   // The terminal measures its font when it opens, so the font has to be there first
   await Promise.all([document.fonts.load(`15px ${FONT}`), document.fonts.load(`bold 15px ${FONT}`)]).catch(() => {})
 
+  // A cell's size in em, measured once the terminal is drawn; JetBrains Mono is 0.6 em wide
+  const cell = { width: 0.6, height: 1.52 }
+  const isFullscreen = () => frame.classList.contains('is-fullscreen')
+
+  // The largest font that fits the whole screen in the frame: its width, and its height in full screen
+  const fontSize = () => {
+    const style = getComputedStyle(host)
+    const width = host.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight) - 2
+    let size = width / (COLS * cell.width)
+
+    if (isFullscreen()) {
+      const height = host.clientHeight - parseFloat(style.paddingTop) - parseFloat(style.paddingBottom) - 2
+
+      size = Math.min(size, height / (ROWS * cell.height))
+    }
+
+    return Math.max(8, Math.min(isFullscreen() ? 32 : 15, Math.floor(size * 2) / 2))
+  }
+
   const terminal = new Terminal({
     cols: COLS,
     rows: ROWS,
@@ -254,7 +266,7 @@ export const createPreview = async (frame) => {
     cursorStyle: 'block',
     cursorInactiveStyle: 'block',
     fontFamily: FONT,
-    fontSize: fontSizeFor(host.clientWidth),
+    fontSize: fontSize(),
     lineHeight: 1.15,
     scrollback: 0,
   })
@@ -289,13 +301,79 @@ export const createPreview = async (frame) => {
     }
   })
 
-  new ResizeObserver(() => {
-    const size = fontSizeFor(host.clientWidth)
+  const measure = () => {
+    const screen = host.querySelector('.xterm-screen')
+    const size = terminal.options.fontSize
+
+    if (screen?.offsetWidth) {
+      cell.width = screen.offsetWidth / (COLS * size)
+      cell.height = screen.offsetHeight / (ROWS * size)
+    }
+  }
+
+  const fit = () => {
+    const size = fontSize()
 
     if (size !== terminal.options.fontSize) {
       terminal.options.fontSize = size
     }
-  }).observe(host)
+  }
+
+  measure()
+  fit()
+  new ResizeObserver(fit).observe(host)
+
+  /*
+   * Full screen: the frame covers the window, and the browser's own full screen is asked for where
+   * it has one. Esc, the button, or leaving the browser's full screen brings the frame back.
+   */
+  const toggle = frame.querySelector('.fullscreen-toggle')
+
+  const setFullscreen = (on) => {
+    if (on === isFullscreen()) {
+      return
+    }
+
+    frame.classList.toggle('is-fullscreen', on)
+    document.documentElement.classList.toggle('has-fullscreen-terminal', on)
+
+    if (toggle) {
+      toggle.setAttribute('aria-pressed', String(on))
+      toggle.title = on ? toggle.dataset.exitTitle : toggle.getAttribute('aria-label')
+    }
+
+    if (on) {
+      // A phone browser without it keeps the frame over the page alone
+      frame.requestFullscreen?.({ navigationUI: 'hide' })?.catch(() => {})
+      terminal.focus()
+    } else {
+      if (document.fullscreenElement === frame) {
+        document.exitFullscreen().catch(() => {})
+      }
+
+      toggle?.focus()
+    }
+
+    fit()
+  }
+
+  toggle?.addEventListener('click', () => setFullscreen(!isFullscreen()))
+  document.addEventListener('fullscreenchange', () => {
+    if (!document.fullscreenElement && isFullscreen()) {
+      setFullscreen(false)
+    }
+  })
+  // The terminal keeps the keys it reads, so Esc is caught before it gets there
+  document.addEventListener(
+    'keydown',
+    (event) => {
+      if (event.key === 'Escape' && isFullscreen()) {
+        event.preventDefault()
+        setFullscreen(false)
+      }
+    },
+    true,
+  )
 
   const showSample = async (name) => {
     sample = name
