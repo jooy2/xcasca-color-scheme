@@ -115,9 +115,12 @@ const icon = (name) =>
   readFileSync(join(SITE_DIR, 'icons', `${name}.svg`), 'utf8')
     .replace(/<!--.*?-->\s*/s, '')
     .replace(/<title>.*?<\/title>/s, '')
-    .replace(/\s+(width|height|class)="[^"]*"/g, '')
-    .replace(/\s*role="img"/, '')
-    .replace('<svg', `<svg class="icon" aria-hidden="true" focusable="false"${name === 'github' ? ' fill="currentColor"' : ''}`)
+    // Only the outer tag loses its size and class; a rect inside keeps its own
+    .replace(/<svg[^>]*>/, (tag) =>
+      tag
+        .replace(/\s+(width|height|class|role)="[^"]*"/g, '')
+        .replace('<svg', `<svg class="icon" aria-hidden="true" focusable="false"${name === 'github' ? ' fill="currentColor"' : ''}`),
+    )
     .replace(/\n\s*/g, ' ')
     .trim()
 
