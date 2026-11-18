@@ -78,9 +78,60 @@ const writeSample = async () => {
   }
 
   terminal.reset()
+  typed = ''
   terminal.write(`${text}${prompt(path)}`, () => {
     terminal.select(selection.column, selection.row, selection.length)
   })
+}
+
+/*
+ * Typing in the terminal. Nothing runs behind it, so what is typed is shown on the line, Enter
+ * starts a new prompt, and `clear` or Ctrl+L clears the screen.
+ */
+let typed = ''
+
+const isWide = (char) => {
+  const code = char.codePointAt(0)
+
+  return (
+    (code >= 0x1100 && code <= 0x115f) ||
+    (code >= 0x2e80 && code <= 0xa4cf) ||
+    (code >= 0xac00 && code <= 0xd7a3) ||
+    (code >= 0xf900 && code <= 0xfaff) ||
+    (code >= 0xfe30 && code <= 0xfe4f) ||
+    (code >= 0xff00 && code <= 0xff60) ||
+    (code >= 0xffe0 && code <= 0xffe6)
+  )
+}
+
+const currentPrompt = () => prompt(SAMPLES[state.sample].path)
+
+const onInput = (data) => {
+  if (data === '\r') {
+    terminal.write(typed.trim() === 'clear' ? `\x1b[2J\x1b[3J\x1b[H${currentPrompt()}` : `\r\n${currentPrompt()}`)
+    typed = ''
+  } else if (data === '\x7f' || data === '\b') {
+    const chars = [...typed]
+    const last = chars.pop()
+
+    if (last) {
+      const width = isWide(last) ? 2 : 1
+
+      typed = chars.join('')
+      terminal.write(`${'\b'.repeat(width)}${' '.repeat(width)}${'\b'.repeat(width)}`)
+    }
+  } else if (data === '\x03') {
+    terminal.write(`^C\r\n${currentPrompt()}`)
+    typed = ''
+  } else if (data === '\x0c') {
+    terminal.write(`\x1b[2J\x1b[3J\x1b[H${currentPrompt()}${typed}`)
+  } else if (!data.startsWith('\x1b')) {
+    // Printable text only, from a key or a paste; a pasted line break ends nothing
+    const text = [...data].filter((char) => char >= ' ' && char !== '\x7f').join('')
+
+    typed += text
+    terminal.write(text)
+  }
 }
 
 const bindSamples = () => {
@@ -350,8 +401,7 @@ const createTerminal = () => {
     cols: COLS,
     rows: ROWS,
     convertEol: true,
-    disableStdin: true,
-    cursorBlink: false,
+    cursorBlink: true,
     cursorStyle: 'block',
     cursorInactiveStyle: 'block',
     fontFamily: FONT,
@@ -360,6 +410,7 @@ const createTerminal = () => {
     scrollback: 0,
   })
   terminal.open(host)
+  terminal.onData(onInput)
 
   new ResizeObserver(() => {
     const size = fontSizeFor(host.clientWidth)
