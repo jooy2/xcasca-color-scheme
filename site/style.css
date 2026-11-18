@@ -61,6 +61,11 @@ code {
   background: var(--chip);
 }
 
+/* The hidden attribute wins over a display set by a class, such as the step lists' grid */
+[hidden] {
+  display: none !important;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
