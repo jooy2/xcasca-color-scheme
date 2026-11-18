@@ -28,7 +28,9 @@ Every file was exported from the app itself, and every pull request is checked a
 
 ## Preview
 
-The [gallery](https://jooy2.github.io/xcasca-color-scheme/) draws each scheme on the same sample session: a file listing, `git status` and `git log`, some source code, test results, and all sixteen colors side by side. Switch between schemes to compare them line by line, filter by dark or light, and download the one you like.
+The [gallery](https://jooy2.github.io/xcasca-color-scheme/) draws each scheme on the same sample sessions: a shell with a file listing, `git status` and `git log`, a code diff with syntax colors, a color test of every style and color pair, and text in Korean, Japanese and Chinese. Switch between schemes to compare them line by line, type in the terminal, filter by dark or light, and download the one you like.
+
+The gallery reads in [English](https://jooy2.github.io/xcasca-color-scheme/), [한국어](https://jooy2.github.io/xcasca-color-scheme/ko/), [日本語](https://jooy2.github.io/xcasca-color-scheme/ja/), [简体中文](https://jooy2.github.io/xcasca-color-scheme/zh-hans/) and [繁體中文](https://jooy2.github.io/xcasca-color-scheme/zh-hant/).
 
 ## Download
 

@@ -17,7 +17,19 @@ const SAMPLES = {
 const FONT = '"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace'
 const ANSI = ['black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white']
 const BRIGHT = ANSI.map((name) => `bright${name[0].toUpperCase()}${name.slice(1)}`)
-const KIND_LABEL = { 'built-in': 'Built-in', community: 'Community', original: 'Original' }
+// The page's language: its strings, and the other languages to offer, written by the build
+const I18N = JSON.parse(document.getElementById('i18n').textContent)
+// From this page to the site's root, such as ../ on /ko/
+const ROOT = document.documentElement.dataset.root ?? ''
+const LANGUAGE_KEY = 'xcasca-gallery-language'
+
+const t = (key, values = {}) =>
+  (I18N.strings[key] ?? key).replace(/\{(\w+)\}/g, (match, name) => (name in values ? values[name] : match))
+
+const colorName = (key) =>
+  key.startsWith('bright')
+    ? t('palette.brightColor', { color: t(`color.${key.slice(6).toLowerCase()}`) })
+    : t(`color.${key}`)
 
 const state = { schemes: [], visible: [], current: null, mode: 'all', kind: 'all', query: '', sample: 'shell' }
 const sampleTexts = {}
@@ -63,7 +75,7 @@ const applyTheme = () => {
 }
 
 const loadSample = async (name) => {
-  sampleTexts[name] ??= await fetch(`samples/${name}.ansi`).then((response) => response.text())
+  sampleTexts[name] ??= await fetch(`${ROOT}samples/${name}.ansi`).then((response) => response.text())
 
   return sampleTexts[name]
 }
@@ -153,7 +165,7 @@ const bindSamples = () => {
 const copyHex = async (hex) => {
   try {
     await navigator.clipboard.writeText(hex)
-    showToast(`Copied ${hex}`)
+    showToast(t('copied', { hex }))
   } catch {
     showToast(hex)
   }
@@ -195,7 +207,7 @@ const swatch = (hex, label, className) => {
 const renderPalette = (colors) => {
   const base = element('div', 'palette-base')
 
-  for (const [key, label] of [['foreground', 'Foreground'], ['background', 'Background'], ['selection', 'Selection']]) {
+  for (const [key, label] of ['foreground', 'background', 'selection'].map((key) => [key, t(`palette.${key}`)])) {
     const button = swatch(colors[key], label, 'base-swatch')
     const text = element('span', 'base-text')
 
@@ -209,15 +221,14 @@ const renderPalette = (colors) => {
   grid.append(element('span', 'grid-corner'))
 
   for (const key of ANSI) {
-    grid.append(element('span', 'grid-head', key[0].toUpperCase() + key.slice(1)))
+    grid.append(element('span', 'grid-head', colorName(key)))
   }
 
-  for (const [row, keys] of [['Normal', ANSI], ['Bright', BRIGHT]]) {
+  for (const [row, keys] of [[t('palette.normal'), ANSI], [t('palette.bright'), BRIGHT]]) {
     grid.append(element('span', 'grid-row', row))
 
     for (const key of keys) {
-      const label = row === 'Bright' ? `Bright ${key.slice(6).toLowerCase()}` : key
-      const button = swatch(colors[key], label, 'grid-swatch')
+      const button = swatch(colors[key], colorName(key), 'grid-swatch')
 
       button.append(element('code', '', colors[key].toUpperCase()))
       grid.append(button)
@@ -232,7 +243,7 @@ const renderViewer = () => {
   const { colors } = scheme
   const frame = $('frame')
 
-  document.title = `${scheme.name} · Xcasca Color Scheme Gallery`
+  document.title = `${scheme.name} · ${t('siteName')}`
   $('scheme-name').textContent = scheme.name
   $('scheme-credit').innerHTML = ''
 
@@ -242,12 +253,19 @@ const renderViewer = () => {
   link.href = scheme.url
   link.textContent = scheme.author
   link.rel = 'noopener'
-  credit.append(`${KIND_LABEL[scheme.kind]} · ${scheme.dark ? 'Dark' : 'Light'} · by `, link, ` · ${scheme.license}`)
+  // The author is a link wherever the language puts it in the line
+  const [before, after] = t('credit', {
+    kind: t(`kind.${scheme.kind}`),
+    mode: t(scheme.dark ? 'mode.dark' : 'mode.light'),
+    license: scheme.license,
+  }).split('{author}')
+
+  credit.append(before, link, after ?? '')
 
   const fileName = scheme.file.split('/').pop()
   const download = $('download')
 
-  download.href = scheme.file.split('/').map(encodeURIComponent).join('/')
+  download.href = `${ROOT}${scheme.file.split('/').map(encodeURIComponent).join('/')}`
   download.setAttribute('download', fileName)
   $('source').href = `${REPO}/blob/main/${scheme.file.split('/').map(encodeURIComponent).join('/')}`
 
@@ -284,13 +302,13 @@ const renderList = () => {
 
   const list = $('list')
 
-  $('count').textContent = `${state.visible.length} of ${state.schemes.length} schemes`
+  $('count').textContent = t('count', { shown: state.visible.length, total: state.schemes.length })
 
   if (state.visible.length === 0) {
     const empty = document.createElement('li')
 
     empty.className = 'empty'
-    empty.textContent = 'No scheme matches.'
+    empty.textContent = t('empty')
     list.replaceChildren(empty)
     return
   }
@@ -319,7 +337,7 @@ const renderList = () => {
       name.className = 'name'
       name.textContent = scheme.name
       tag.className = 'tag'
-      tag.title = scheme.dark ? 'Dark' : 'Light'
+      tag.title = t(scheme.dark ? 'mode.dark' : 'mode.light')
       tag.append(icon(scheme.dark ? 'moon' : 'sun'))
       button.append(mini, name, tag)
       button.addEventListener('click', () => select(scheme))
@@ -421,12 +439,93 @@ const createTerminal = () => {
   }).observe(host)
 }
 
+/*
+ * The language menu remembers the choice and keeps the scheme in the address. On the English page,
+ * a visitor whose browser asks for another language the gallery has is offered it, once; the page
+ * is never switched for them, so search engines and links always get the language they asked for.
+ */
+const storage = {
+  get: (key) => {
+    try {
+      return localStorage.getItem(key)
+    } catch {
+      return null
+    }
+  },
+  set: (key, value) => {
+    try {
+      localStorage.setItem(key, value)
+    } catch {
+      // A private window may refuse; the choice is then not remembered
+    }
+  },
+}
+
+const languageFor = (tag) => {
+  const lower = tag.toLowerCase()
+
+  if (lower.startsWith('ko')) return 'ko'
+  if (lower.startsWith('ja')) return 'ja'
+  if (/^zh-(tw|hk|mo|hant)/.test(lower)) return 'zh-Hant'
+  if (lower.startsWith('zh')) return 'zh-Hans'
+  if (lower.startsWith('en')) return 'en'
+
+  return null
+}
+
+const bindLanguages = () => {
+  const menu = document.querySelector('.lang-menu')
+
+  for (const link of document.querySelectorAll('[data-lang-link]')) {
+    link.addEventListener('click', () => {
+      storage.set(LANGUAGE_KEY, link.dataset.langLink)
+      link.href = `${link.getAttribute('href')}${location.hash}`
+    })
+  }
+
+  document.addEventListener('click', (event) => {
+    if (menu?.open && !menu.contains(event.target)) {
+      menu.open = false
+    }
+  })
+
+  const offers = I18N.suggestions ?? {}
+
+  if (storage.get(LANGUAGE_KEY) || Object.keys(offers).length === 0) {
+    return
+  }
+
+  const wanted = (navigator.languages ?? [navigator.language]).map(languageFor).find(Boolean)
+  const offer = offers[wanted]
+
+  if (!offer) {
+    return
+  }
+
+  const banner = $('language-suggestion')
+  const link = $('language-suggestion-link')
+
+  $('language-suggestion-text').textContent = offer.text
+  link.textContent = offer.action
+  link.href = offer.href || './'
+  link.addEventListener('click', () => {
+    storage.set(LANGUAGE_KEY, wanted)
+    link.href = `${link.getAttribute('href')}${location.hash}`
+  })
+  $('language-suggestion-close').addEventListener('click', () => {
+    storage.set(LANGUAGE_KEY, 'en')
+    banner.hidden = true
+  })
+  banner.hidden = false
+}
+
 const main = async () => {
+  bindLanguages()
   bindFilters()
   bindTabs()
   bindSamples()
 
-  const [index] = await Promise.all([fetch('schemes.json').then((response) => response.json()), loadSample('shell')])
+  const [index] = await Promise.all([fetch(`${ROOT}schemes.json`).then((response) => response.json()), loadSample('shell')])
 
   state.schemes = index.terminal
 
@@ -462,6 +561,6 @@ const main = async () => {
 }
 
 main().catch((error) => {
-  $('scheme-name').textContent = 'The gallery could not load.'
+  $('scheme-name').textContent = t('loadError')
   $('scheme-credit').textContent = String(error)
 })

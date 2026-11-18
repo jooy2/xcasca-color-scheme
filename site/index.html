@@ -1,82 +1,87 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{lang}}" data-root="{{root}}" data-lang="{{langCode}}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Xcasca Color Scheme Gallery: Terminal Themes to Preview and Download</title>
-    <meta name="description" content="Preview and download %SCHEME_COUNT% free terminal color schemes for Xcasca, including Dracula, Nord, Gruvbox, Catppuccin and Tokyo Night, for desktop and mobile.">
-    <link rel="canonical" href="https://jooy2.github.io/xcasca-color-scheme/">
+    <title>{{a:meta.title}}</title>
+    <meta name="description" content="{{a:meta.description}}">
+    {{head}}
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="author" content="jooy2">
     <meta name="theme-color" content="#0e1014" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Xcasca Color Scheme Gallery">
-    <meta property="og:url" content="https://jooy2.github.io/xcasca-color-scheme/">
-    <meta property="og:title" content="Xcasca Color Scheme Gallery">
-    <meta property="og:description" content="Preview and download %SCHEME_COUNT% free terminal color schemes for Xcasca, including Dracula, Nord, Gruvbox, Catppuccin and Tokyo Night.">
+    <meta property="og:title" content="{{a:meta.ogTitle}}">
+    <meta property="og:description" content="{{a:meta.ogDescription}}">
     <meta property="og:image" content="https://jooy2.github.io/xcasca-color-scheme/images/social-preview.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1280">
     <meta property="og:image:height" content="640">
     <meta property="og:image:alt" content="Xcasca on a desktop and a phone beside eight color schemes: Harbor Night, Dracula, Nord, Catppuccin Mocha, Gruvbox Dark, Tokyo Night, Paper Ink and Solarized Light">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Xcasca Color Scheme Gallery">
-    <meta name="twitter:description" content="Preview and download %SCHEME_COUNT% free terminal color schemes for Xcasca.">
+    <meta name="twitter:title" content="{{a:meta.ogTitle}}">
+    <meta name="twitter:description" content="{{a:meta.ogDescription}}">
     <meta name="twitter:image" content="https://jooy2.github.io/xcasca-color-scheme/images/social-preview.png">
     <!-- structured-data -->
     <meta name="color-scheme" content="dark light">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="sitemap" type="application/xml" href="sitemap.xml">
+    <link rel="icon" href="{{root}}favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="{{root}}apple-touch-icon.png">
+    <link rel="sitemap" type="application/xml" href="{{root}}sitemap.xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xterm/xterm@6.0.0/css/xterm.css" integrity="sha384-n2n7twoohnW+d3myBKaUgl7DSiwidw6MkQy9oesGzkPpMjejKRR3XlnD+5yCdtBD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{root}}style.css">
   </head>
   <body>
+    <div class="language-suggestion" id="language-suggestion" hidden>
+      <span id="language-suggestion-text"></span>
+      <a id="language-suggestion-link" href="./"></a>
+      <button type="button" id="language-suggestion-close" aria-label="Close">{{icon:x}}</button>
+    </div>
+
     <header class="masthead">
       <div class="masthead-inner">
         <a class="brand" href="./">
-          <img src="favicon.svg" width="36" height="36" alt="">
+          <img src="{{root}}favicon.svg" width="36" height="36" alt="">
           <span>
             <strong>Xcasca Color Scheme Gallery</strong>
-            <small>Terminal themes for Xcasca</small>
+            <small>{{t:brand.tagline}}</small>
           </span>
         </a>
         <nav class="masthead-links" aria-label="Site">
-          <a href="#apply">{{icon:book-open}}<span>How to apply</span></a>
-          <a href="https://github.com/jooy2/xcasca-color-scheme">{{icon:github}}<span>GitHub</span></a>
+          <a class="hide-narrow" href="#apply">{{icon:book-open}}<span>{{t:nav.apply}}</span></a>
+          {{langMenu}}
+          <a href="https://github.com/jooy2/xcasca-color-scheme" aria-label="GitHub">{{icon:github}}<span class="hide-narrow">GitHub</span></a>
         </nav>
       </div>
     </header>
 
     <main>
       <section class="intro">
-        <h1>Color schemes for the Xcasca terminal</h1>
-        <p>Pick a scheme to see it on a real-looking terminal session, then download the file and import it in Xcasca 1.1.2 or later, on the desktop or on your phone. Every file here was exported from the app itself, so it imports as it is.</p>
-        <p class="fineprint">An unofficial project, unrelated to the company behind Xcasca.</p>
+        <h1>{{t:intro.title}}</h1>
+        <p>{{t:intro.body}}</p>
+        <p class="fineprint">{{t:fineprint}}</p>
       </section>
 
-      <section class="gallery" aria-label="Color schemes">
+      <section class="gallery" aria-label="{{a:gallery.label}}">
         <aside class="picker">
           <label class="search">
             {{icon:search}}
-            <span class="visually-hidden">Search color schemes</span>
-            <input id="search" type="search" placeholder="Search schemes" autocomplete="off" spellcheck="false">
+            <span class="visually-hidden">{{t:search.label}}</span>
+            <input id="search" type="search" placeholder="{{a:search.placeholder}}" autocomplete="off" spellcheck="false">
           </label>
-          <div class="filters" role="group" aria-label="Background">
-            <button type="button" class="chip" data-mode="all" aria-pressed="true">All</button>
-            <button type="button" class="chip icon-only" data-mode="dark" aria-pressed="false" aria-label="Dark" title="Dark">{{icon:moon}}</button>
-            <button type="button" class="chip icon-only" data-mode="light" aria-pressed="false" aria-label="Light" title="Light">{{icon:sun}}</button>
+          <div class="filters" role="group" aria-label="{{a:filter.background}}">
+            <button type="button" class="chip" data-mode="all" aria-pressed="true">{{t:filter.all}}</button>
+            <button type="button" class="chip icon-only" data-mode="dark" aria-pressed="false" aria-label="{{a:filter.dark}}" title="{{a:filter.dark}}">{{icon:moon}}</button>
+            <button type="button" class="chip icon-only" data-mode="light" aria-pressed="false" aria-label="{{a:filter.light}}" title="{{a:filter.light}}">{{icon:sun}}</button>
           </div>
-          <div class="filters" role="group" aria-label="Source">
-            <button type="button" class="chip" data-kind="all" aria-pressed="true">Any source</button>
-            <button type="button" class="chip" data-kind="built-in" aria-pressed="false">{{icon:package}}<span>Built-in</span></button>
-            <button type="button" class="chip" data-kind="community" aria-pressed="false">{{icon:users}}<span>Community</span></button>
-            <button type="button" class="chip" data-kind="original" aria-pressed="false">{{icon:sparkles}}<span>Original</span></button>
+          <div class="filters" role="group" aria-label="{{a:filter.source}}">
+            <button type="button" class="chip" data-kind="all" aria-pressed="true">{{t:filter.anySource}}</button>
+            <button type="button" class="chip" data-kind="built-in" aria-pressed="false">{{icon:package}}<span>{{t:kind.built-in}}</span></button>
+            <button type="button" class="chip" data-kind="community" aria-pressed="false">{{icon:users}}<span>{{t:kind.community}}</span></button>
+            <button type="button" class="chip" data-kind="original" aria-pressed="false">{{icon:sparkles}}<span>{{t:kind.original}}</span></button>
           </div>
           <p class="count" id="count" aria-live="polite"></p>
           <ul class="scheme-list" id="list"><!-- scheme-list --></ul>
@@ -89,103 +94,50 @@
               <p class="credit" id="scheme-credit"></p>
             </div>
             <div class="actions">
-              <a class="button primary" id="download" href="#" download>
-                {{icon:download}}<span>Download</span>
-              </a>
-              <a class="button" id="source" href="https://github.com/jooy2/xcasca-color-scheme">{{icon:file-code}}<span>View file</span></a>
+              <a class="button primary" id="download" href="#" download>{{icon:download}}<span>{{t:viewer.download}}</span></a>
+              <a class="button" id="source" href="https://github.com/jooy2/xcasca-color-scheme">{{icon:file-code}}<span>{{t:viewer.viewFile}}</span></a>
             </div>
           </header>
           <div class="terminal-frame" id="frame">
             <div class="terminal-bar">
               <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-              <div class="sample-tabs" role="group" aria-label="Sample">
-                <button type="button" data-sample="shell" aria-pressed="true">{{icon:terminal}}<span>Shell</span></button>
-                <button type="button" data-sample="code" aria-pressed="false">{{icon:code}}<span>Code</span></button>
-                <button type="button" data-sample="colors" aria-pressed="false">{{icon:palette}}<span>Colors</span></button>
-                <button type="button" data-sample="cjk" aria-pressed="false">{{icon:languages}}<span>CJK</span></button>
+              <div class="sample-tabs" role="group" aria-label="{{a:sample.group}}">
+                <button type="button" data-sample="shell" aria-pressed="true">{{icon:terminal}}<span>{{t:sample.shell}}</span></button>
+                <button type="button" data-sample="code" aria-pressed="false">{{icon:code}}<span>{{t:sample.code}}</span></button>
+                <button type="button" data-sample="colors" aria-pressed="false">{{icon:palette}}<span>{{t:sample.colors}}</span></button>
+                <button type="button" data-sample="cjk" aria-pressed="false">{{icon:languages}}<span>{{t:sample.cjk}}</span></button>
               </div>
             </div>
-            <div class="terminal" id="terminal" aria-label="A terminal drawn with the selected color scheme. Click it to type."></div>
+            <div class="terminal" id="terminal" aria-label="{{a:terminal.label}}"></div>
           </div>
-          <div class="palette" id="palette" aria-label="Colors"></div>
-          <p class="hint">Click the terminal to type in it. Click a color to copy its hex value. The highlighted text shows the selection color.</p>
+          <div class="palette" id="palette" aria-label="{{a:palette.label}}"></div>
+          <p class="hint">{{t:viewer.hint}}</p>
         </article>
       </section>
 
       <section class="apply" id="apply">
-        <h2>Apply a downloaded scheme</h2>
-        <p>Import the <code>.xccolorscheme</code> file once, then pick it for any session. The scheme is stored like the ones you make yourself, and syncs with your other devices if you use sync.</p>
-        <div class="tabs" role="tablist" aria-label="Platform">
-          <button type="button" role="tab" id="tab-desktop" aria-controls="steps-desktop" aria-selected="true">{{icon:monitor}}<span>Desktop</span></button>
-          <button type="button" role="tab" id="tab-android" aria-controls="steps-android" aria-selected="false" tabindex="-1">{{icon:smartphone}}<span>Android</span></button>
+        <h2>{{t:apply.title}}</h2>
+        <p>{{t:apply.body}}</p>
+        <div class="tabs" role="tablist" aria-label="{{a:apply.platform}}">
+          <button type="button" role="tab" id="tab-desktop" aria-controls="steps-desktop" aria-selected="true">{{icon:monitor}}<span>{{t:apply.desktop}}</span></button>
+          <button type="button" role="tab" id="tab-android" aria-controls="steps-android" aria-selected="false" tabindex="-1">{{icon:smartphone}}<span>{{t:apply.android}}</span></button>
         </div>
-
-        <ol class="steps" id="steps-desktop" role="tabpanel" aria-labelledby="tab-desktop">
-          <li>
-            <img src="images/desktop-1-open-manager.png" width="1440" height="900" loading="lazy" alt="The menu open on Tools, with Terminal Color Schemes highlighted">
-            <p>Open the <strong>&#8942;</strong> menu at the top right, then <strong>Tools</strong> &gt; <strong>Terminal Color Schemes...</strong></p>
-          </li>
-          <li>
-            <img src="images/desktop-2-import.png" width="1440" height="900" loading="lazy" alt="The Terminal Color Schemes window with Import highlighted in its menu">
-            <p>Click <strong>&#8942;</strong> under the list, choose <strong>Import...</strong>, and pick the file you downloaded.</p>
-          </li>
-          <li>
-            <img src="images/desktop-3-imported.png" width="1440" height="900" loading="lazy" alt="The imported scheme selected in the list, with its colors shown">
-            <p>The scheme joins the list. Click <strong>Close</strong>.</p>
-          </li>
-          <li>
-            <img src="images/desktop-4-properties.png" width="1440" height="900" loading="lazy" alt="The session properties button with Current Session highlighted">
-            <p>Click the session properties button on the toolbar, then <strong>Current Session</strong>. <strong>Default Session</strong> sets it for new sessions instead.</p>
-          </li>
-          <li>
-            <img src="images/desktop-5-apply.png" width="1440" height="900" loading="lazy" alt="Session properties with the color scheme chosen and OK highlighted">
-            <p>Under <strong>Appearance</strong>, choose the scheme in <strong>Color Scheme</strong> and click <strong>OK</strong>.</p>
-          </li>
-          <li>
-            <img src="images/desktop-6-applied.png" width="1440" height="900" loading="lazy" alt="The terminal drawn with the new color scheme">
-            <p>The terminal takes the new colors right away.</p>
-          </li>
-        </ol>
-
-        <ol class="steps phone" id="steps-android" role="tabpanel" aria-labelledby="tab-android" hidden>
-          <li>
-            <img src="images/android-1-open-menu.png" width="540" height="1212" loading="lazy" alt="The app menu with Terminal Color Schemes highlighted">
-            <p>On the home screen, open the menu at the bottom left and tap <strong>Terminal Color Schemes</strong>.</p>
-          </li>
-          <li>
-            <img src="images/android-2-import.png" width="540" height="1212" loading="lazy" alt="The add menu with Import highlighted">
-            <p>Tap <strong>+</strong>, then <strong>Import</strong>, and pick the downloaded file.</p>
-          </li>
-          <li>
-            <img src="images/android-3-imported.png" width="540" height="1212" loading="lazy" alt="The imported scheme highlighted in the list">
-            <p>The scheme joins the list.</p>
-          </li>
-          <li>
-            <img src="images/android-4-edit.png" width="540" height="1212" loading="lazy" alt="A session's menu with Edit highlighted">
-            <p>In <strong>Sessions</strong>, press and hold a session, then tap <strong>Edit</strong>.</p>
-          </li>
-          <li>
-            <img src="images/android-5-apply.png" width="540" height="1212" loading="lazy" alt="Session properties with the color scheme chosen and the save button highlighted">
-            <p>Under <strong>Appearance</strong>, pick the scheme in <strong>Color Scheme</strong>, then tap the check mark to save.</p>
-          </li>
-          <li>
-            <img src="images/android-6-applied.png" width="540" height="1212" loading="lazy" alt="The terminal drawn with the new color scheme">
-            <p>Open the session to see the new colors.</p>
-          </li>
-        </ol>
+        <ol class="steps" id="steps-desktop" role="tabpanel" aria-labelledby="tab-desktop">{{steps:desktop}}</ol>
+        <ol class="steps phone" id="steps-android" role="tabpanel" aria-labelledby="tab-android" hidden>{{steps:android}}</ol>
       </section>
     </main>
 
     <footer class="footer">
-      <p>Made by <a href="https://github.com/jooy2">@jooy2</a> under the <a href="https://github.com/jooy2/xcasca-color-scheme/blob/main/LICENSE">MIT License</a>. Each scheme keeps the license of its author; see <a href="https://github.com/jooy2/xcasca-color-scheme/blob/main/CREDITS.md">Credits</a>.</p>
-      <p class="fineprint">An unofficial project, unrelated to the company behind Xcasca.</p>
+      <p>{{t:footer.credits}}</p>
+      <p class="fineprint">{{t:fineprint}}</p>
     </footer>
 
     <div class="toast" id="toast" role="status" hidden></div>
     <template id="icon-moon">{{icon:moon}}</template>
     <template id="icon-sun">{{icon:sun}}</template>
+    <script type="application/json" id="i18n">{{runtime}}</script>
 
     <script src="https://cdn.jsdelivr.net/npm/@xterm/xterm@6.0.0/lib/xterm.js" integrity="sha384-f/1U6Z9wM4D71a5eRXEZnyOTMOvjqxr2XLwh+Go1OvIl3L3tOcvUrzudnhbECwl4" crossorigin="anonymous"></script>
-    <script src="app.js" type="module"></script>
+    <script src="{{root}}app.js" type="module"></script>
   </body>
 </html>
