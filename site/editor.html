@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="{{lang}}" data-root="{{root}}" data-lang="{{langCode}}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{a:editor.meta.title}}</title>
+    <meta name="description" content="{{a:editor.meta.description}}">
+    {{head}}
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="jooy2">
+    <meta name="theme-color" content="#0e1014" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
+    <script>
+      // The theme the visitor picked, before anything is drawn; none follows the system
+      try {
+        var theme = localStorage.getItem('xcasca-gallery-theme')
+
+        if (theme === 'light' || theme === 'dark') {
+          document.documentElement.dataset.theme = theme
+        }
+      } catch (e) {}
+    </script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Xcasca Color Scheme Gallery">
+    <meta property="og:title" content="{{a:editor.meta.ogTitle}}">
+    <meta property="og:description" content="{{a:editor.meta.description}}">
+    <meta property="og:image" content="https://jooy2.github.io/xcasca-color-scheme/images/social-preview.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="640">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{a:editor.meta.ogTitle}}">
+    <meta name="twitter:description" content="{{a:editor.meta.description}}">
+    <meta name="twitter:image" content="https://jooy2.github.io/xcasca-color-scheme/images/social-preview.png">
+    <!-- structured-data -->
+    <meta name="color-scheme" content="dark light">
+    <link rel="icon" href="{{root}}favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="{{root}}apple-touch-icon.png">
+    <link rel="sitemap" type="application/xml" href="{{root}}sitemap.xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xterm/xterm@6.0.0/css/xterm.css" integrity="sha384-n2n7twoohnW+d3myBKaUgl7DSiwidw6MkQy9oesGzkPpMjejKRR3XlnD+5yCdtBD" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{root}}style.css">
+  </head>
+  <body>
+    <div class="language-suggestion" id="language-suggestion" hidden>
+      <span id="language-suggestion-text"></span>
+      <a id="language-suggestion-link" href="./"></a>
+      <button type="button" id="language-suggestion-close" aria-label="Close">{{icon:x}}</button>
+    </div>
+
+    <header class="masthead">
+      <div class="masthead-inner">
+        <a class="brand" href="../">
+          <img src="{{root}}favicon.svg" width="36" height="36" alt="">
+          <span>
+            <strong>Xcasca Color Scheme Gallery</strong>
+            <small>{{t:brand.tagline}}</small>
+          </span>
+        </a>
+        <nav class="masthead-links" aria-label="Site">
+          <a class="hide-narrow" href="../">{{icon:palette}}<span>{{t:nav.gallery}}</span></a>
+          <div class="theme-switch" role="group" aria-label="{{a:theme.label}}">
+            <button type="button" data-theme-choice="system" aria-pressed="true" aria-label="{{a:theme.system}}" title="{{a:theme.system}}">{{icon:monitor}}</button>
+            <button type="button" data-theme-choice="light" aria-pressed="false" aria-label="{{a:theme.light}}" title="{{a:theme.light}}">{{icon:sun}}</button>
+            <button type="button" data-theme-choice="dark" aria-pressed="false" aria-label="{{a:theme.dark}}" title="{{a:theme.dark}}">{{icon:moon}}</button>
+          </div>
+          {{langMenu}}
+          <a href="https://github.com/jooy2/xcasca-color-scheme" aria-label="GitHub">{{icon:github}}<span class="hide-narrow">GitHub</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h1>{{t:editor.title}}</h1>
+        <p>{{t:editor.body}}</p>
+        <p class="fineprint">{{t:fineprint}}</p>
+      </section>
+
+      <section class="editor" aria-label="{{a:editor.title}}">
+        <form class="editor-panel" id="editor-form" novalidate>
+          <div class="editor-start">
+            <label class="field">
+              <span>{{t:editor.startFrom}}</span>
+              <select id="start-from"></select>
+            </label>
+            <div class="editor-buttons">
+              <label class="button" for="import-file" tabindex="0">{{icon:upload}}<span>{{t:editor.import}}</span></label>
+              <input type="file" id="import-file" accept=".xccolorscheme,application/json" hidden>
+              <button type="button" class="button" id="reset">{{icon:rotate-ccw}}<span>{{t:editor.reset}}</span></button>
+            </div>
+          </div>
+
+          <label class="field">
+            <span>{{t:editor.name}}</span>
+            <input id="name" type="text" maxlength="255" autocomplete="off" spellcheck="false">
+            <small class="field-message" id="name-message" aria-live="polite"></small>
+          </label>
+
+          <fieldset>
+            <legend>{{t:editor.basics}}</legend>
+            <div class="color-fields" id="base-fields"></div>
+            <label class="opacity">
+              <span>{{t:editor.opacity}}</span>
+              <input type="range" id="opacity" min="0" max="100" step="1">
+              <output id="opacity-value" for="opacity"></output>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>{{t:editor.ansi}}</legend>
+            <div class="ansi-fields" id="ansi-fields"></div>
+          </fieldset>
+
+          <details class="search-colors">
+            <summary>{{t:editor.search}}</summary>
+            <div class="color-fields" id="search-fields"></div>
+          </details>
+        </form>
+
+        <div class="editor-preview">
+          <div class="terminal-frame" id="frame">
+            <div class="terminal-bar">
+              <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <div class="sample-tabs" role="group" aria-label="{{a:sample.group}}">
+                <button type="button" data-sample="shell" aria-pressed="true">{{icon:terminal}}<span>{{t:sample.shell}}</span></button>
+                <button type="button" data-sample="code" aria-pressed="false">{{icon:code}}<span>{{t:sample.code}}</span></button>
+                <button type="button" data-sample="colors" aria-pressed="false">{{icon:palette}}<span>{{t:sample.colors}}</span></button>
+                <button type="button" data-sample="cjk" aria-pressed="false">{{icon:languages}}<span>{{t:sample.cjk}}</span></button>
+              </div>
+            </div>
+            <div class="terminal" id="terminal" aria-label="{{a:terminal.label}}"></div>
+          </div>
+          <p class="contrast" id="contrast" aria-live="polite"></p>
+          <div class="actions">
+            <button type="button" class="button primary" id="download-scheme">{{icon:download}}<span>{{t:editor.download}}</span></button>
+            <button type="button" class="button" id="copy-json">{{icon:copy}}<span>{{t:editor.copy}}</span></button>
+          </div>
+          <p class="hint">{{t:editor.hint}}</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>{{t:footer.credits}}</p>
+      <p class="fineprint">{{t:fineprint}}</p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" hidden></div>
+    <script type="application/json" id="i18n">{{runtime}}</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@xterm/xterm@6.0.0/lib/xterm.js" integrity="sha384-f/1U6Z9wM4D71a5eRXEZnyOTMOvjqxr2XLwh+Go1OvIl3L3tOcvUrzudnhbECwl4" crossorigin="anonymous"></script>
+    <script src="{{root}}editor.js" type="module"></script>
+  </body>
+</html>

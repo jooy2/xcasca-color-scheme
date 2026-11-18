@@ -14,6 +14,8 @@ You need Xcasca 1.1.2 or later, on the desktop or on mobile.
 2. Click **New**, or start from a copy of an existing scheme (**Save As** under **&#8942;** on the desktop, **Duplicate** on mobile), and set the colors. The preview at the top shows them on sample text.
 3. Give it a name and save it.
 
+You can also make it in the gallery's [editor](https://jooy2.github.io/xcasca-color-scheme/editor/), which writes the same file the app does. Import that file into Xcasca once to check it, then go on as below.
+
 ### 2. Export it from the app
 
 Select the scheme, open **&#8942;** under the list, and choose **Export...**. The app writes `<name>.xccolorscheme`.

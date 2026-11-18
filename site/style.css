@@ -535,6 +535,7 @@ main {
 
 .actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -794,6 +795,240 @@ main {
   color: var(--text-muted);
   font-size: 13px;
 }
+
+/* Editor */
+
+.editor {
+  display: grid;
+  grid-template-columns: minmax(320px, 420px) minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.editor-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--page-raised);
+}
+
+.editor-preview {
+  position: sticky;
+  top: 84px;
+  min-width: 0;
+}
+
+.editor-start {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.editor-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.editor-buttons .button {
+  cursor: pointer;
+  font-size: 14px;
+  padding: 7px 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.field > span {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.field input,
+.field select {
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--page);
+  color: var(--text);
+  font: inherit;
+}
+
+.field input:focus,
+.field select:focus,
+.color-field .hex:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.field-message {
+  min-height: 1.2em;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.field-message.error {
+  color: #e5534b;
+}
+
+.editor-panel fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.editor-panel legend,
+.search-colors summary {
+  margin-bottom: 8px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.search-colors summary {
+  cursor: pointer;
+}
+
+.search-colors .color-fields {
+  margin-top: 4px;
+}
+
+.color-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.color-field {
+  display: grid;
+  grid-template-columns: 34px 1fr 92px;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.color-field input[type="color"] {
+  width: 34px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: none;
+  cursor: pointer;
+}
+
+.color-field input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 2px;
+}
+
+.color-field input[type="color"]::-webkit-color-swatch {
+  border: 0;
+  border-radius: 5px;
+}
+
+.color-field .hex {
+  width: 100%;
+  min-width: 0;
+  padding: 5px 8px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--page);
+  color: var(--text);
+  font: 12px var(--mono);
+  text-transform: uppercase;
+}
+
+.color-field .hex.invalid {
+  border-color: #e5534b;
+}
+
+.color-field.compact {
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 6px;
+}
+
+.color-field.compact input[type="color"] {
+  width: 30px;
+}
+
+.ansi-grid {
+  display: grid;
+  grid-template-columns: minmax(64px, auto) repeat(2, minmax(0, 1fr));
+  gap: 6px 10px;
+  align-items: center;
+}
+
+.ansi-grid .grid-head {
+  text-align: left;
+}
+
+.ansi-grid .grid-row {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.opacity {
+  display: grid;
+  grid-template-columns: 1fr 120px 44px;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.opacity output {
+  color: var(--text);
+  font: 12px var(--mono);
+  text-align: right;
+}
+
+.contrast {
+  margin: 14px 0 12px;
+  font-size: 14px;
+}
+
+.contrast[data-rating="low"],
+.contrast[data-rating="bad"] {
+  color: #e5534b;
+}
+
+.editor-preview .actions {
+  flex-wrap: wrap;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.button {
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .editor {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .editor-preview {
+    position: static;
+    order: -1;
+  }
+}
+
 
 /* How to apply */
 

@@ -1,189 +1,24 @@
-// The gallery: a list of schemes on the left, and the selected one drawn on a terminal with xterm.js.
+// The gallery: a list of schemes on the left, and the selected one drawn on a terminal.
 
-const REPO = 'https://github.com/jooy2/xcasca-color-scheme'
-const COLS = 68
-const ROWS = 25
-const prompt = (path) => `\x1b[1;32mdemo@devbox\x1b[0m:\x1b[1;34m${path}\x1b[0m$ `
-/*
- * The sessions the terminal can show, written by scripts/sample.mjs. Each ends on a prompt, and
- * has a stretch of text selected so the selection color shows.
- */
-const SAMPLES = {
-  shell: { path: '~/projects/aurora', selection: { column: 8, row: 10, length: 30 } },
-  code: { path: '~/projects/aurora', selection: { column: 6, row: 13, length: 33 } },
-  colors: { path: '~', selection: { column: 9, row: 1, length: 15 } },
-  cjk: { path: '~/文書', selection: { column: 5, row: 11, length: 26 } },
-}
-const FONT = '"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace'
-const ANSI = ['black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white']
-const BRIGHT = ANSI.map((name) => `bright${name[0].toUpperCase()}${name.slice(1)}`)
-// The page's language: its strings, and the other languages to offer, written by the build
-const I18N = JSON.parse(document.getElementById('i18n').textContent)
-// From this page to the site's root, such as ../ on /ko/
-const ROOT = document.documentElement.dataset.root ?? ''
-const LANGUAGE_KEY = 'xcasca-gallery-language'
+import {
+  $,
+  ANSI,
+  BRIGHT,
+  REPO,
+  ROOT,
+  bindLanguages,
+  bindTheme,
+  colorName,
+  copyText,
+  createPreview,
+  element,
+  icon,
+  loadSchemes,
+  t,
+} from './common.js'
 
-const t = (key, values = {}) =>
-  (I18N.strings[key] ?? key).replace(/\{(\w+)\}/g, (match, name) => (name in values ? values[name] : match))
-
-const colorName = (key) =>
-  key.startsWith('bright')
-    ? t('palette.brightColor', { color: t(`color.${key.slice(6).toLowerCase()}`) })
-    : t(`color.${key}`)
-
-const state = { schemes: [], visible: [], current: null, mode: 'all', kind: 'all', query: '', sample: 'shell' }
-const sampleTexts = {}
-const $ = (id) => document.getElementById(id)
-// An icon the build put in a <template>, for elements made here
-const icon = (name) => $(`icon-${name}`).content.firstElementChild.cloneNode(true)
-let terminal = null
-
-const toTheme = (c) => ({
-  foreground: c.foreground,
-  background: c.background,
-  cursor: c.foreground,
-  cursorAccent: c.background,
-  selectionBackground: c.selection,
-  selectionInactiveBackground: c.selection,
-  ...Object.fromEntries(ANSI.map((key) => [key, c[key]])),
-  ...Object.fromEntries(BRIGHT.map((key) => [key, c[key]])),
-})
-
-const fontSizeFor = (width) => {
-  // JetBrains Mono is 0.6 em wide; leave the frame's padding
-  const size = Math.floor(((width - 36) / (COLS * 0.6)) * 2) / 2
-
-  return Math.max(8, Math.min(15, size))
-}
-
-const showToast = (text) => {
-  const toast = $('toast')
-
-  toast.textContent = text
-  toast.hidden = false
-  clearTimeout(showToast.timer)
-  showToast.timer = setTimeout(() => {
-    toast.hidden = true
-  }, 1600)
-}
-
-// A scheme changes only the colors; what the terminal shows stays
-const applyTheme = () => {
-  if (terminal && state.current) {
-    terminal.options.theme = toTheme(state.current.colors)
-  }
-}
-
-const loadSample = async (name) => {
-  sampleTexts[name] ??= await fetch(`${ROOT}samples/${name}.ansi`).then((response) => response.text())
-
-  return sampleTexts[name]
-}
-
-const writeSample = async () => {
-  const name = state.sample
-  const text = await loadSample(name)
-  const { path, selection } = SAMPLES[name]
-
-  if (!terminal || name !== state.sample) {
-    return
-  }
-
-  terminal.reset()
-  typed = ''
-  terminal.write(`${text}${prompt(path)}`, () => {
-    terminal.select(selection.column, selection.row, selection.length)
-  })
-}
-
-/*
- * Typing in the terminal. Nothing runs behind it, so what is typed is shown on the line, Enter
- * starts a new prompt, and `clear` or Ctrl+L clears the screen.
- */
-let typed = ''
-
-const isWide = (char) => {
-  const code = char.codePointAt(0)
-
-  return (
-    (code >= 0x1100 && code <= 0x115f) ||
-    (code >= 0x2e80 && code <= 0xa4cf) ||
-    (code >= 0xac00 && code <= 0xd7a3) ||
-    (code >= 0xf900 && code <= 0xfaff) ||
-    (code >= 0xfe30 && code <= 0xfe4f) ||
-    (code >= 0xff00 && code <= 0xff60) ||
-    (code >= 0xffe0 && code <= 0xffe6)
-  )
-}
-
-const currentPrompt = () => prompt(SAMPLES[state.sample].path)
-
-const onInput = (data) => {
-  if (data === '\r') {
-    terminal.write(typed.trim() === 'clear' ? `\x1b[2J\x1b[3J\x1b[H${currentPrompt()}` : `\r\n${currentPrompt()}`)
-    typed = ''
-  } else if (data === '\x7f' || data === '\b') {
-    const chars = [...typed]
-    const last = chars.pop()
-
-    if (last) {
-      const width = isWide(last) ? 2 : 1
-
-      typed = chars.join('')
-      terminal.write(`${'\b'.repeat(width)}${' '.repeat(width)}${'\b'.repeat(width)}`)
-    }
-  } else if (data === '\x03') {
-    terminal.write(`^C\r\n${currentPrompt()}`)
-    typed = ''
-  } else if (data === '\x0c') {
-    terminal.write(`\x1b[2J\x1b[3J\x1b[H${currentPrompt()}${typed}`)
-  } else if (!data.startsWith('\x1b')) {
-    // Printable text only, from a key or a paste; a pasted line break ends nothing
-    const text = [...data].filter((char) => char >= ' ' && char !== '\x7f').join('')
-
-    typed += text
-    terminal.write(text)
-  }
-}
-
-const bindSamples = () => {
-  const buttons = [...document.querySelectorAll('[data-sample]')]
-
-  for (const button of buttons) {
-    button.addEventListener('click', () => {
-      state.sample = button.dataset.sample
-
-      for (const other of buttons) {
-        other.setAttribute('aria-pressed', String(other === button))
-      }
-
-      writeSample()
-    })
-  }
-}
-
-const copyHex = async (hex) => {
-  try {
-    await navigator.clipboard.writeText(hex)
-    showToast(t('copied', { hex }))
-  } catch {
-    showToast(hex)
-  }
-}
-
-const element = (tag, className, text) => {
-  const node = document.createElement(tag)
-
-  if (className) {
-    node.className = className
-  }
-
-  if (text !== undefined) {
-    node.textContent = text
-  }
-
-  return node
-}
+const state = { schemes: [], visible: [], current: null, mode: 'all', kind: 'all', query: '' }
+let preview = null
 
 // A button that shows a color and copies its hex value
 const swatch = (hex, label, className) => {
@@ -195,7 +30,7 @@ const swatch = (hex, label, className) => {
   button.setAttribute('aria-label', `${label} ${hex}`)
   color.style.background = hex
   button.append(color)
-  button.addEventListener('click', () => copyHex(hex))
+  button.addEventListener('click', () => copyText(hex, t('copied', { hex })))
 
   return button
 }
@@ -207,7 +42,8 @@ const swatch = (hex, label, className) => {
 const renderPalette = (colors) => {
   const base = element('div', 'palette-base')
 
-  for (const [key, label] of ['foreground', 'background', 'selection'].map((key) => [key, t(`palette.${key}`)])) {
+  for (const key of ['foreground', 'background', 'selection']) {
+    const label = t(`palette.${key}`)
     const button = swatch(colors[key], label, 'base-swatch')
     const text = element('span', 'base-text')
 
@@ -240,19 +76,15 @@ const renderPalette = (colors) => {
 
 const renderViewer = () => {
   const scheme = state.current
-  const { colors } = scheme
-  const frame = $('frame')
+  const path = scheme.file.split('/').map(encodeURIComponent).join('/')
+  const credit = $('scheme-credit')
+  const link = element('a', '', scheme.author)
 
   document.title = `${scheme.name} · ${t('siteName')}`
   $('scheme-name').textContent = scheme.name
-  $('scheme-credit').innerHTML = ''
-
-  const credit = $('scheme-credit')
-  const link = document.createElement('a')
-
   link.href = scheme.url
-  link.textContent = scheme.author
   link.rel = 'noopener'
+
   // The author is a link wherever the language puts it in the line
   const [before, after] = t('credit', {
     kind: t(`kind.${scheme.kind}`),
@@ -260,20 +92,14 @@ const renderViewer = () => {
     license: scheme.license,
   }).split('{author}')
 
-  credit.append(before, link, after ?? '')
+  credit.replaceChildren(before, link, after ?? '')
+  $('download').href = `${ROOT}${path}`
+  $('download').setAttribute('download', scheme.file.split('/').pop())
+  $('source').href = `${REPO}/blob/main/${path}`
+  $('customize').href = `editor/#${encodeURIComponent(scheme.name)}`
 
-  const fileName = scheme.file.split('/').pop()
-  const download = $('download')
-
-  download.href = `${ROOT}${scheme.file.split('/').map(encodeURIComponent).join('/')}`
-  download.setAttribute('download', fileName)
-  $('source').href = `${REPO}/blob/main/${scheme.file.split('/').map(encodeURIComponent).join('/')}`
-
-  frame.style.setProperty('--scheme-bg', colors.background)
-  frame.style.setProperty('--scheme-fg', colors.foreground)
-
-  renderPalette(colors)
-  applyTheme()
+  renderPalette(scheme.colors)
+  preview?.setColors(scheme.colors)
 }
 
 const select = (scheme, { updateHash = true } = {}) => {
@@ -300,46 +126,35 @@ const renderList = () => {
       (!query || scheme.name.toLowerCase().includes(query) || scheme.author.toLowerCase().includes(query)),
   )
 
-  const list = $('list')
-
   $('count').textContent = t('count', { shown: state.visible.length, total: state.schemes.length })
 
   if (state.visible.length === 0) {
-    const empty = document.createElement('li')
-
-    empty.className = 'empty'
-    empty.textContent = t('empty')
-    list.replaceChildren(empty)
+    $('list').replaceChildren(element('li', 'empty', t('empty')))
     return
   }
 
-  list.replaceChildren(
+  $('list').replaceChildren(
     ...state.visible.map((scheme) => {
-      const item = document.createElement('li')
-      const button = document.createElement('button')
-      const mini = document.createElement('span')
-      const name = document.createElement('span')
-      const tag = document.createElement('span')
+      const item = element('li')
+      const button = element('button')
+      const mini = element('span', 'mini')
+      const tag = element('span', 'tag')
 
       button.type = 'button'
       button.dataset.name = scheme.name
       button.setAttribute('aria-current', String(scheme === state.current))
-      mini.className = 'mini'
       mini.style.background = scheme.colors.background
 
       for (const key of [...ANSI, ...BRIGHT]) {
-        const cell = document.createElement('i')
+        const cell = element('i')
 
         cell.style.background = scheme.colors[key]
         mini.append(cell)
       }
 
-      name.className = 'name'
-      name.textContent = scheme.name
-      tag.className = 'tag'
       tag.title = t(scheme.dark ? 'mode.dark' : 'mode.light')
       tag.append(icon(scheme.dark ? 'moon' : 'sun'))
-      button.append(mini, name, tag)
+      button.append(mini, element('span', 'name', scheme.name), tag)
       button.addEventListener('click', () => select(scheme))
       item.append(button)
 
@@ -386,6 +201,7 @@ const bindFilters = () => {
   })
 }
 
+// The Desktop and Android tabs of the steps
 const bindTabs = () => {
   const tabs = [...document.querySelectorAll('[role="tab"]')]
 
@@ -412,156 +228,16 @@ const bindTabs = () => {
   })
 }
 
-const createTerminal = () => {
-  const host = $('terminal')
-
-  terminal = new Terminal({
-    cols: COLS,
-    rows: ROWS,
-    convertEol: true,
-    cursorBlink: true,
-    cursorStyle: 'block',
-    cursorInactiveStyle: 'block',
-    fontFamily: FONT,
-    fontSize: fontSizeFor(host.clientWidth),
-    lineHeight: 1.15,
-    scrollback: 0,
-  })
-  terminal.open(host)
-  terminal.onData(onInput)
-
-  new ResizeObserver(() => {
-    const size = fontSizeFor(host.clientWidth)
-
-    if (size !== terminal.options.fontSize) {
-      terminal.options.fontSize = size
-    }
-  }).observe(host)
-}
-
-/*
- * The language menu remembers the choice and keeps the scheme in the address. On the English page,
- * a visitor whose browser asks for another language the gallery has is offered it, once; the page
- * is never switched for them, so search engines and links always get the language they asked for.
- */
-const storage = {
-  get: (key) => {
-    try {
-      return localStorage.getItem(key)
-    } catch {
-      return null
-    }
-  },
-  set: (key, value) => {
-    try {
-      localStorage.setItem(key, value)
-    } catch {
-      // A private window may refuse; the choice is then not remembered
-    }
-  },
-}
-
-const languageFor = (tag) => {
-  const lower = tag.toLowerCase()
-
-  if (lower.startsWith('ko')) return 'ko'
-  if (lower.startsWith('ja')) return 'ja'
-  if (/^zh-(tw|hk|mo|hant)/.test(lower)) return 'zh-Hant'
-  if (lower.startsWith('zh')) return 'zh-Hans'
-  if (lower.startsWith('en')) return 'en'
-
-  return null
-}
-
-const bindLanguages = () => {
-  const menu = document.querySelector('.lang-menu')
-
-  for (const link of document.querySelectorAll('[data-lang-link]')) {
-    link.addEventListener('click', () => {
-      storage.set(LANGUAGE_KEY, link.dataset.langLink)
-      link.href = `${link.getAttribute('href')}${location.hash}`
-    })
-  }
-
-  document.addEventListener('click', (event) => {
-    if (menu?.open && !menu.contains(event.target)) {
-      menu.open = false
-    }
-  })
-
-  const offers = I18N.suggestions ?? {}
-
-  if (storage.get(LANGUAGE_KEY) || Object.keys(offers).length === 0) {
-    return
-  }
-
-  const wanted = (navigator.languages ?? [navigator.language]).map(languageFor).find(Boolean)
-  const offer = offers[wanted]
-
-  if (!offer) {
-    return
-  }
-
-  const banner = $('language-suggestion')
-  const link = $('language-suggestion-link')
-
-  $('language-suggestion-text').textContent = offer.text
-  link.textContent = offer.action
-  link.href = offer.href || './'
-  link.addEventListener('click', () => {
-    storage.set(LANGUAGE_KEY, wanted)
-    link.href = `${link.getAttribute('href')}${location.hash}`
-  })
-  $('language-suggestion-close').addEventListener('click', () => {
-    storage.set(LANGUAGE_KEY, 'en')
-    banner.hidden = true
-  })
-  banner.hidden = false
-}
-
-// Light, dark, or the system's, which is the default and is not stored
-const THEME_KEY = 'xcasca-gallery-theme'
-
-const bindTheme = () => {
-  const buttons = [...document.querySelectorAll('[data-theme-choice]')]
-  const apply = (choice) => {
-    if (choice === 'light' || choice === 'dark') {
-      document.documentElement.dataset.theme = choice
-    } else {
-      delete document.documentElement.dataset.theme
-    }
-
-    for (const button of buttons) {
-      button.setAttribute('aria-pressed', String(button.dataset.themeChoice === choice))
-    }
-  }
-
-  apply(storage.get(THEME_KEY) ?? 'system')
-
-  for (const button of buttons) {
-    button.addEventListener('click', () => {
-      const choice = button.dataset.themeChoice
-
-      storage.set(THEME_KEY, choice)
-      apply(choice)
-    })
-  }
-}
-
 const main = async () => {
   bindTheme()
   bindLanguages()
   bindFilters()
   bindTabs()
-  bindSamples()
 
-  const [index] = await Promise.all([fetch(`${ROOT}schemes.json`).then((response) => response.json()), loadSample('shell')])
+  const index = await loadSchemes()
 
   state.schemes = index.terminal
-
-  // The terminal measures its font when it opens, so the font has to be there first
-  await Promise.all([document.fonts.load(`15px ${FONT}`), document.fonts.load(`bold 15px ${FONT}`)]).catch(() => {})
-  createTerminal()
+  preview = await createPreview($('frame'))
 
   const fromHash = decodeURIComponent(location.hash.slice(1))
   const first =
@@ -572,7 +248,8 @@ const main = async () => {
   state.current = first
   renderList()
   select(first, { updateHash: false })
-  await writeSample()
+  await preview.showSample('shell')
+
   // Bring the selected scheme into view inside the list, without moving the page
   const list = $('list')
   const current = list.querySelector('button[aria-current="true"]')

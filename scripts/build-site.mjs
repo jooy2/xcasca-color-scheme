@@ -31,7 +31,10 @@ const LANGUAGES = [
 ]
 
 // The pages built from site/, and where each sits under a language's path
-const PAGES = [{ template: 'index.html', path: '' }]
+const PAGES = [
+  { template: 'index.html', path: '', meta: 'meta.', list: true },
+  { template: 'editor.html', path: 'editor/', meta: 'editor.meta.', list: false },
+]
 
 const STEPS = {
   desktop: ['1-open-manager', '2-import', '3-imported', '4-properties', '5-apply', '6-applied'].map((name) => ({
@@ -198,13 +201,13 @@ const renderPage = (template, language, page) => {
         '@type': 'WebPage',
         '@id': `${pageUrl(language, page)}#page`,
         url: pageUrl(language, page),
-        name: text('meta.title'),
-        description: text('meta.description'),
+        name: text(`${page.meta}title`),
+        description: text(`${page.meta}description`),
         inLanguage: language.code,
         isPartOf: { '@id': `${SITE_URL}#website` },
         primaryImageOfPage: `${SITE_URL}images/social-preview.png`,
       },
-      {
+      page.list && {
         '@type': 'ItemList',
         name: text('gallery.label'),
         numberOfItems: list.length,
@@ -215,7 +218,7 @@ const renderPage = (template, language, page) => {
           url: `${pageUrl(language, page)}#${encodeURIComponent(scheme.name)}`,
         })),
       },
-    ],
+    ].filter(Boolean),
   }
 
   return template
@@ -263,7 +266,7 @@ const llms = [
   '',
   'A `.xccolorscheme` file is JSON with `app` ("xcasca"), `type` ("terminalColor"), `version` (1), `name`, and `data`, which holds 22 colors as `#RRGGBB`: foreground, background, selection (which may carry alpha as `#RRGGBBAA`), the eight ANSI colors, their eight bright variants, and three search highlight colors. To use one, download it, open Terminal Color Schemes in Xcasca, import the file, and choose the scheme in a session\'s Appearance settings.',
   '',
-  'The gallery is available in English, Korean, Japanese, Simplified Chinese and Traditional Chinese.',
+  `The gallery is available in English, Korean, Japanese, Simplified Chinese and Traditional Chinese, and has an [editor](${SITE_URL}editor/) that makes a new scheme from any of these and downloads it as a \`.xccolorscheme\` file.`,
   '',
   '## Docs',
   '',
