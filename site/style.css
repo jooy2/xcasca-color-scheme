@@ -317,6 +317,18 @@ main {
   letter-spacing: -0.02em;
 }
 
+.xcasca-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent) 70%, transparent);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}
+
+.xcasca-link:hover {
+  color: var(--accent);
+}
+
 .intro p {
   margin: 0;
   color: var(--text-muted);

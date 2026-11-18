@@ -234,6 +234,10 @@ const renderPage = (template, language, page) => {
       '<!-- scheme-list -->',
       list.map((scheme) => `<li><a class="static" href="#${encodeURIComponent(scheme.name)}">${escapeHtml(scheme.name)}</a></li>`).join(''),
     )
+    // The first Xcasca in the text leads to the app's site, in a new tab
+    .replace(/\{\{xcasca:([a-zA-Z0-9.-]+)\}\}/g, (_, key) =>
+      text(key).replace('Xcasca', '<a class="xcasca-link" href="https://www.xcasca.com" target="_blank" rel="noopener">Xcasca</a>'),
+    )
     .replace(/\{\{a:([a-zA-Z0-9.-]+)\}\}/g, (_, key) => escapeHtml(text(key)))
     .replace(/\{\{t:([a-zA-Z0-9.-]+)\}\}/g, (_, key) => text(key))
     .replace(/\{\{icon:([a-z0-9-]+)\}\}/g, (_, name) => icon(name))
