@@ -2,7 +2,7 @@
 
 Thanks for helping. This collection grows through pull requests: a new scheme, a fix to one, or an improvement to the gallery. Please read the [Code of Conduct](CODE_OF_CONDUCT.md) first; everyone taking part follows it.
 
-This is an unofficial repository, unrelated to the company behind Xcasca. Problems with the app itself belong with the app's own support, not here.
+Problems with the Xcasca app itself belong with the app's own support, not here; this is an unofficial project, unrelated to the company behind the app.
 
 ## Add a color scheme
 

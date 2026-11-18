@@ -589,6 +589,16 @@ main {
   margin: 0 0 6px;
 }
 
+.fineprint {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.intro .fineprint {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
 .toast {
   position: fixed;
   left: 50%;

@@ -70,7 +70,7 @@ const structuredData = {
       '@id': `${SITE_URL}#website`,
       name: 'Xcasca Color Scheme Gallery',
       url: SITE_URL,
-      description: 'An unofficial gallery of terminal color schemes for Xcasca, with previews and .xccolorscheme downloads.',
+      description: 'A gallery of terminal color schemes for Xcasca, with previews and .xccolorscheme downloads.',
       inLanguage: 'en',
       author: { '@type': 'Person', name: 'jooy2', url: 'https://github.com/jooy2' },
     },
@@ -108,7 +108,7 @@ writeFileSync(indexPath, index)
 const llms = [
   '# Xcasca Color Scheme Gallery',
   '',
-  `> An unofficial collection of ${list.length} terminal color schemes for Xcasca, the SSH terminal for desktop and mobile. Each scheme is a \`.xccolorscheme\` file that Xcasca 1.1.2 or later imports on macOS, Windows, Linux, Android and iOS. The gallery previews every scheme on the same sample terminal session and links to its file.`,
+  `> A collection of ${list.length} terminal color schemes for Xcasca, the SSH terminal for desktop and mobile. Each scheme is a \`.xccolorscheme\` file that Xcasca 1.1.2 or later imports on macOS, Windows, Linux, Android and iOS. The gallery previews every scheme on the same sample terminal session and links to its file. It is an unofficial project, unrelated to the company behind Xcasca.`,
   '',
   'A `.xccolorscheme` file is JSON with `app` ("xcasca"), `type` ("terminalColor"), `version` (1), `name`, and `data`, which holds 22 colors as `#RRGGBB`: foreground, background, selection (which may carry alpha as `#RRGGBBAA`), the eight ANSI colors, their eight bright variants, and three search highlight colors. To use one, download it, open Terminal Color Schemes in Xcasca, import the file, and choose the scheme in a session\'s Appearance settings.',
   '',

@@ -1,6 +1,6 @@
 # Xcasca Color Scheme Gallery
 
-Free **terminal color schemes** (themes) for [Xcasca](https://www.xcasca.com), the SSH terminal for desktop and mobile. Preview each one in the online gallery, download the `.xccolorscheme` file, and import it in a few clicks. This is an unofficial repository, unrelated to the company behind Xcasca.
+Free **terminal color schemes** (themes) for [Xcasca](https://www.xcasca.com), the SSH terminal for desktop and mobile. Preview each one in the online gallery, download the `.xccolorscheme` file, and import it in a few clicks.
 
 <p align="center">
   <img src="docs/images/hero.png" width="900" alt="Xcasca on macOS and on an Android phone, both drawing a terminal session in the Harbor Night color scheme">
@@ -13,6 +13,8 @@ Free **terminal color schemes** (themes) for [Xcasca](https://www.xcasca.com), t
   &nbsp;·&nbsp;
   <a href="CONTRIBUTING.md">Add a scheme</a>
 </p>
+
+<p align="center"><sub>An unofficial project, unrelated to the company behind Xcasca.</sub></p>
 
 ## What you get
 
