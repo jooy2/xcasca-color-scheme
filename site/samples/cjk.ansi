@@ -1,0 +1,24 @@
+[1;32mdemo@devbox[0m:[1;34m~/文書[0m$ ls -l
+drwxr-xr-x 2 demo demo 4096 Nov 18 09:12 [1;34m写真[0m
+-rw-r--r-- 1 demo demo 2.1K Nov 18 09:12 회의록.md
+-rw-r--r-- 1 demo demo  14K Nov 18 09:14 [1;31m設計書.zip[0m
+-rwxr-xr-x 1 demo demo  640 Nov 18 09:15 [1;32m배포.sh[0m
+[1;32mdemo@devbox[0m:[1;34m~/文書[0m$ git log --oneline -4
+[33m3f2a91c[0m [33m([0m[1;36mHEAD -> [0m[1;32mmain[0m[33m)[0m 로그인 화면 문구 수정
+[33m8c1d0e7[0m 設定画面のレイアウトを調整
+[33mb47e2d0[0m 修复下载进度显示错误
+[33m51c9a3e[0m 修正上傳檔案時的編碼問題
+[1;32mdemo@devbox[0m:[1;34m~/文書[0m$ cat 인사.txt
+[36m[ko][0m 안녕하세요. 터미널 색상표 미리보기입니다.
+[36m[ja][0m こんにちは。ターミナルの配色プレビューです。
+[36m[zh][0m 你好，这是终端配色方案的预览。
+[36m[tw][0m 你好，這是終端機配色方案的預覽。
+[1;32mdemo@devbox[0m:[1;34m~/文書[0m$ npm test
+[1;30;42m PASS [0m 테스트/다운로드.test.ts [2m(12 ms)[0m
+[1;97;41m FAIL [0m テスト/設定.test.ts [2m(48 ms)[0m
+Tests: [1;31m1 failed 失败[0m, [1;32m11 passed 성공[0m
+[1;32mdemo@devbox[0m:[1;34m~/文書[0m$ cat 表.txt
+┌────────┬──────────┬──────┐
+│ 언어   │ 状態     │ 进度 │
+├────────┼──────────┼──────┤
+│ 한국어 │ [32m完了[0m     │ [32m100%[0m │

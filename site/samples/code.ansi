@@ -1,0 +1,24 @@
+[1;32mdemo@devbox[0m:[1;34m~/projects/aurora[0m$ git diff src/cache.py
+[1mdiff --git a/src/cache.py b/src/cache.py[0m
+[1m--- a/src/cache.py[0m
+[1m+++ b/src/cache.py[0m
+[36m@@ -14,5 +14,8 @@[0m class TokenCache:
+     def get(self, key):
+[31m-        return self._items[key][0m
+[32m+        entry = self._items.get(key)[0m
+[32m+        if entry and entry.expires > time.time():[0m
+[32m+            return entry.value[0m
+[32m+        return None[0m
+[1;32mdemo@devbox[0m:[1;34m~/projects/aurora[0m$ bat --plain --number src/cache.py
+[90m  1 │ [0m[35mimport[0m time
+[90m  2 │ [0m[35mfrom[0m dataclasses [35mimport[0m dataclass
+[90m  3 │ [0m
+[90m  4 │ [0m[33m@dataclass[0m
+[90m  5 │ [0m[35mclass[0m [36mEntry[0m:
+[90m  6 │ [0m    value: [36mstr[0m
+[90m  7 │ [0m    expires: [36mfloat[0m  [3;90m# seconds since the epoch[0m
+[90m  8 │ [0m
+[90m  9 │ [0m[35mclass[0m [36mTokenCache[0m:
+[90m 10 │ [0m    [3;90m"""Keeps tokens until they expire."""[0m
+[90m 11 │ [0m    [35mdef[0m [34m__init__[0m(self, ttl: [36mint[0m = [95m300[0m):
+[90m 12 │ [0m        self._items: [36mdict[0m[[36mstr[0m, [36mEntry[0m] = {}

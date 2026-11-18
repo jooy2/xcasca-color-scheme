@@ -96,11 +96,19 @@
             </div>
           </header>
           <div class="terminal-frame" id="frame">
-            <div class="terminal-bar" aria-hidden="true"><span></span><span></span><span></span><em id="frame-title">demo@devbox</em></div>
+            <div class="terminal-bar">
+              <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <div class="sample-tabs" role="group" aria-label="Sample">
+                <button type="button" data-sample="shell" aria-pressed="true">{{icon:terminal}}<span>Shell</span></button>
+                <button type="button" data-sample="code" aria-pressed="false">{{icon:code}}<span>Code</span></button>
+                <button type="button" data-sample="colors" aria-pressed="false">{{icon:palette}}<span>Colors</span></button>
+                <button type="button" data-sample="cjk" aria-pressed="false">{{icon:languages}}<span>CJK</span></button>
+              </div>
+            </div>
             <div class="terminal" id="terminal" role="img" aria-label="A terminal session drawn with the selected color scheme"></div>
           </div>
           <div class="palette" id="palette" aria-label="Colors"></div>
-          <p class="hint">Click a color to copy its hex value. The highlighted line shows the selection color.</p>
+          <p class="hint">Click a color to copy its hex value. The highlighted text shows the selection color.</p>
         </article>
       </section>
 

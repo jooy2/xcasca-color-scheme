@@ -3,15 +3,24 @@
 const REPO = 'https://github.com/jooy2/xcasca-color-scheme'
 const COLS = 68
 const ROWS = 25
-const PROMPT = '\x1b[1;32mdemo@devbox\x1b[0m:\x1b[1;34m~/projects/aurora\x1b[0m$ '
-// The line of the sample shown selected, so the selection color shows: "Cache session tokens in memory"
-const SELECTION = { column: 8, row: 10, length: 30 }
+const prompt = (path) => `\x1b[1;32mdemo@devbox\x1b[0m:\x1b[1;34m${path}\x1b[0m$ `
+/*
+ * The sessions the terminal can show, written by scripts/sample.mjs. Each ends on a prompt, and
+ * has a stretch of text selected so the selection color shows.
+ */
+const SAMPLES = {
+  shell: { path: '~/projects/aurora', selection: { column: 8, row: 10, length: 30 } },
+  code: { path: '~/projects/aurora', selection: { column: 6, row: 13, length: 33 } },
+  colors: { path: '~', selection: { column: 9, row: 1, length: 15 } },
+  cjk: { path: '~/文書', selection: { column: 5, row: 11, length: 26 } },
+}
 const FONT = '"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace'
 const ANSI = ['black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white']
 const BRIGHT = ANSI.map((name) => `bright${name[0].toUpperCase()}${name.slice(1)}`)
 const KIND_LABEL = { 'built-in': 'Built-in', community: 'Community', original: 'Original' }
 
-const state = { schemes: [], visible: [], current: null, mode: 'all', kind: 'all', query: '', sample: '' }
+const state = { schemes: [], visible: [], current: null, mode: 'all', kind: 'all', query: '', sample: 'shell' }
+const sampleTexts = {}
 const $ = (id) => document.getElementById(id)
 // An icon the build put in a <template>, for elements made here
 const icon = (name) => $(`icon-${name}`).content.firstElementChild.cloneNode(true)
@@ -46,18 +55,48 @@ const showToast = (text) => {
   }, 1600)
 }
 
-const drawTerminal = () => {
-  const scheme = state.current
+// A scheme changes only the colors; what the terminal shows stays
+const applyTheme = () => {
+  if (terminal && state.current) {
+    terminal.options.theme = toTheme(state.current.colors)
+  }
+}
 
-  if (!terminal || !scheme) {
+const loadSample = async (name) => {
+  sampleTexts[name] ??= await fetch(`samples/${name}.ansi`).then((response) => response.text())
+
+  return sampleTexts[name]
+}
+
+const writeSample = async () => {
+  const name = state.sample
+  const text = await loadSample(name)
+  const { path, selection } = SAMPLES[name]
+
+  if (!terminal || name !== state.sample) {
     return
   }
 
-  terminal.options.theme = toTheme(scheme.colors)
   terminal.reset()
-  terminal.write(`${state.sample}${PROMPT}`, () => {
-    terminal.select(SELECTION.column, SELECTION.row, SELECTION.length)
+  terminal.write(`${text}${prompt(path)}`, () => {
+    terminal.select(selection.column, selection.row, selection.length)
   })
+}
+
+const bindSamples = () => {
+  const buttons = [...document.querySelectorAll('[data-sample]')]
+
+  for (const button of buttons) {
+    button.addEventListener('click', () => {
+      state.sample = button.dataset.sample
+
+      for (const other of buttons) {
+        other.setAttribute('aria-pressed', String(other === button))
+      }
+
+      writeSample()
+    })
+  }
 }
 
 const copyHex = async (hex) => {
@@ -165,8 +204,7 @@ const renderViewer = () => {
   frame.style.setProperty('--scheme-fg', colors.foreground)
 
   renderPalette(colors)
-
-  drawTerminal()
+  applyTheme()
 }
 
 const select = (scheme, { updateHash = true } = {}) => {
@@ -328,7 +366,6 @@ const createTerminal = () => {
 
     if (size !== terminal.options.fontSize) {
       terminal.options.fontSize = size
-      drawTerminal()
     }
   }).observe(host)
 }
@@ -336,14 +373,11 @@ const createTerminal = () => {
 const main = async () => {
   bindFilters()
   bindTabs()
+  bindSamples()
 
-  const [index, sample] = await Promise.all([
-    fetch('schemes.json').then((response) => response.json()),
-    fetch('sample.ansi').then((response) => response.text()),
-  ])
+  const [index] = await Promise.all([fetch('schemes.json').then((response) => response.json()), loadSample('shell')])
 
   state.schemes = index.terminal
-  state.sample = sample
 
   // The terminal measures its font when it opens, so the font has to be there first
   await Promise.all([document.fonts.load(`15px ${FONT}`), document.fonts.load(`bold 15px ${FONT}`)]).catch(() => {})
@@ -358,6 +392,7 @@ const main = async () => {
   state.current = first
   renderList()
   select(first, { updateHash: false })
+  await writeSample()
   // Bring the selected scheme into view inside the list, without moving the page
   const list = $('list')
   const current = list.querySelector('button[aria-current="true"]')

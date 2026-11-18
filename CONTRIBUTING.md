@@ -74,7 +74,7 @@ Change it in the app, export it again over the old file, and open a pull request
 
 ## Improve the gallery
 
-The page lives in [`site/`](site/) and the build scripts in [`scripts/`](scripts/). There are no dependencies: `npm run preview` builds the page and serves it locally. The sample session the page draws comes from `scripts/sample.mjs`; run `npm run sample` after changing it.
+The page lives in [`site/`](site/) and the build scripts in [`scripts/`](scripts/). There are no dependencies: `npm run preview` builds the page and serves it locally. The sample sessions the page draws come from `scripts/sample.mjs`; run `npm run sample` after changing it.
 
 ## Commit messages
 
