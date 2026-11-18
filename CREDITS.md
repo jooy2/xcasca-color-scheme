@@ -44,7 +44,7 @@ Two things differ from the originals, because of how Xcasca draws a terminal:
 
 ## Originals
 
-Harbor Night, Ember Glow, Moss Garden, Neon Drift, Graphite, Midnight Plum, Paper Ink, Morning Fog and Sandstone were made for this collection by [jooy2](https://github.com/jooy2) and are released under this repository's [MIT License](LICENSE.md). In each of them, the foreground stands out from the background by more than 10:1, and every other color by at least 3:1, apart from black on a dark background and white on a light one.
+Harbor Night, Ember Glow, Moss Garden, Neon Drift, Graphite, Midnight Plum, Paper Ink, Morning Fog and Sandstone were made for this collection by [jooy2](https://github.com/jooy2) and are released under this repository's [MIT License](LICENSE). In each of them, the foreground stands out from the background by more than 10:1, and every other color by at least 3:1, apart from black on a dark background and white on a light one.
 
 ## The gallery
 
@@ -54,5 +54,3 @@ Harbor Night, Ember Glow, Moss Garden, Neon Drift, Graphite, Midnight Plum, Pape
 ## This repository
 
 The [Code of Conduct](CODE_OF_CONDUCT.md) is the [Contributor Covenant](https://www.contributor-covenant.org) 2.1, licensed under CC BY 4.0.
-
-Xcasca is a trademark of its owner. This collection is not affiliated with, endorsed by, or sponsored by the makers of Xcasca.

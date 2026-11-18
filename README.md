@@ -1,6 +1,6 @@
 # Xcasca Color Scheme Gallery
 
-**Unofficial** color schemes for the [Xcasca](https://www.xcasca.com) terminal, with a gallery to preview them and screenshots that walk through importing one.
+Free **terminal color schemes** (themes) for [Xcasca](https://www.xcasca.com), the SSH terminal for desktop and mobile. Preview each one in the online gallery, download the `.xccolorscheme` file, and import it in a few clicks. This is an unofficial repository, unrelated to the company behind Xcasca.
 
 <p align="center">
   <img src="docs/images/hero.png" width="900" alt="Xcasca on macOS and on an Android phone, both drawing a terminal session in the Harbor Night color scheme">
@@ -14,12 +14,9 @@
   <a href="CONTRIBUTING.md">Add a scheme</a>
 </p>
 
-> [!NOTE]
-> This is a personal project. It is not affiliated with, endorsed by, or sponsored by the makers of Xcasca. Xcasca is a trademark of its owner.
-
 ## What you get
 
-39 terminal color schemes, as `.xccolorscheme` files that Xcasca 1.1.2 or later imports on the desktop and on mobile:
+39 terminal color schemes, as `.xccolorscheme` files that Xcasca 1.1.2 or later imports on macOS, Windows, Linux, Android and iOS:
 
 - **10 built into Xcasca**, the ones the app ships with, for anyone who changed them and wants the originals back.
 - **20 community favorites**, such as Dracula, Nord, Gruvbox and Catppuccin, under their original names. Each keeps its author's license, listed in [CREDITS.md](CREDITS.md).
@@ -167,4 +164,4 @@ Pushing to `main` deploys the gallery to GitHub Pages.
 
 ## License
 
-The code, the documentation and the original schemes are released under the [MIT License](LICENSE.md). The built-in and community schemes keep the licenses of their authors, listed in [CREDITS.md](CREDITS.md). The screenshots show the Xcasca app and are here to document how to use these files with it.
+The code, the documentation and the original schemes are released under the [MIT License](LICENSE). The built-in and community schemes keep the licenses of their authors, listed in [CREDITS.md](CREDITS.md). The screenshots show the Xcasca app and are here to document how to use these files with it.

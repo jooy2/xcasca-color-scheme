@@ -63,7 +63,7 @@ const renderViewer = () => {
   const { colors } = scheme
   const frame = $('frame')
 
-  document.title = `${scheme.name} · Xcasca Color Scheme Gallery (Unofficial)`
+  document.title = `${scheme.name} · Xcasca Color Scheme Gallery`
   $('scheme-name').textContent = scheme.name
   $('scheme-credit').innerHTML = ''
 
