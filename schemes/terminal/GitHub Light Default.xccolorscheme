@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "GitHub Light Default",
+  "data": {
+    "foreground": "#1F2328",
+    "background": "#FFFFFF",
+    "selection": "#1F23284D",
+    "black": "#24292F",
+    "red": "#CF222E",
+    "green": "#116329",
+    "yellow": "#4D2D00",
+    "blue": "#0969DA",
+    "magenta": "#8250DF",
+    "cyan": "#1B7C83",
+    "white": "#6E7781",
+    "brightBlack": "#57606A",
+    "brightRed": "#A40E26",
+    "brightGreen": "#1A7F37",
+    "brightYellow": "#633C01",
+    "brightBlue": "#218BFF",
+    "brightMagenta": "#A475F9",
+    "brightCyan": "#3192AA",
+    "brightWhite": "#8C959F",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

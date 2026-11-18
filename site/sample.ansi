@@ -1,0 +1,24 @@
+[1;32mdemo@devbox[0m:[1;34m~/projects/aurora[0m$ ls -l
+drwxr-xr-x 2 demo demo 4096 Nov 18 09:12 [1;34mdocs[0m
+-rwxr-xr-x 1 demo demo  812 Nov 18 09:12 [1;32mdeploy.sh[0m
+-rw-r--r-- 1 demo demo 9.1M Nov 18 09:14 [1;31mrelease.tar.gz[0m
+lrwxrwxrwx 1 demo demo   12 Nov 18 09:14 [1;36mcurrent[0m -> releases/2.4
+[1;32mdemo@devbox[0m:[1;34m~/projects/aurora[0m$ git status -sb
+## [32mmain[0m...[31morigin/main[0m [ahead [32m2[0m]
+ [31mM[0m src/server.ts   [32mA[0m  src/health.ts   [31m??[0m notes.md
+[1;32mdemo@devbox[0m:[1;34m~/projects/aurora[0m$ git log --oneline -3
+[33m3f2a91c[0m [33m([0m[1;36mHEAD -> [0m[1;32mmain[0m[33m)[0m Add a health check endpoint
+[33m8c1d0e7[0m Cache session tokens in memory
+[33mb47e2d0[0m [33m([0m[1;33mtag: v2.4.0[0m[33m)[0m Release 2.4.0
+[1;32mdemo@devbox[0m:[1;34m~/projects/aurora[0m$ cat src/health.ts
+[35mexport[0m [34mfunction[0m [33mhealth[0m([36mreq[0m: [32mRequest[0m) {
+  [3;90m// Report the uptime and the build in one call[0m
+  [35mreturn[0m { status: [32m"ok"[0m, uptime: [95m3600[0m, build: [32m"2.4.1"[0m }
+}
+[1;32mdemo@devbox[0m:[1;34m~/projects/aurora[0m$ npm test
+[1;30;42m PASS [0m tests/health.test.ts [2m(12 ms)[0m
+[1;97;41m FAIL [0m tests/cache.test.ts [2m(48 ms)[0m
+Tests: [1;31m1 failed[0m, [1;32m11 passed[0m, 12 total  [4;34mhttps://example.com/ci/1042[0m
+[1;32mdemo@devbox[0m:[1;34m~/projects/aurora[0m$ palette
+[40m      [0m [41m      [0m [42m      [0m [43m      [0m [44m      [0m [45m      [0m [46m      [0m [47m      [0m
+[100m      [0m [101m      [0m [102m      [0m [103m      [0m [104m      [0m [105m      [0m [106m      [0m [107m      [0m

@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Ayu Mirage",
+  "data": {
+    "foreground": "#CCCAC2",
+    "background": "#1F2430",
+    "selection": "#CCCAC24D",
+    "black": "#171B24",
+    "red": "#ED8274",
+    "green": "#87D96C",
+    "yellow": "#FACC6E",
+    "blue": "#6DCBFA",
+    "magenta": "#DABAFA",
+    "cyan": "#90E1C6",
+    "white": "#C7C7C7",
+    "brightBlack": "#686868",
+    "brightRed": "#F28779",
+    "brightGreen": "#D5FF80",
+    "brightYellow": "#FFD173",
+    "brightBlue": "#73D0FF",
+    "brightMagenta": "#DFBFFF",
+    "brightCyan": "#95E6CB",
+    "brightWhite": "#FFFFFF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

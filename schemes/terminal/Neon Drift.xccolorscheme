@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Neon Drift",
+  "data": {
+    "foreground": "#E6E1F5",
+    "background": "#14111F",
+    "selection": "#E6E1F54D",
+    "black": "#221C33",
+    "red": "#FF5C8A",
+    "green": "#4DF0A9",
+    "yellow": "#FFD45C",
+    "blue": "#5CA8FF",
+    "magenta": "#C77DFF",
+    "cyan": "#4DE8F0",
+    "white": "#D0C9E6",
+    "brightBlack": "#5D5478",
+    "brightRed": "#FF85A8",
+    "brightGreen": "#7FF7C4",
+    "brightYellow": "#FFE38C",
+    "brightBlue": "#8AC2FF",
+    "brightMagenta": "#DAA3FF",
+    "brightCyan": "#82F1F6",
+    "brightWhite": "#FAF8FF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Ember Glow",
+  "data": {
+    "foreground": "#E8DCCF",
+    "background": "#1C1714",
+    "selection": "#E8DCCF4D",
+    "black": "#2A221D",
+    "red": "#E5654B",
+    "green": "#A5B95A",
+    "yellow": "#F0B24A",
+    "blue": "#7FA6C9",
+    "magenta": "#D58AA6",
+    "cyan": "#7DBFAF",
+    "white": "#D6C7B6",
+    "brightBlack": "#6B5A4E",
+    "brightRed": "#FF8A6E",
+    "brightGreen": "#C2D47A",
+    "brightYellow": "#FFCC70",
+    "brightBlue": "#A2C2DE",
+    "brightMagenta": "#E8A9C0",
+    "brightCyan": "#9DD7C9",
+    "brightWhite": "#F7EEE4",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

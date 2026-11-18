@@ -1,0 +1,36 @@
+name: Suggest a color scheme
+description: Ask for a scheme that is not in the collection yet.
+title: "Scheme: "
+labels: ["scheme request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If you can export the scheme from Xcasca yourself, a pull request is the quickest way in; [CONTRIBUTING.md](https://github.com/jooy2/xcasca-color-scheme/blob/main/CONTRIBUTING.md) explains how.
+  - type: input
+    id: name
+    attributes:
+      label: Scheme name
+      description: The name the scheme is published under.
+      placeholder: Rose Pine Moon
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Where it comes from
+      description: A link to the scheme's project or page.
+      placeholder: https://github.com/...
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: License
+      description: The license of the scheme, if you know it. It has to allow redistribution.
+      placeholder: MIT
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it would be a good addition
+      description: What makes it different from the schemes already here.

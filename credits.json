@@ -1,0 +1,236 @@
+{
+  "Ayu Mirage": {
+    "kind": "community",
+    "author": "ayu-theme",
+    "url": "https://github.com/ayu-theme/ayu-colors",
+    "license": "MIT"
+  },
+  "Campbell": {
+    "kind": "built-in",
+    "author": "Microsoft (Windows Terminal)",
+    "url": "https://github.com/microsoft/terminal",
+    "license": "MIT"
+  },
+  "Campbell PowerShell": {
+    "kind": "built-in",
+    "author": "Microsoft (Windows Terminal)",
+    "url": "https://github.com/microsoft/terminal",
+    "license": "MIT"
+  },
+  "Catppuccin Latte": {
+    "kind": "community",
+    "author": "Catppuccin",
+    "url": "https://github.com/catppuccin/catppuccin",
+    "license": "MIT"
+  },
+  "Catppuccin Mocha": {
+    "kind": "community",
+    "author": "Catppuccin",
+    "url": "https://github.com/catppuccin/catppuccin",
+    "license": "MIT"
+  },
+  "Default": {
+    "kind": "built-in",
+    "author": "Tango Desktop Project",
+    "url": "https://en.wikipedia.org/wiki/Tango_Desktop_Project",
+    "license": "Public domain"
+  },
+  "Dracula": {
+    "kind": "community",
+    "author": "Zeno Rocha and the Dracula contributors",
+    "url": "https://github.com/dracula/dracula-theme",
+    "license": "MIT"
+  },
+  "Ember Glow": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
+  "Everforest Dark": {
+    "kind": "community",
+    "author": "sainnhe",
+    "url": "https://github.com/sainnhe/everforest",
+    "license": "MIT"
+  },
+  "Flexoki Dark": {
+    "kind": "community",
+    "author": "Steph Ango",
+    "url": "https://github.com/kepano/flexoki",
+    "license": "MIT"
+  },
+  "Flexoki Light": {
+    "kind": "community",
+    "author": "Steph Ango",
+    "url": "https://github.com/kepano/flexoki",
+    "license": "MIT"
+  },
+  "GitHub Dark Default": {
+    "kind": "community",
+    "author": "GitHub (Primer)",
+    "url": "https://github.com/primer/github-vscode-theme",
+    "license": "MIT"
+  },
+  "GitHub Light Default": {
+    "kind": "community",
+    "author": "GitHub (Primer)",
+    "url": "https://github.com/primer/github-vscode-theme",
+    "license": "MIT"
+  },
+  "Graphite": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
+  "Gruvbox Dark": {
+    "kind": "community",
+    "author": "Pavel Pertsev",
+    "url": "https://github.com/morhetz/gruvbox",
+    "license": "MIT"
+  },
+  "Gruvbox Light": {
+    "kind": "community",
+    "author": "Pavel Pertsev",
+    "url": "https://github.com/morhetz/gruvbox",
+    "license": "MIT"
+  },
+  "Harbor Night": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
+  "Iceberg Dark": {
+    "kind": "community",
+    "author": "cocopon",
+    "url": "https://github.com/cocopon/iceberg.vim",
+    "license": "MIT"
+  },
+  "Kanagawa Wave": {
+    "kind": "community",
+    "author": "rebelot",
+    "url": "https://github.com/rebelot/kanagawa.nvim",
+    "license": "MIT"
+  },
+  "Midnight Plum": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
+  "Morning Fog": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
+  "Moss Garden": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
+  "Neon Drift": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
+  "Night Owl": {
+    "kind": "community",
+    "author": "Sarah Drasner",
+    "url": "https://github.com/sdras/night-owl-vscode-theme",
+    "license": "MIT"
+  },
+  "Nightfox": {
+    "kind": "community",
+    "author": "EdenEast",
+    "url": "https://github.com/EdenEast/nightfox.nvim",
+    "license": "MIT"
+  },
+  "Nord": {
+    "kind": "community",
+    "author": "Sven Greb (Nord)",
+    "url": "https://github.com/nordtheme/nord",
+    "license": "MIT"
+  },
+  "One Half Dark": {
+    "kind": "built-in",
+    "author": "Son A. Pham",
+    "url": "https://github.com/sonph/onehalf",
+    "license": "MIT"
+  },
+  "One Half Light": {
+    "kind": "built-in",
+    "author": "Son A. Pham",
+    "url": "https://github.com/sonph/onehalf",
+    "license": "MIT"
+  },
+  "Paper Ink": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
+  "Sandstone": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
+  "Selenized Dark": {
+    "kind": "community",
+    "author": "Jan Warchol",
+    "url": "https://github.com/jan-warchol/selenized",
+    "license": "MIT"
+  },
+  "Snazzy": {
+    "kind": "community",
+    "author": "Sindre Sorhus",
+    "url": "https://github.com/sindresorhus/hyper-snazzy",
+    "license": "MIT"
+  },
+  "Solarized Dark": {
+    "kind": "built-in",
+    "author": "Ethan Schoonover",
+    "url": "https://github.com/altercation/solarized",
+    "license": "MIT"
+  },
+  "Solarized Light": {
+    "kind": "built-in",
+    "author": "Ethan Schoonover",
+    "url": "https://github.com/altercation/solarized",
+    "license": "MIT"
+  },
+  "Tango Dark": {
+    "kind": "built-in",
+    "author": "Tango Desktop Project",
+    "url": "https://en.wikipedia.org/wiki/Tango_Desktop_Project",
+    "license": "Public domain"
+  },
+  "Tango Light": {
+    "kind": "built-in",
+    "author": "Tango Desktop Project",
+    "url": "https://en.wikipedia.org/wiki/Tango_Desktop_Project",
+    "license": "Public domain"
+  },
+  "Tokyo Night": {
+    "kind": "community",
+    "author": "Folke Lemaitre",
+    "url": "https://github.com/folke/tokyonight.nvim",
+    "license": "Apache-2.0"
+  },
+  "Tomorrow Night": {
+    "kind": "community",
+    "author": "Chris Kempson",
+    "url": "https://github.com/chriskempson/tomorrow-theme",
+    "license": "MIT"
+  },
+  "Vintage": {
+    "kind": "built-in",
+    "author": "Microsoft (Windows Terminal)",
+    "url": "https://github.com/microsoft/terminal",
+    "license": "MIT"
+  }
+}

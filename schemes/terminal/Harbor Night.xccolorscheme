@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Harbor Night",
+  "data": {
+    "foreground": "#D5E1E8",
+    "background": "#0F1B24",
+    "selection": "#D5E1E84D",
+    "black": "#1A2A36",
+    "red": "#EF6F6C",
+    "green": "#7FC8A9",
+    "yellow": "#E8C27A",
+    "blue": "#6CB6EB",
+    "magenta": "#C49BE8",
+    "cyan": "#5FD0D3",
+    "white": "#C5D3DC",
+    "brightBlack": "#51697A",
+    "brightRed": "#FF8C87",
+    "brightGreen": "#9BE0C2",
+    "brightYellow": "#F5D69A",
+    "brightBlue": "#8DCBF5",
+    "brightMagenta": "#D7B5F2",
+    "brightCyan": "#86E3E5",
+    "brightWhite": "#EEF5F9",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

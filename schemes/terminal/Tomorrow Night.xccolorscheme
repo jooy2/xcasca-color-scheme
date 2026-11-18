@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Tomorrow Night",
+  "data": {
+    "foreground": "#C5C8C6",
+    "background": "#1D1F21",
+    "selection": "#C5C8C64D",
+    "black": "#000000",
+    "red": "#CC6666",
+    "green": "#B5BD68",
+    "yellow": "#F0C674",
+    "blue": "#81A2BE",
+    "magenta": "#B294BB",
+    "cyan": "#8ABEB7",
+    "white": "#FFFFFF",
+    "brightBlack": "#4C4C4C",
+    "brightRed": "#CC6666",
+    "brightGreen": "#B5BD68",
+    "brightYellow": "#F0C674",
+    "brightBlue": "#81A2BE",
+    "brightMagenta": "#B294BB",
+    "brightCyan": "#8ABEB7",
+    "brightWhite": "#FFFFFF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

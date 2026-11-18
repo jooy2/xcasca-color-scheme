@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Ember Glow">
+  <rect width="280" height="56" rx="8" fill="#1C1714"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#E8DCCF">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#2A221D"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#E5654B"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#A5B95A"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#F0B24A"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#7FA6C9"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#D58AA6"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#7DBFAF"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#D6C7B6"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#6B5A4E"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#FF8A6E"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#C2D47A"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#FFCC70"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#A2C2DE"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#E8A9C0"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#9DD7C9"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#F7EEE4"/>
+</svg>

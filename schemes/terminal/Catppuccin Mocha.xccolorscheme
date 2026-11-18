@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Catppuccin Mocha",
+  "data": {
+    "foreground": "#CDD6F4",
+    "background": "#1E1E2E",
+    "selection": "#CDD6F44D",
+    "black": "#45475A",
+    "red": "#F38BA8",
+    "green": "#A6E3A1",
+    "yellow": "#F9E2AF",
+    "blue": "#89B4FA",
+    "magenta": "#F5C2E7",
+    "cyan": "#94E2D5",
+    "white": "#BAC2DE",
+    "brightBlack": "#585B70",
+    "brightRed": "#F7AEC2",
+    "brightGreen": "#C2ECBF",
+    "brightYellow": "#FCD682",
+    "brightBlue": "#AECCFC",
+    "brightMagenta": "#F398DA",
+    "brightCyan": "#B1EAE1",
+    "brightWhite": "#A6ADC8",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

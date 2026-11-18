@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Nightfox">
+  <rect width="280" height="56" rx="8" fill="#192330"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#CDCECF">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#393B44"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#C94F6D"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#81B29A"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#DBC074"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#719CD6"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#9D79D6"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#63CDCF"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#DFDFE0"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#575860"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#D16983"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#8EBAA4"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#E0C989"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#86ABDC"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#BAA1E2"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#7AD5D6"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#E4E4E5"/>
+</svg>

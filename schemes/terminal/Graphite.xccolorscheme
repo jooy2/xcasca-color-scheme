@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Graphite",
+  "data": {
+    "foreground": "#D4D4D2",
+    "background": "#1E1F21",
+    "selection": "#D4D4D24D",
+    "black": "#2A2B2E",
+    "red": "#D47A7A",
+    "green": "#9DB98A",
+    "yellow": "#D6BE84",
+    "blue": "#8FA9C8",
+    "magenta": "#B79BC2",
+    "cyan": "#8DBDBA",
+    "white": "#C2C2C0",
+    "brightBlack": "#66686C",
+    "brightRed": "#E39696",
+    "brightGreen": "#B5CDA4",
+    "brightYellow": "#E5D0A0",
+    "brightBlue": "#A9BFD9",
+    "brightMagenta": "#CBB2D4",
+    "brightCyan": "#A6D0CD",
+    "brightWhite": "#EDEDEB",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

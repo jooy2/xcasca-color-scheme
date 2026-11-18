@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Catppuccin Latte",
+  "data": {
+    "foreground": "#4C4F69",
+    "background": "#EFF1F5",
+    "selection": "#4C4F694D",
+    "black": "#BCC0CC",
+    "red": "#D20F39",
+    "green": "#40A02B",
+    "yellow": "#DF8E1D",
+    "blue": "#1E66F5",
+    "magenta": "#EA76CB",
+    "cyan": "#179299",
+    "white": "#5C5F77",
+    "brightBlack": "#ACB0BE",
+    "brightRed": "#E7103F",
+    "brightGreen": "#46B02F",
+    "brightYellow": "#E49931",
+    "brightBlue": "#3878F6",
+    "brightMagenta": "#EF95D7",
+    "brightCyan": "#19A1A8",
+    "brightWhite": "#6C6F85",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

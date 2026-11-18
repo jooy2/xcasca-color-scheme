@@ -1,0 +1,24 @@
+{
+  "name": "xcasca-color-scheme",
+  "private": true,
+  "description": "An unofficial collection of color schemes for the Xcasca app, with a gallery to preview and download them.",
+  "license": "MIT",
+  "author": "jooy2 (https://github.com/jooy2)",
+  "homepage": "https://jooy2.github.io/xcasca-color-scheme/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jooy2/xcasca-color-scheme.git"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "format": "node scripts/format.mjs",
+    "catalog": "node scripts/catalog.mjs",
+    "sample": "node scripts/sample.mjs",
+    "build": "node scripts/build-site.mjs",
+    "preview": "node scripts/build-site.mjs && node scripts/serve.mjs"
+  }
+}

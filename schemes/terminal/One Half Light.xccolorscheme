@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "One Half Light",
+  "data": {
+    "foreground": "#383A42",
+    "background": "#FAFAFA",
+    "selection": "#FFCC0077",
+    "black": "#383A42",
+    "red": "#E45649",
+    "green": "#50A14F",
+    "yellow": "#C18301",
+    "blue": "#0184BC",
+    "magenta": "#A626A4",
+    "cyan": "#0997B3",
+    "white": "#FAFAFA",
+    "brightBlack": "#4F525D",
+    "brightRed": "#DF6C75",
+    "brightGreen": "#98C379",
+    "brightYellow": "#E4C07A",
+    "brightBlue": "#61AFEF",
+    "brightMagenta": "#C577DD",
+    "brightCyan": "#56B5C1",
+    "brightWhite": "#FFFFFF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

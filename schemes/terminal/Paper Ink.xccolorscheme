@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Paper Ink",
+  "data": {
+    "foreground": "#2B3442",
+    "background": "#F7F3EA",
+    "selection": "#2B34424D",
+    "black": "#2B3442",
+    "red": "#B23A3A",
+    "green": "#3D7A3A",
+    "yellow": "#8C6A12",
+    "blue": "#2F5DA8",
+    "magenta": "#8A3E8F",
+    "cyan": "#1F7A80",
+    "white": "#C9C2B4",
+    "brightBlack": "#6B7180",
+    "brightRed": "#D0524C",
+    "brightGreen": "#4F944A",
+    "brightYellow": "#A8821D",
+    "brightBlue": "#4475C2",
+    "brightMagenta": "#A456A9",
+    "brightCyan": "#2E949A",
+    "brightWhite": "#E8E2D6",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

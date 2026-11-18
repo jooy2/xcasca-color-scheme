@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.xccolorscheme text eol=lf
+*.ansi text eol=lf
+*.png binary

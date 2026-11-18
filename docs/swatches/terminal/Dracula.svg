@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Dracula">
+  <rect width="280" height="56" rx="8" fill="#282A36"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#F8F8F2">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#21222C"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#FF5555"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#50FA7B"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#F1FA8C"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#BD93F9"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#FF79C6"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#8BE9FD"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#F8F8F2"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#6272A4"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#FF6E6E"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#69FF94"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#FFFFA5"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#D6ACFF"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#FF92DF"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#A4FFFF"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#FFFFFF"/>
+</svg>

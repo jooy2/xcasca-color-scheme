@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Midnight Plum",
+  "data": {
+    "foreground": "#E3D9EA",
+    "background": "#1D1525",
+    "selection": "#E3D9EA4D",
+    "black": "#2A2033",
+    "red": "#F07A8E",
+    "green": "#9FD39A",
+    "yellow": "#EFC88A",
+    "blue": "#8FA8F0",
+    "magenta": "#D490E0",
+    "cyan": "#86CFD8",
+    "white": "#CFC3D9",
+    "brightBlack": "#64566F",
+    "brightRed": "#FF9CAC",
+    "brightGreen": "#BAE6B5",
+    "brightYellow": "#F8DBA8",
+    "brightBlue": "#AEC0F7",
+    "brightMagenta": "#E5AEEE",
+    "brightCyan": "#A6E0E7",
+    "brightWhite": "#F6F0FA",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

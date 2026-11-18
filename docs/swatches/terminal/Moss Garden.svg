@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Moss Garden">
+  <rect width="280" height="56" rx="8" fill="#161C17"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#D3DCCB">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#222B23"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#D9735F"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#8FBF6A"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#D9BC6A"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#7AA5B8"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#B98EB3"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#74B8A0"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#C2CCB8"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#5A6B57"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#EE9180"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#AAD58A"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#EBD08C"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#99BFD0"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#CFA9CA"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#93CFB9"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#EDF2E6"/>
+</svg>

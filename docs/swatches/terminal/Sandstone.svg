@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Sandstone">
+  <rect width="280" height="56" rx="8" fill="#F3EBDD"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#3A3128">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#3A3128"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#B4472F"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#5F7F2E"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#9C6B12"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#3E6A8E"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#94507A"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#3E7E73"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#CDBFA8"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#7A6C5D"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#CC5E45"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#6A8C35"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#A9771A"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#5383A8"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#AD6893"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#478B80"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#E8DDCB"/>
+</svg>

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: A problem with the Xcasca app itself
+    url: https://www.xcasca.com
+    about: This collection is unofficial. Report problems with the app, including its color scheme import, to the makers of Xcasca.

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Morning Fog">
+  <rect width="280" height="56" rx="8" fill="#EEF2F5"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#2A3540">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#2A3540"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#C2464E"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#3E8458"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#9A7417"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#3A6CB4"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#8E4FA8"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#2B828C"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#B8C2CB"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#66727E"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#D95F66"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#4A9263"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#A8811F"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#4F83CB"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#A566BF"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#368F99"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#DCE3E9"/>
+</svg>

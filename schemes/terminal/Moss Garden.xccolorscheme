@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Moss Garden",
+  "data": {
+    "foreground": "#D3DCCB",
+    "background": "#161C17",
+    "selection": "#D3DCCB4D",
+    "black": "#222B23",
+    "red": "#D9735F",
+    "green": "#8FBF6A",
+    "yellow": "#D9BC6A",
+    "blue": "#7AA5B8",
+    "magenta": "#B98EB3",
+    "cyan": "#74B8A0",
+    "white": "#C2CCB8",
+    "brightBlack": "#5A6B57",
+    "brightRed": "#EE9180",
+    "brightGreen": "#AAD58A",
+    "brightYellow": "#EBD08C",
+    "brightBlue": "#99BFD0",
+    "brightMagenta": "#CFA9CA",
+    "brightCyan": "#93CFB9",
+    "brightWhite": "#EDF2E6",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

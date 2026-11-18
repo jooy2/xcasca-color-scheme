@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Night Owl",
+  "data": {
+    "foreground": "#D6DEEB",
+    "background": "#011627",
+    "selection": "#D6DEEB4D",
+    "black": "#011627",
+    "red": "#EF5350",
+    "green": "#22DA6E",
+    "yellow": "#ADDB67",
+    "blue": "#82AAFF",
+    "magenta": "#C792EA",
+    "cyan": "#21C7A8",
+    "white": "#FFFFFF",
+    "brightBlack": "#575656",
+    "brightRed": "#EF5350",
+    "brightGreen": "#22DA6E",
+    "brightYellow": "#FFEB95",
+    "brightBlue": "#82AAFF",
+    "brightMagenta": "#C792EA",
+    "brightCyan": "#7FDBCA",
+    "brightWhite": "#FFFFFF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Gruvbox Light">
+  <rect width="280" height="56" rx="8" fill="#FBF1C7"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#3C3836">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#FBF1C7"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#CC241D"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#98971A"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#D79921"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#458588"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#B16286"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#689D6A"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#7C6F64"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#928374"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#9D0006"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#79740E"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#B57614"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#076678"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#8F3F71"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#427B58"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#3C3836"/>
+</svg>

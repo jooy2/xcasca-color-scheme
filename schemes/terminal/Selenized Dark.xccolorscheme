@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Selenized Dark",
+  "data": {
+    "foreground": "#ADBCBC",
+    "background": "#103C48",
+    "selection": "#ADBCBC4D",
+    "black": "#184956",
+    "red": "#FA5750",
+    "green": "#75B938",
+    "yellow": "#DBB32D",
+    "blue": "#4695F7",
+    "magenta": "#F275BE",
+    "cyan": "#41C7B9",
+    "white": "#ADBCBC",
+    "brightBlack": "#72898F",
+    "brightRed": "#FF665C",
+    "brightGreen": "#84C747",
+    "brightYellow": "#EBC13D",
+    "brightBlue": "#58A3FF",
+    "brightMagenta": "#FF84CD",
+    "brightCyan": "#53D6C7",
+    "brightWhite": "#CAD8D9",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

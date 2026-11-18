@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Morning Fog",
+  "data": {
+    "foreground": "#2A3540",
+    "background": "#EEF2F5",
+    "selection": "#2A35404D",
+    "black": "#2A3540",
+    "red": "#C2464E",
+    "green": "#3E8458",
+    "yellow": "#9A7417",
+    "blue": "#3A6CB4",
+    "magenta": "#8E4FA8",
+    "cyan": "#2B828C",
+    "white": "#B8C2CB",
+    "brightBlack": "#66727E",
+    "brightRed": "#D95F66",
+    "brightGreen": "#4A9263",
+    "brightYellow": "#A8811F",
+    "brightBlue": "#4F83CB",
+    "brightMagenta": "#A566BF",
+    "brightCyan": "#368F99",
+    "brightWhite": "#DCE3E9",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Sandstone",
+  "data": {
+    "foreground": "#3A3128",
+    "background": "#F3EBDD",
+    "selection": "#3A31284D",
+    "black": "#3A3128",
+    "red": "#B4472F",
+    "green": "#5F7F2E",
+    "yellow": "#9C6B12",
+    "blue": "#3E6A8E",
+    "magenta": "#94507A",
+    "cyan": "#3E7E73",
+    "white": "#CDBFA8",
+    "brightBlack": "#7A6C5D",
+    "brightRed": "#CC5E45",
+    "brightGreen": "#6A8C35",
+    "brightYellow": "#A9771A",
+    "brightBlue": "#5383A8",
+    "brightMagenta": "#AD6893",
+    "brightCyan": "#478B80",
+    "brightWhite": "#E8DDCB",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

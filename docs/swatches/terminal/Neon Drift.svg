@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Neon Drift">
+  <rect width="280" height="56" rx="8" fill="#14111F"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#E6E1F5">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#221C33"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#FF5C8A"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#4DF0A9"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#FFD45C"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#5CA8FF"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#C77DFF"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#4DE8F0"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#D0C9E6"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#5D5478"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#FF85A8"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#7FF7C4"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#FFE38C"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#8AC2FF"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#DAA3FF"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#82F1F6"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#FAF8FF"/>
+</svg>

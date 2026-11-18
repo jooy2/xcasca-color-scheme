@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Midnight Plum">
+  <rect width="280" height="56" rx="8" fill="#1D1525"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#E3D9EA">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#2A2033"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#F07A8E"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#9FD39A"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#EFC88A"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#8FA8F0"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#D490E0"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#86CFD8"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#CFC3D9"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#64566F"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#FF9CAC"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#BAE6B5"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#F8DBA8"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#AEC0F7"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#E5AEEE"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#A6E0E7"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#F6F0FA"/>
+</svg>
