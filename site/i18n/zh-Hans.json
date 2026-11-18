@@ -28,6 +28,8 @@
   "kind.original": "原创",
   "viewer.download": "下载",
   "viewer.viewFile": "查看文件",
+  "export.label": "其他应用",
+  "export.note": "以其他终端应用的格式下载相同的颜色。选区会变为不透明的颜色，仅 Xcasca 具有的搜索高亮颜色不包含在内。",
   "sample.group": "示例",
   "sample.shell": "Shell",
   "sample.code": "代码",

@@ -167,6 +167,14 @@ const renderPage = (template, language, page) => {
     '</details>',
   ].join('')
 
+  // The download for other apps; formats.js fills in the list
+  const formatMenu = [
+    '<details class="format-menu" id="formats">',
+    '<summary class="button">{{icon:package}}<span>{{t:export.label}}</span>{{icon:chevron-down}}</summary>',
+    '<div class="format-panel"><div class="format-list"></div><p class="format-note">{{t:export.note}}</p></div>',
+    '</details>',
+  ].join('')
+
   const steps = (platform) =>
     STEPS[platform]
       .map(
@@ -226,6 +234,7 @@ const renderPage = (template, language, page) => {
     .replaceAll('{{root}}', root)
     .replace('{{head}}', head)
     .replace('{{langMenu}}', langMenu)
+    .replace('{{formatMenu}}', formatMenu)
     .replace('{{steps:desktop}}', steps('desktop'))
     .replace('{{steps:android}}', steps('android'))
     .replace('{{runtime}}', jsonForScript({ lang: language.code, strings: { ...t.runtime, siteName: t['meta.ogTitle'] }, suggestions }))
@@ -270,6 +279,8 @@ const llms = [
   'A `.xccolorscheme` file is JSON with `app` ("xcasca"), `type` ("terminalColor"), `version` (1), `name`, and `data`, which holds 22 colors as `#RRGGBB`: foreground, background, selection (which may carry alpha as `#RRGGBBAA`), the eight ANSI colors, their eight bright variants, and three search highlight colors. To use one, download it, open Terminal Color Schemes in Xcasca, import the file, and choose the scheme in a session\'s Appearance settings.',
   '',
   `The gallery is available in English, Korean, Japanese, Simplified Chinese and Traditional Chinese, and has an [editor](${SITE_URL}editor/) that makes a new scheme from any of these and downloads it as a \`.xccolorscheme\` file.`,
+  '',
+  'Every scheme, and every scheme made in the editor, can also be downloaded for Xshell (`.xcs`), Windows Terminal (a `schemes` entry for `settings.json`), iTerm2 (`.itermcolors`), Ghostty, Alacritty, Kitty and WezTerm. The selection becomes a solid color mixed with the background, and the search highlight colors, which only Xcasca has, are left out.',
   '',
   '## Docs',
   '',

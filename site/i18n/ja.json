@@ -28,6 +28,8 @@
   "kind.original": "オリジナル",
   "viewer.download": "ダウンロード",
   "viewer.viewFile": "ファイルを見る",
+  "export.label": "他のアプリ用",
+  "export.note": "同じ色を他のターミナルアプリの形式でダウンロードします。選択範囲は不透明な色になり、Xcasca にしかない検索ハイライトの色は含まれません。",
   "sample.group": "サンプル",
   "sample.shell": "シェル",
   "sample.code": "コード",

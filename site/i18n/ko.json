@@ -28,6 +28,8 @@
   "kind.original": "오리지널",
   "viewer.download": "다운로드",
   "viewer.viewFile": "파일 보기",
+  "export.label": "다른 앱용",
+  "export.note": "같은 색을 다른 터미널 앱의 형식으로 받습니다. 선택 영역은 불투명한 색으로 바뀌고, Xcasca에만 있는 검색 강조 색은 빠집니다.",
   "sample.group": "예시",
   "sample.shell": "셸",
   "sample.code": "코드",

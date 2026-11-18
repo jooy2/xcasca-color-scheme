@@ -59,6 +59,18 @@ export const copyText = async (text, message) => {
   }
 }
 
+// Hand the visitor a file made on the page
+export const saveFile = (name, content, type) => {
+  const link = element('a')
+
+  link.href = URL.createObjectURL(new Blob([content], { type }))
+  link.download = name
+  document.body.append(link)
+  link.click()
+  link.remove()
+  setTimeout(() => URL.revokeObjectURL(link.href), 1000)
+}
+
 // localStorage, which a private window or blocked site data may refuse
 export const storage = {
   get: (key) => {

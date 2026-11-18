@@ -12,10 +12,12 @@ import {
   createPreview,
   element,
   loadSchemes,
+  saveFile,
   showToast,
   storage,
   t,
 } from './common.js'
+import { bindFormatMenu, fileBase } from './formats.js'
 
 // The order Xcasca writes the colors in
 const COLOR_KEYS = [
@@ -40,6 +42,7 @@ const state = { name: '', colors: {}, opacity: 30, from: '' }
 const inputs = {}
 let schemes = []
 let preview = null
+let formats = null
 
 const normalizeHex = (value) => `#${value.replace(/^#/, '').toUpperCase()}`
 
@@ -272,6 +275,7 @@ const changed = ({ save = true } = {}) => {
   $('name').setAttribute('aria-invalid', String(Boolean(error)))
   $('download-scheme').disabled = Boolean(error)
   $('copy-json').disabled = Boolean(error)
+  formats?.setEnabled(!error)
 
   const ratio = contrast(state.colors.foreground, state.colors.background)
   const rating = ratio >= 7 ? 'great' : ratio >= 4.5 ? 'good' : ratio >= 3 ? 'low' : 'bad'
@@ -290,18 +294,7 @@ const changed = ({ save = true } = {}) => {
 
 // --- actions -----------------------------------------------------------------------------------
 
-const download = () => {
-  const blob = new Blob([fileContent()], { type: 'application/json' })
-  const link = element('a')
-
-  link.href = URL.createObjectURL(blob)
-  // The app names an exported file after the scheme, without dots or spaces at the end
-  link.download = `${state.name.trim().replace(/[. ]+$/, '') || 'terminalColor'}.xccolorscheme`
-  document.body.append(link)
-  link.click()
-  link.remove()
-  setTimeout(() => URL.revokeObjectURL(link.href), 1000)
-}
+const download = () => saveFile(`${fileBase(state.name)}.xccolorscheme`, fileContent(), 'application/json')
 
 const startFrom = (name) => {
   const scheme = schemes.find((x) => x.name === name)
@@ -319,6 +312,7 @@ const bindActions = () => {
   $('reset').addEventListener('click', () => startFrom(state.from || 'Harbor Night'))
   $('download-scheme').addEventListener('click', download)
   $('copy-json').addEventListener('click', () => copyText(fileContent(), t('editor.copied')))
+  formats = bindFormatMenu($('formats'), () => ({ name: state.name.trim(), colors: fileColors() }))
 
   $('import-file').addEventListener('change', async (event) => {
     const file = event.target.files?.[0]

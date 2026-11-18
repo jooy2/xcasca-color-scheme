@@ -28,6 +28,8 @@
   "kind.original": "原創",
   "viewer.download": "下載",
   "viewer.viewFile": "檢視檔案",
+  "export.label": "其他應用程式",
+  "export.note": "以其他終端機應用程式的格式下載相同的顏色。選取範圍會變為不透明的顏色，僅 Xcasca 具有的搜尋醒目標示顏色不包含在內。",
   "sample.group": "範例",
   "sample.shell": "Shell",
   "sample.code": "程式碼",

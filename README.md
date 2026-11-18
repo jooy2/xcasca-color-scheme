@@ -38,6 +38,7 @@ The gallery reads in [English](https://jooy2.github.io/xcasca-color-scheme/), [í
 
 - **One scheme:** the **Download** button in the gallery, or open the file under [`schemes/terminal/`](schemes/terminal/) and choose **Download raw file**.
 - **All of them:** **Code** > **Download ZIP** at the top of this page. The schemes are in `schemes/terminal/`.
+- **For another terminal app:** **For other apps**, beside **Download** in the gallery and in the editor, writes the same colors for Xshell, Windows Terminal, iTerm2, Ghostty, Alacritty, Kitty or WezTerm. The selection becomes a solid color, and the search highlight colors, which only Xcasca has, are left out.
 
 ## Apply a scheme
 

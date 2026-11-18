@@ -16,6 +16,7 @@ import {
   loadSchemes,
   t,
 } from './common.js'
+import { bindFormatMenu } from './formats.js'
 
 const state = { schemes: [], visible: [], current: null, mode: 'all', kind: 'all', query: '' }
 let preview = null
@@ -233,6 +234,7 @@ const main = async () => {
   bindLanguages()
   bindFilters()
   bindTabs()
+  bindFormatMenu($('formats'), () => state.current)
 
   const index = await loadSchemes()
 

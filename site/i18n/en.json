@@ -28,6 +28,8 @@
   "kind.original": "Original",
   "viewer.download": "Download",
   "viewer.viewFile": "View file",
+  "export.label": "For other apps",
+  "export.note": "The same colors in another terminal app’s format. The selection becomes a solid color, and the search highlight colors, which only Xcasca has, are left out.",
   "sample.group": "Sample",
   "sample.shell": "Shell",
   "sample.code": "Code",
