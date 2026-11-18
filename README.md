@@ -157,7 +157,7 @@ The scripts need Node.js 20 or later and nothing else; there are no dependencies
 | `npm run catalog` | Updates the scheme list in this README and the preview images in `docs/swatches/`. |
 | `npm run format` | Rewrites hand-edited scheme files in the layout the app exports. |
 | `npm run preview` | Builds the gallery into `_site/` and serves it at http://localhost:4173. |
-| `npm run build` | Builds the gallery into `_site/`, as the deployment does. |
+| `npm run build` | Builds the gallery into `_site/`, as the deployment does, along with `llms.txt`, `sitemap.xml` and a 404 page. |
 | `npm run sample` | Regenerates `site/sample.ansi`, the session the gallery draws. |
 
 Pushing to `main` deploys the gallery to GitHub Pages.

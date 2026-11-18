@@ -247,6 +247,16 @@ main {
   cursor: pointer;
 }
 
+/* The list as the build writes it, for a reader or a crawler without JavaScript */
+.scheme-list .static {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 14px;
+  text-decoration: none;
+}
+
 .scheme-list button:hover {
   background: var(--chip);
 }
@@ -635,4 +645,16 @@ main {
   .terminal-frame {
     transition: none;
   }
+}
+
+/* 404 */
+
+.not-found {
+  max-width: 640px;
+  padding-top: 120px;
+}
+
+.not-found h1 {
+  margin: 0 0 12px;
+  font-size: 32px;
 }

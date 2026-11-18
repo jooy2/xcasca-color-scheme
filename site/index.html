@@ -4,28 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Xcasca Color Scheme Gallery: Terminal Themes to Preview and Download</title>
-    <meta name="description" content="Preview and download 39 free terminal color schemes for Xcasca, including Dracula, Nord, Gruvbox, Catppuccin and Tokyo Night, for desktop and mobile.">
+    <meta name="description" content="Preview and download %SCHEME_COUNT% free terminal color schemes for Xcasca, including Dracula, Nord, Gruvbox, Catppuccin and Tokyo Night, for desktop and mobile.">
     <link rel="canonical" href="https://jooy2.github.io/xcasca-color-scheme/">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="jooy2">
+    <meta name="theme-color" content="#0e1014" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Xcasca Color Scheme Gallery">
     <meta property="og:url" content="https://jooy2.github.io/xcasca-color-scheme/">
     <meta property="og:title" content="Xcasca Color Scheme Gallery">
-    <meta property="og:description" content="Preview and download 39 free terminal color schemes for Xcasca, including Dracula, Nord, Gruvbox, Catppuccin and Tokyo Night.">
-    <meta property="og:image" content="https://jooy2.github.io/xcasca-color-scheme/images/hero.png">
-    <meta property="og:image:alt" content="Xcasca on macOS and Android drawing a terminal in the Harbor Night color scheme">
+    <meta property="og:description" content="Preview and download %SCHEME_COUNT% free terminal color schemes for Xcasca, including Dracula, Nord, Gruvbox, Catppuccin and Tokyo Night.">
+    <meta property="og:image" content="https://jooy2.github.io/xcasca-color-scheme/images/social-preview.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="640">
+    <meta property="og:image:alt" content="Xcasca on a desktop and a phone beside eight color schemes: Harbor Night, Dracula, Nord, Catppuccin Mocha, Gruvbox Dark, Tokyo Night, Paper Ink and Solarized Light">
     <meta name="twitter:card" content="summary_large_image">
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Xcasca Color Scheme Gallery",
-        "url": "https://jooy2.github.io/xcasca-color-scheme/",
-        "description": "An unofficial gallery of terminal color schemes for Xcasca, with previews and .xccolorscheme downloads.",
-        "author": { "@type": "Person", "name": "jooy2", "url": "https://github.com/jooy2" }
-      }
-    </script>
+    <meta name="twitter:title" content="Xcasca Color Scheme Gallery">
+    <meta name="twitter:description" content="Preview and download %SCHEME_COUNT% free terminal color schemes for Xcasca.">
+    <meta name="twitter:image" content="https://jooy2.github.io/xcasca-color-scheme/images/social-preview.png">
+    <!-- structured-data -->
     <meta name="color-scheme" content="dark light">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="sitemap" type="application/xml" href="sitemap.xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap">
@@ -73,13 +77,13 @@
             <button type="button" class="chip" data-kind="original" aria-pressed="false">Original</button>
           </div>
           <p class="count" id="count" aria-live="polite"></p>
-          <ul class="scheme-list" id="list"></ul>
+          <ul class="scheme-list" id="list"><!-- scheme-list --></ul>
         </aside>
 
         <article class="viewer" id="viewer" aria-live="polite">
           <header class="viewer-head">
             <div>
-              <h2 id="scheme-name">Loading...</h2>
+              <h2 id="scheme-name">Harbor Night</h2>
               <p class="credit" id="scheme-credit"></p>
             </div>
             <div class="actions">
