@@ -18,11 +18,11 @@ Free **terminal color schemes** (themes) for [Xcasca](https://www.xcasca.com), t
 
 ## What you get
 
-39 terminal color schemes, as `.xccolorscheme` files that Xcasca 1.1.2 or later imports on macOS, Windows, Linux, Android and iOS:
+Terminal color schemes as `.xccolorscheme` files, which Xcasca 1.1.2 or later imports on macOS, Windows, Linux, Android and iOS, in three groups:
 
-- **10 built into Xcasca**, the ones the app ships with, for anyone who changed them and wants the originals back.
-- **20 community favorites**, such as Dracula, Nord, Gruvbox and Catppuccin, under their original names. Each keeps its author's license, listed in [CREDITS.md](CREDITS.md).
-- **9 originals**, made for this collection.
+- **Built into Xcasca**: the ones the app ships with, for anyone who changed them and wants the originals back.
+- **Community favorites**: well-known schemes such as Dracula, Nord, Gruvbox and Catppuccin, under their original names. Each keeps its author's license, listed in [CREDITS.md](CREDITS.md).
+- **Originals**: made for this collection.
 
 Every file was exported from the app itself, and every pull request is checked against the format the app writes, so a file imports as it is.
 

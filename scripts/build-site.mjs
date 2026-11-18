@@ -134,13 +134,12 @@ const rootFrom = (language, page) => '../'.repeat(`${language.path}${page.path}`
 const renderPage = (template, language, page) => {
   const t = translations[language.code]
   const root = rootFrom(language, page)
-  const count = String(list.length)
   const text = (key) => {
     if (!(key in t)) {
       throw new Error(`${page.template}: no translation for ${key}`)
     }
 
-    return String(t[key]).replaceAll('%SCHEME_COUNT%', count)
+    return String(t[key])
   }
 
   const head = [
@@ -262,7 +261,7 @@ for (const page of PAGES) {
 const llms = [
   '# Xcasca Color Scheme Gallery',
   '',
-  `> A collection of ${list.length} terminal color schemes for Xcasca, the SSH terminal for desktop and mobile. Each scheme is a \`.xccolorscheme\` file that Xcasca 1.1.2 or later imports on macOS, Windows, Linux, Android and iOS. The gallery previews every scheme on the same sample terminal session and links to its file. It is an unofficial project, unrelated to the company behind Xcasca.`,
+  `> A collection of terminal color schemes for Xcasca, the SSH terminal for desktop and mobile. Each scheme is a \`.xccolorscheme\` file that Xcasca 1.1.2 or later imports on macOS, Windows, Linux, Android and iOS. The gallery previews every scheme on the same sample terminal session and links to its file. It is an unofficial project, unrelated to the company behind Xcasca.`,
   '',
   'A `.xccolorscheme` file is JSON with `app` ("xcasca"), `type` ("terminalColor"), `version` (1), `name`, and `data`, which holds 22 colors as `#RRGGBB`: foreground, background, selection (which may carry alpha as `#RRGGBBAA`), the eight ANSI colors, their eight bright variants, and three search highlight colors. To use one, download it, open Terminal Color Schemes in Xcasca, import the file, and choose the scheme in a session\'s Appearance settings.',
   '',
