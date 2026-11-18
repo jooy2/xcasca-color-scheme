@@ -1192,9 +1192,42 @@ button.button {
   }
 }
 
+.lang-menu summary span {
+  white-space: nowrap;
+}
+
 @media (max-width: 560px) {
   .hide-narrow {
     display: none !important;
+  }
+
+  /* A phone keeps the name, the theme switch and the icons on one line */
+  .masthead-inner {
+    gap: 10px;
+  }
+
+  .masthead-links {
+    gap: 10px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .brand strong {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .brand small,
+  .lang-menu summary span,
+  .lang-menu summary .icon:last-child {
+    display: none;
   }
 
   .masthead-inner,
