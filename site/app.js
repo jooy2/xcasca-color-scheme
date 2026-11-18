@@ -519,7 +519,37 @@ const bindLanguages = () => {
   banner.hidden = false
 }
 
+// Light, dark, or the system's, which is the default and is not stored
+const THEME_KEY = 'xcasca-gallery-theme'
+
+const bindTheme = () => {
+  const buttons = [...document.querySelectorAll('[data-theme-choice]')]
+  const apply = (choice) => {
+    if (choice === 'light' || choice === 'dark') {
+      document.documentElement.dataset.theme = choice
+    } else {
+      delete document.documentElement.dataset.theme
+    }
+
+    for (const button of buttons) {
+      button.setAttribute('aria-pressed', String(button.dataset.themeChoice === choice))
+    }
+  }
+
+  apply(storage.get(THEME_KEY) ?? 'system')
+
+  for (const button of buttons) {
+    button.addEventListener('click', () => {
+      const choice = button.dataset.themeChoice
+
+      storage.set(THEME_KEY, choice)
+      apply(choice)
+    })
+  }
+}
+
 const main = async () => {
+  bindTheme()
   bindLanguages()
   bindFilters()
   bindTabs()

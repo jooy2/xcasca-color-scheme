@@ -10,6 +10,16 @@
     <meta name="author" content="jooy2">
     <meta name="theme-color" content="#0e1014" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
+    <script>
+      // The theme the visitor picked, before anything is drawn; none follows the system
+      try {
+        var theme = localStorage.getItem('xcasca-gallery-theme')
+
+        if (theme === 'light' || theme === 'dark') {
+          document.documentElement.dataset.theme = theme
+        }
+      } catch (e) {}
+    </script>
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Xcasca Color Scheme Gallery">
     <meta property="og:title" content="{{a:meta.ogTitle}}">
@@ -52,6 +62,11 @@
         </a>
         <nav class="masthead-links" aria-label="Site">
           <a class="hide-narrow" href="#apply">{{icon:book-open}}<span>{{t:nav.apply}}</span></a>
+          <div class="theme-switch" role="group" aria-label="{{a:theme.label}}">
+            <button type="button" data-theme-choice="system" aria-pressed="true" aria-label="{{a:theme.system}}" title="{{a:theme.system}}">{{icon:monitor}}</button>
+            <button type="button" data-theme-choice="light" aria-pressed="false" aria-label="{{a:theme.light}}" title="{{a:theme.light}}">{{icon:sun}}</button>
+            <button type="button" data-theme-choice="dark" aria-pressed="false" aria-label="{{a:theme.dark}}" title="{{a:theme.dark}}">{{icon:moon}}</button>
+          </div>
           {{langMenu}}
           <a href="https://github.com/jooy2/xcasca-color-scheme" aria-label="GitHub">{{icon:github}}<span class="hide-narrow">GitHub</span></a>
         </nav>

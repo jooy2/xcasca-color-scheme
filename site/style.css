@@ -16,8 +16,9 @@
   color-scheme: dark;
 }
 
+/* The light colors follow the system unless the visitor picked a theme */
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not([data-theme="dark"]) {
     --page: #f5f6f8;
     --page-raised: #ffffff;
     --page-sunken: #eceef2;
@@ -31,6 +32,21 @@
     --shadow: 0 24px 60px rgba(20, 30, 50, 0.18);
     color-scheme: light;
   }
+}
+
+:root[data-theme="light"] {
+  --page: #f5f6f8;
+  --page-raised: #ffffff;
+  --page-sunken: #eceef2;
+  --line: #dde1e8;
+  --text: #1a1f29;
+  --text-muted: #5b6474;
+  --accent: #0a6cc2;
+  --accent-text: #ffffff;
+  --chip: #e9ecf1;
+  --chip-active: #d5dbe5;
+  --shadow: 0 24px 60px rgba(20, 30, 50, 0.18);
+  color-scheme: light;
 }
 
 * {
@@ -147,6 +163,46 @@ code {
 
 .masthead-links {
   align-items: center;
+}
+
+/* Theme switch */
+
+.theme-switch {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 10px;
+  background: var(--chip);
+}
+
+.theme-switch button {
+  display: inline-flex;
+  padding: 4px 6px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.theme-switch button:hover {
+  color: var(--text);
+}
+
+.theme-switch button[aria-pressed="true"] {
+  background: var(--page-raised);
+  color: var(--text);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+}
+
+.theme-switch .icon {
+  width: 15px;
+  height: 15px;
+}
+
+.theme-switch button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
 }
 
 /* Language menu */
