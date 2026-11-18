@@ -37,7 +37,7 @@
   "terminal.fullscreen": "全屏",
   "terminal.exitFullscreen": "退出全屏 (Esc)",
   "palette.label": "颜色",
-  "viewer.hint": "点击终端即可尝试输入。点击颜色可复制其十六进制值。高亮的文字展示了选区的颜色。",
+  "viewer.hint": "点击终端即可尝试输入，也可以运行 ls 或 pwd。点击颜色可复制其十六进制值。高亮的文字展示了选区的颜色。",
   "apply.title": "应用下载的配色方案",
   "apply.body": "只需导入一次 <code>.xccolorscheme</code> 文件，即可在任意会话中选用。它会像你自己创建的配色方案一样保存，如果开启了同步，还会同步到你的其他设备。截图中的应用界面为英文。",
   "apply.platform": "平台",

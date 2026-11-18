@@ -37,7 +37,7 @@
   "terminal.fullscreen": "全螢幕",
   "terminal.exitFullscreen": "結束全螢幕 (Esc)",
   "palette.label": "顏色",
-  "viewer.hint": "點一下終端機即可試著輸入。點選顏色可複製其十六進位值。醒目標示的文字呈現了選取範圍的顏色。",
+  "viewer.hint": "點一下終端機即可試著輸入，也可以執行 ls 或 pwd。點選顏色可複製其十六進位值。醒目標示的文字呈現了選取範圍的顏色。",
   "apply.title": "套用下載的配色方案",
   "apply.body": "只要匯入一次 <code>.xccolorscheme</code> 檔案，就能在任何工作階段中選用。它會像你自己建立的配色方案一樣儲存，如果有使用同步，也會同步到你的其他裝置。截圖中的應用程式介面為英文。",
   "apply.platform": "平台",

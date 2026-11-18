@@ -37,7 +37,7 @@
   "terminal.fullscreen": "Full screen",
   "terminal.exitFullscreen": "Exit full screen (Esc)",
   "palette.label": "Colors",
-  "viewer.hint": "Click the terminal to type in it. Click a color to copy its hex value. The highlighted text shows the selection color.",
+  "viewer.hint": "Click the terminal to type in it, and try ls or pwd. Click a color to copy its hex value. The highlighted text shows the selection color.",
   "apply.title": "Apply a downloaded scheme",
   "apply.body": "Import the <code>.xccolorscheme</code> file once, then pick it for any session. The scheme is stored like the ones you make yourself, and syncs with your other devices if you use sync.",
   "apply.platform": "Platform",

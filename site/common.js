@@ -1,6 +1,8 @@
 // What the gallery and the editor share: the page's language and paths, the theme and language
 // switches, and the terminal preview drawn with xterm.js.
 
+import { isWide, run } from './shell.js'
+
 export const $ = (id) => document.getElementById(id)
 
 // The page's language: its strings, and the other languages to offer, written by the build
@@ -211,24 +213,11 @@ const toTheme = (c) => ({
   ...Object.fromEntries(BRIGHT.map((key) => [key, c[key]])),
 })
 
-const isWide = (char) => {
-  const code = char.codePointAt(0)
-
-  return (
-    (code >= 0x1100 && code <= 0x115f) ||
-    (code >= 0x2e80 && code <= 0xa4cf) ||
-    (code >= 0xac00 && code <= 0xd7a3) ||
-    (code >= 0xf900 && code <= 0xfaff) ||
-    (code >= 0xfe30 && code <= 0xfe4f) ||
-    (code >= 0xff00 && code <= 0xff60) ||
-    (code >= 0xffe0 && code <= 0xffe6)
-  )
-}
-
 /*
  * A terminal in `frame` that shows a sample session in a scheme's colors. The tabs in the frame
- * pick the session, and a visitor can type in it: nothing runs behind it, so what is typed is shown
- * on the line, Enter starts a new prompt, and `clear` or Ctrl+L clears the screen.
+ * pick the session, and a visitor can type in it: nothing runs behind it, but `ls` and `pwd` answer
+ * from the sample's directory, `clear` or Ctrl+L clears the screen, and anything else gets the
+ * answer bash gives a missing program.
  */
 export const createPreview = async (frame) => {
   const host = frame.querySelector('.terminal')
@@ -275,8 +264,15 @@ export const createPreview = async (frame) => {
   terminal.open(host)
   terminal.onData((data) => {
     if (data === '\r') {
-      terminal.write(typed.trim() === 'clear' ? `\x1b[2J\x1b[3J\x1b[H${currentPrompt()}` : `\r\n${currentPrompt()}`)
+      const line = typed.trim()
+
       typed = ''
+
+      if (line === 'clear') {
+        terminal.write(`\x1b[2J\x1b[3J\x1b[H${currentPrompt()}`)
+      } else {
+        terminal.write(`\r\n${run(line, SAMPLES[sample].path).map((output) => `${output}\r\n`).join('')}${currentPrompt()}`)
+      }
     } else if (data === '\x7f' || data === '\b') {
       const chars = [...typed]
       const last = chars.pop()
