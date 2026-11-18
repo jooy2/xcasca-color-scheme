@@ -32,7 +32,7 @@ The [gallery](https://jooy2.github.io/xcasca-color-scheme/) draws each scheme on
 
 To make a scheme of your own, open the [editor](https://jooy2.github.io/xcasca-color-scheme/editor/): start from any scheme here or from a file you have, change the colors on the same live terminal, and download a `.xccolorscheme` file in the exact layout Xcasca exports.
 
-The gallery reads in [English](https://jooy2.github.io/xcasca-color-scheme/), [한국어](https://jooy2.github.io/xcasca-color-scheme/ko/), [日本語](https://jooy2.github.io/xcasca-color-scheme/ja/), [简体中文](https://jooy2.github.io/xcasca-color-scheme/zh-hans/) and [繁體中文](https://jooy2.github.io/xcasca-color-scheme/zh-hant/).
+The gallery reads in [English](https://jooy2.github.io/xcasca-color-scheme/), [한국어](https://jooy2.github.io/xcasca-color-scheme/ko/), [日本語](https://jooy2.github.io/xcasca-color-scheme/ja/), [简体中文](https://jooy2.github.io/xcasca-color-scheme/zh-hans/), [繁體中文](https://jooy2.github.io/xcasca-color-scheme/zh-hant/), [Español](https://jooy2.github.io/xcasca-color-scheme/es/), [Deutsch](https://jooy2.github.io/xcasca-color-scheme/de/) and [Français](https://jooy2.github.io/xcasca-color-scheme/fr/).
 
 ## Download
 

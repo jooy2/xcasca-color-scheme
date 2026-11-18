@@ -138,6 +138,9 @@ const languageFor = (tag) => {
   if (lower.startsWith('ja')) return 'ja'
   if (/^zh-(tw|hk|mo|hant)/.test(lower)) return 'zh-Hant'
   if (lower.startsWith('zh')) return 'zh-Hans'
+  if (lower.startsWith('es')) return 'es'
+  if (lower.startsWith('de')) return 'de'
+  if (lower.startsWith('fr')) return 'fr'
   if (lower.startsWith('en')) return 'en'
 
   return null

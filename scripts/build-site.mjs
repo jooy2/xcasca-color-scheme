@@ -28,6 +28,9 @@ const LANGUAGES = [
   { code: 'ja', path: 'ja/', locale: 'ja_JP' },
   { code: 'zh-Hans', path: 'zh-hans/', locale: 'zh_CN' },
   { code: 'zh-Hant', path: 'zh-hant/', locale: 'zh_TW' },
+  { code: 'es', path: 'es/', locale: 'es_ES' },
+  { code: 'de', path: 'de/', locale: 'de_DE' },
+  { code: 'fr', path: 'fr/', locale: 'fr_FR' },
 ]
 
 // The pages built from site/, and where each sits under a language's path
@@ -278,7 +281,7 @@ const llms = [
   '',
   'A `.xccolorscheme` file is JSON with `app` ("xcasca"), `type` ("terminalColor"), `version` (1), `name`, and `data`, which holds 22 colors as `#RRGGBB`: foreground, background, selection (which may carry alpha as `#RRGGBBAA`), the eight ANSI colors, their eight bright variants, and three search highlight colors. To use one, download it, open Terminal Color Schemes in Xcasca, import the file, and choose the scheme in a session\'s Appearance settings.',
   '',
-  `The gallery is available in English, Korean, Japanese, Simplified Chinese and Traditional Chinese, and has an [editor](${SITE_URL}editor/) that makes a new scheme from any of these and downloads it as a \`.xccolorscheme\` file.`,
+  `The gallery is available in English, Korean, Japanese, Simplified Chinese, Traditional Chinese, Spanish, German and French, and has an [editor](${SITE_URL}editor/) that makes a new scheme from any of these and downloads it as a \`.xccolorscheme\` file.`,
   '',
   'Every scheme, and every scheme made in the editor, can also be downloaded for Xshell (`.xcs`), Windows Terminal (a `schemes` entry for `settings.json`), iTerm2 (`.itermcolors`), Ghostty, Alacritty, Kitty and WezTerm. The selection becomes a solid color mixed with the background, and the search highlight colors, which only Xcasca has, are left out.',
   '',
