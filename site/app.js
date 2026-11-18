@@ -60,6 +60,83 @@ const drawTerminal = () => {
   })
 }
 
+const copyHex = async (hex) => {
+  try {
+    await navigator.clipboard.writeText(hex)
+    showToast(`Copied ${hex}`)
+  } catch {
+    showToast(hex)
+  }
+}
+
+const element = (tag, className, text) => {
+  const node = document.createElement(tag)
+
+  if (className) {
+    node.className = className
+  }
+
+  if (text !== undefined) {
+    node.textContent = text
+  }
+
+  return node
+}
+
+// A button that shows a color and copies its hex value
+const swatch = (hex, label, className) => {
+  const button = element('button', className)
+  const color = element('span', 'swatch-color')
+
+  button.type = 'button'
+  button.title = `${label}: ${hex}`
+  button.setAttribute('aria-label', `${label} ${hex}`)
+  color.style.background = hex
+  button.append(color)
+  button.addEventListener('click', () => copyHex(hex))
+
+  return button
+}
+
+/*
+ * Foreground, background and selection in a row, then the sixteen ANSI colors as a table: the
+ * color names across, normal and bright down, so every cell has the same size.
+ */
+const renderPalette = (colors) => {
+  const base = element('div', 'palette-base')
+
+  for (const [key, label] of [['foreground', 'Foreground'], ['background', 'Background'], ['selection', 'Selection']]) {
+    const button = swatch(colors[key], label, 'base-swatch')
+    const text = element('span', 'base-text')
+
+    text.append(element('small', '', label), element('code', '', colors[key]))
+    button.append(text)
+    base.append(button)
+  }
+
+  const grid = element('div', 'palette-grid')
+
+  grid.append(element('span', 'grid-corner'))
+
+  for (const key of ANSI) {
+    grid.append(element('span', 'grid-head', key[0].toUpperCase() + key.slice(1)))
+  }
+
+  for (const [row, keys] of [['Normal', ANSI], ['Bright', BRIGHT]]) {
+    grid.append(element('span', 'grid-row', row))
+
+    for (const key of keys) {
+      const label = row === 'Bright' ? `Bright ${key.slice(6).toLowerCase()}` : key
+      const button = swatch(colors[key], label, 'grid-swatch')
+
+      button.append(element('code', '', colors[key].toUpperCase()))
+      grid.append(button)
+    }
+  }
+
+  $('palette').replaceChildren(base, grid)
+}
+
 const renderViewer = () => {
   const scheme = state.current
   const { colors } = scheme
@@ -87,45 +164,7 @@ const renderViewer = () => {
   frame.style.setProperty('--scheme-bg', colors.background)
   frame.style.setProperty('--scheme-fg', colors.foreground)
 
-  const palette = $('palette')
-  const entries = [
-    ['Foreground', colors.foreground],
-    ['Background', colors.background],
-    ['Selection', colors.selection],
-    ...ANSI.map((key) => [key[0].toUpperCase() + key.slice(1), colors[key]]),
-    ...BRIGHT.map((key) => [`Bright ${key.slice(6).toLowerCase()}`, colors[key]]),
-  ]
-
-  palette.replaceChildren(
-    ...entries.map(([label, hex]) => {
-      const item = document.createElement('li')
-      const button = document.createElement('button')
-      const dot = document.createElement('span')
-      const text = document.createElement('span')
-      const small = document.createElement('small')
-      const code = document.createElement('code')
-
-      button.type = 'button'
-      button.title = `Copy ${hex}`
-      dot.className = 'dot'
-      dot.style.background = hex
-      small.textContent = label
-      code.textContent = hex
-      text.append(small, code)
-      button.append(dot, text)
-      button.addEventListener('click', async () => {
-        try {
-          await navigator.clipboard.writeText(hex)
-          showToast(`Copied ${hex}`)
-        } catch {
-          showToast(hex)
-        }
-      })
-      item.append(button)
-
-      return item
-    }),
-  )
+  renderPalette(colors)
 
   drawTerminal()
 }
