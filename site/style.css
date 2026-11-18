@@ -53,6 +53,12 @@ a {
   color: var(--accent);
 }
 
+.icon {
+  flex: none;
+  width: 18px;
+  height: 18px;
+}
+
 code {
   font-family: var(--mono);
   font-size: 0.9em;
@@ -122,6 +128,9 @@ code {
 }
 
 .masthead-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   color: var(--text-muted);
   text-decoration: none;
 }
@@ -172,9 +181,24 @@ main {
   max-height: calc(100vh - 100px);
 }
 
+.search {
+  position: relative;
+}
+
+.search .icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
 .search input {
   width: 100%;
-  padding: 10px 14px;
+  padding: 10px 14px 10px 36px;
   border: 1px solid var(--line);
   border-radius: 10px;
   background: var(--page-raised);
@@ -195,6 +219,9 @@ main {
 }
 
 .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   padding: 5px 12px;
   border: 0;
   border-radius: 999px;
@@ -203,6 +230,15 @@ main {
   font: inherit;
   font-size: 13px;
   cursor: pointer;
+}
+
+.chip .icon {
+  width: 15px;
+  height: 15px;
+}
+
+.chip.icon-only {
+  padding: 5px 10px;
 }
 
 .chip[aria-pressed="true"] {
@@ -295,10 +331,13 @@ main {
 }
 
 .scheme-list .tag {
+  display: inline-flex;
   color: var(--text-muted);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+}
+
+.scheme-list .tag .icon {
+  width: 15px;
+  height: 15px;
 }
 
 .empty {
@@ -505,6 +544,9 @@ main {
 }
 
 .tabs button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 7px 18px;
   border: 0;
   border-radius: 9px;

@@ -50,6 +50,7 @@ Harbor Night, Ember Glow, Moss Garden, Neon Drift, Graphite, Midnight Plum, Pape
 
 - [xterm.js](https://github.com/xtermjs/xterm.js) draws the terminal (MIT), loaded from [jsDelivr](https://www.jsdelivr.com).
 - [JetBrains Mono](https://www.jetbrains.com/lp/mono/) is the terminal font (SIL Open Font License 1.1), loaded from Google Fonts.
+- The icons are from [Lucide](https://lucide.dev) (ISC License, in `site/icons/LICENSE-lucide.txt`), and the GitHub logo from [Simple Icons](https://simpleicons.org) (CC0 1.0).
 
 ## This repository
 

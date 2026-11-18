@@ -13,6 +13,8 @@ const KIND_LABEL = { 'built-in': 'Built-in', community: 'Community', original: '
 
 const state = { schemes: [], visible: [], current: null, mode: 'all', kind: 'all', query: '', sample: '' }
 const $ = (id) => document.getElementById(id)
+// An icon the build put in a <template>, for elements made here
+const icon = (name) => $(`icon-${name}`).content.firstElementChild.cloneNode(true)
 let terminal = null
 
 const toTheme = (c) => ({
@@ -189,7 +191,8 @@ const renderList = () => {
       name.className = 'name'
       name.textContent = scheme.name
       tag.className = 'tag'
-      tag.textContent = scheme.dark ? 'Dark' : 'Light'
+      tag.title = scheme.dark ? 'Dark' : 'Light'
+      tag.append(icon(scheme.dark ? 'moon' : 'sun'))
       button.append(mini, name, tag)
       button.addEventListener('click', () => select(scheme))
       item.append(button)

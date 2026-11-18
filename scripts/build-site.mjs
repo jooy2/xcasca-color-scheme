@@ -41,7 +41,8 @@ const lastModified = (() => {
 
 rmSync(OUT, { recursive: true, force: true })
 mkdirSync(OUT, { recursive: true })
-cpSync(join(ROOT, 'site'), OUT, { recursive: true })
+// The icons are inlined into the pages below rather than served as files
+cpSync(join(ROOT, 'site'), OUT, { recursive: true, filter: (path) => !path.includes(`${join('site', 'icons')}`) })
 cpSync(join(ROOT, 'docs', 'images'), join(OUT, 'images'), { recursive: true })
 cpSync(SCHEMES_DIR, join(OUT, SCHEMES_PATH), { recursive: true })
 
@@ -59,6 +60,19 @@ const list = schemes
   .sort((a, b) => a.name.localeCompare(b.name))
 
 writeFileSync(join(OUT, 'schemes.json'), `${JSON.stringify({ terminal: list }, null, 2)}\n`)
+
+// Each {{icon:name}} becomes the SVG in site/icons/, drawn in the text color
+const inlineIcons = (html) =>
+  html.replace(/\{\{icon:([a-z0-9-]+)\}\}/g, (_, name) =>
+    readFileSync(join(ROOT, 'site', 'icons', `${name}.svg`), 'utf8')
+      .replace(/<!--.*?-->\s*/s, '')
+      .replace(/<title>.*?<\/title>/s, '')
+      .replace(/\s+(width|height|class)="[^"]*"/g, '')
+      .replace(/\s*role="img"/, '')
+      .replace('<svg', '<svg class="icon" aria-hidden="true" focusable="false"' + (name === 'github' ? ' fill="currentColor"' : ''))
+      .replace(/\n\s*/g, ' ')
+      .trim(),
+  )
 
 // --- index.html --------------------------------------------------------------------------------
 
@@ -93,7 +107,7 @@ const staticList = list
   .join('')
 
 const indexPath = join(OUT, 'index.html')
-const index = readFileSync(indexPath, 'utf8')
+const index = inlineIcons(readFileSync(indexPath, 'utf8'))
   .replaceAll('%SCHEME_COUNT%', String(list.length))
   .replace(
     '<!-- structured-data -->',
