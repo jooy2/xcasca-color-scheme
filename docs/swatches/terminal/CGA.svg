@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="CGA">
+  <rect width="280" height="56" rx="8" fill="#000000"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#AAAAAA">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#000000"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#AA0000"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#00AA00"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#AA5500"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#0D0DB7"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#AA00AA"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#00AAAA"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#AAAAAA"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#555555"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#FF5555"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#55FF55"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#FFFF55"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#5555FF"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#FF55FF"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#55FFFF"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#FFFFFF"/>
+</svg>

@@ -59,6 +59,12 @@
     "url": "https://github.com/jooy2",
     "license": "MIT"
   },
+  "CGA": {
+    "kind": "community",
+    "author": "John Hodges",
+    "url": "https://github.com/jdhmtl/cga-theme",
+    "license": "MIT"
+  },
   "Cherry Blossom": {
     "kind": "original",
     "author": "jooy2",
