@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Clear Sky",
+  "data": {
+    "foreground": "#1F2E40",
+    "background": "#E6F1FA",
+    "selection": "#1F2E404D",
+    "black": "#1F2E40",
+    "red": "#BE3F3F",
+    "green": "#2E7D4F",
+    "yellow": "#8F6400",
+    "blue": "#2563B0",
+    "magenta": "#9B4AA8",
+    "cyan": "#14788F",
+    "white": "#C3D3E2",
+    "brightBlack": "#5F7287",
+    "brightRed": "#CC5552",
+    "brightGreen": "#3B8B5C",
+    "brightYellow": "#A0730A",
+    "brightBlue": "#3D75BF",
+    "brightMagenta": "#AB5FB8",
+    "brightCyan": "#25879E",
+    "brightWhite": "#F7FBFE",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
