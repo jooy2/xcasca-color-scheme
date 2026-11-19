@@ -299,6 +299,12 @@
     "url": "https://github.com/neovim/neovim",
     "license": "Apache-2.0"
   },
+  "Nvim Light": {
+    "kind": "community",
+    "author": "Neovim contributors",
+    "url": "https://github.com/neovim/neovim",
+    "license": "Apache-2.0"
+  },
   "One Half Dark": {
     "kind": "built-in",
     "author": "Son A. Pham",

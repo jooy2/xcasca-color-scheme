@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Nvim Light",
+  "data": {
+    "foreground": "#14161B",
+    "background": "#E0E2EA",
+    "selection": "#14161B4D",
+    "black": "#07080D",
+    "red": "#590008",
+    "green": "#005523",
+    "yellow": "#6B5300",
+    "blue": "#004C73",
+    "magenta": "#470045",
+    "cyan": "#007373",
+    "white": "#A1A4AB",
+    "brightBlack": "#4F5258",
+    "brightRed": "#590008",
+    "brightGreen": "#005523",
+    "brightYellow": "#6B5300",
+    "brightBlue": "#004C73",
+    "brightMagenta": "#470045",
+    "brightCyan": "#007373",
+    "brightWhite": "#EEF1F8",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

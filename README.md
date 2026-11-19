@@ -143,6 +143,7 @@ Well-known schemes, under their original names and licenses.
 | <img src="docs/swatches/terminal/Nightfox.svg" width="210" alt="Nightfox"> | [Nightfox](schemes/terminal/Nightfox.xccolorscheme) | Dark | [EdenEast](https://github.com/EdenEast/nightfox.nvim) | MIT |
 | <img src="docs/swatches/terminal/Nord.svg" width="210" alt="Nord"> | [Nord](schemes/terminal/Nord.xccolorscheme) | Dark | [Sven Greb (Nord)](https://github.com/nordtheme/nord) | MIT |
 | <img src="docs/swatches/terminal/Nvim%20Dark.svg" width="210" alt="Nvim Dark"> | [Nvim Dark](schemes/terminal/Nvim%20Dark.xccolorscheme) | Dark | [Neovim contributors](https://github.com/neovim/neovim) | Apache-2.0 |
+| <img src="docs/swatches/terminal/Nvim%20Light.svg" width="210" alt="Nvim Light"> | [Nvim Light](schemes/terminal/Nvim%20Light.xccolorscheme) | Light | [Neovim contributors](https://github.com/neovim/neovim) | Apache-2.0 |
 | <img src="docs/swatches/terminal/Oxocarbon.svg" width="210" alt="Oxocarbon"> | [Oxocarbon](schemes/terminal/Oxocarbon.xccolorscheme) | Dark | [Nyoom Engineering](https://github.com/nyoom-engineering/oxocarbon.nvim) | MIT |
 | <img src="docs/swatches/terminal/Poimandres.svg" width="210" alt="Poimandres"> | [Poimandres](schemes/terminal/Poimandres.xccolorscheme) | Dark | [drcmda](https://github.com/drcmda/poimandres-theme) | MIT |
 | <img src="docs/swatches/terminal/Rose%20Pine.svg" width="210" alt="Rose Pine"> | [Rose Pine](schemes/terminal/Rose%20Pine.xccolorscheme) | Dark | [Rose Pine](https://github.com/rose-pine/rose-pine-theme) | MIT |

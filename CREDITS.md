@@ -37,7 +37,7 @@ The colors were taken from the Windows Terminal versions of these schemes in [iT
 | Moonfly | bluz71, [vim-moonfly-colors](https://github.com/bluz71/vim-moonfly-colors) | MIT |
 | Night Owl | Sarah Drasner, [Night Owl](https://github.com/sdras/night-owl-vscode-theme) | MIT |
 | Nord | Sven Greb, [Nord](https://github.com/nordtheme/nord) | MIT |
-| Nvim Dark | Neovim contributors, [Neovim](https://github.com/neovim/neovim) | Apache 2.0 |
+| Nvim Dark, Nvim Light | Neovim contributors, [Neovim](https://github.com/neovim/neovim) | Apache 2.0 |
 | Oxocarbon | Nyoom Engineering, [oxocarbon.nvim](https://github.com/nyoom-engineering/oxocarbon.nvim) | MIT |
 | Poimandres | drcmda, [Poimandres](https://github.com/drcmda/poimandres-theme) | MIT |
 | Rose Pine, Rose Pine Dawn, Rose Pine Moon | [Rosé Pine](https://github.com/rose-pine/rose-pine-theme) | MIT |
