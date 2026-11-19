@@ -1,4 +1,10 @@
 {
+  "Atom One Light": {
+    "kind": "community",
+    "author": "GitHub (Atom)",
+    "url": "https://github.com/atom/atom",
+    "license": "MIT"
+  },
   "Ayu Mirage": {
     "kind": "community",
     "author": "ayu-theme",

@@ -20,6 +20,7 @@ The colors were taken from the Windows Terminal versions of these schemes in [iT
 
 | Scheme | Author and project | License |
 |---|---|---|
+| Atom One Light | GitHub, [Atom](https://github.com/atom/atom) | MIT |
 | Ayu Mirage | [ayu](https://github.com/ayu-theme/ayu-colors) | MIT |
 | Carbonfox, Dayfox, Nightfox | EdenEast, [nightfox.nvim](https://github.com/EdenEast/nightfox.nvim) | MIT |
 | Catppuccin Frappe, Catppuccin Latte, Catppuccin Macchiato, Catppuccin Mocha | [Catppuccin](https://github.com/catppuccin/catppuccin) | MIT |
