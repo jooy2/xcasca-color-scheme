@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Pop Art",
+  "data": {
+    "foreground": "#111111",
+    "background": "#FFFEF8",
+    "selection": "#1111114D",
+    "black": "#111111",
+    "red": "#E3001B",
+    "green": "#00873C",
+    "yellow": "#A87A00",
+    "blue": "#0047D6",
+    "magenta": "#D4007A",
+    "cyan": "#007F9E",
+    "white": "#D8D8D8",
+    "brightBlack": "#6B6B6B",
+    "brightRed": "#FF2A3D",
+    "brightGreen": "#00A04A",
+    "brightYellow": "#BF8600",
+    "brightBlue": "#2D6BFF",
+    "brightMagenta": "#F0168F",
+    "brightCyan": "#0096B8",
+    "brightWhite": "#FFFFFF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

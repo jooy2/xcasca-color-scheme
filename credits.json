@@ -425,6 +425,12 @@
     "url": "https://github.com/drcmda/poimandres-theme",
     "license": "MIT"
   },
+  "Pop Art": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
   "Primary": {
     "kind": "community",
     "author": "Google",
