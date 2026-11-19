@@ -53,6 +53,12 @@
     "url": "https://github.com/catppuccin/catppuccin",
     "license": "MIT"
   },
+  "Dancheong": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
   "Dayfox": {
     "kind": "community",
     "author": "EdenEast",
