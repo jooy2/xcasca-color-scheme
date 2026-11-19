@@ -143,6 +143,12 @@
     "url": "https://github.com/EdenEast/nightfox.nvim",
     "license": "MIT"
   },
+  "Deep Indigo": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
   "Default": {
     "kind": "built-in",
     "author": "Tango Desktop Project",

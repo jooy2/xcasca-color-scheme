@@ -184,6 +184,7 @@ Made for this collection.
 | <img src="docs/swatches/terminal/Clear%20Sky.svg" width="210" alt="Clear Sky"> | [Clear Sky](schemes/terminal/Clear%20Sky.xccolorscheme) | Light | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Crimson%20Eclipse.svg" width="210" alt="Crimson Eclipse"> | [Crimson Eclipse](schemes/terminal/Crimson%20Eclipse.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Dancheong.svg" width="210" alt="Dancheong"> | [Dancheong](schemes/terminal/Dancheong.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
+| <img src="docs/swatches/terminal/Deep%20Indigo.svg" width="210" alt="Deep Indigo"> | [Deep Indigo](schemes/terminal/Deep%20Indigo.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Ember%20Glow.svg" width="210" alt="Ember Glow"> | [Ember Glow](schemes/terminal/Ember%20Glow.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Graphite.svg" width="210" alt="Graphite"> | [Graphite](schemes/terminal/Graphite.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Green%20Monitor.svg" width="210" alt="Green Monitor"> | [Green Monitor](schemes/terminal/Green%20Monitor.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |

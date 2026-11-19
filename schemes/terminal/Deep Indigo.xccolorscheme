@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Deep Indigo",
+  "data": {
+    "foreground": "#E8E6FA",
+    "background": "#1B1A3A",
+    "selection": "#E8E6FA4D",
+    "black": "#26244D",
+    "red": "#FF7A59",
+    "green": "#4FD6A0",
+    "yellow": "#FFB347",
+    "blue": "#8E9BFF",
+    "magenta": "#E57CE0",
+    "cyan": "#3FD0E0",
+    "white": "#CFCCEA",
+    "brightBlack": "#6C69A0",
+    "brightRed": "#FF9C82",
+    "brightGreen": "#7FE6BC",
+    "brightYellow": "#FFCB7A",
+    "brightBlue": "#B0B9FF",
+    "brightMagenta": "#F0A2EC",
+    "brightCyan": "#74E0EC",
+    "brightWhite": "#F7F6FF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
