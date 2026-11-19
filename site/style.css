@@ -530,6 +530,54 @@ main {
   padding: 5px 10px;
 }
 
+/* The tone dots share what the row has left, so they stay on one line in every language */
+.filters.tones {
+  display: grid;
+  grid-template-columns: auto repeat(7, minmax(0, 1fr));
+}
+
+.tones .icon-only {
+  justify-content: center;
+  padding: 5px 0;
+}
+
+/* A dot in each tone's color, ringed so it shows on either page theme */
+.tone-dot {
+  flex: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(128, 128, 128, 0.4);
+}
+
+[data-tone="red"] .tone-dot {
+  background: #e5484d;
+}
+
+[data-tone="warm"] .tone-dot {
+  background: #f0a030;
+}
+
+[data-tone="green"] .tone-dot {
+  background: #46a758;
+}
+
+[data-tone="blue"] .tone-dot {
+  background: #3e7bf0;
+}
+
+[data-tone="purple"] .tone-dot {
+  background: #9a5ad8;
+}
+
+[data-tone="neutral"] .tone-dot {
+  background: linear-gradient(135deg, #f2f2f2 50%, #1c1c1c 50%);
+}
+
+[data-tone="vivid"] .tone-dot {
+  background: conic-gradient(#ff2d55, #ffd60a, #30d158, #0a84ff, #bf5af2, #ff2d55);
+}
+
 .chip[aria-pressed="true"] {
   background: var(--chip-active);
   color: var(--text);

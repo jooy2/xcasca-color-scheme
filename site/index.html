@@ -99,6 +99,16 @@
             <button type="button" class="chip" data-kind="community" aria-pressed="false">{{icon:users}}<span>{{t:kind.community}}</span></button>
             <button type="button" class="chip" data-kind="original" aria-pressed="false">{{icon:sparkles}}<span>{{t:kind.original}}</span></button>
           </div>
+          <div class="filters tones" role="group" aria-label="{{a:filter.tone}}">
+            <button type="button" class="chip" data-tone="all" aria-pressed="true">{{t:filter.all}}</button>
+            <button type="button" class="chip icon-only" data-tone="red" aria-pressed="false" aria-label="{{a:tone.red}}" title="{{a:tone.red}}"><span class="tone-dot"></span></button>
+            <button type="button" class="chip icon-only" data-tone="warm" aria-pressed="false" aria-label="{{a:tone.warm}}" title="{{a:tone.warm}}"><span class="tone-dot"></span></button>
+            <button type="button" class="chip icon-only" data-tone="green" aria-pressed="false" aria-label="{{a:tone.green}}" title="{{a:tone.green}}"><span class="tone-dot"></span></button>
+            <button type="button" class="chip icon-only" data-tone="blue" aria-pressed="false" aria-label="{{a:tone.blue}}" title="{{a:tone.blue}}"><span class="tone-dot"></span></button>
+            <button type="button" class="chip icon-only" data-tone="purple" aria-pressed="false" aria-label="{{a:tone.purple}}" title="{{a:tone.purple}}"><span class="tone-dot"></span></button>
+            <button type="button" class="chip icon-only" data-tone="neutral" aria-pressed="false" aria-label="{{a:tone.neutral}}" title="{{a:tone.neutral}}"><span class="tone-dot"></span></button>
+            <button type="button" class="chip icon-only" data-tone="vivid" aria-pressed="false" aria-label="{{a:tone.vivid}}" title="{{a:tone.vivid}}"><span class="tone-dot"></span></button>
+          </div>
           <p class="count" id="count" aria-live="polite"></p>
           <ul class="scheme-list" id="list"><!-- scheme-list --></ul>
         </aside>

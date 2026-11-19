@@ -18,7 +18,7 @@ import {
 } from './common.js'
 import { bindFormatMenu } from './formats.js'
 
-const state = { schemes: [], visible: [], current: null, mode: 'all', kind: 'all', query: '' }
+const state = { schemes: [], visible: [], current: null, mode: 'all', kind: 'all', tone: 'all', query: '' }
 let preview = null
 
 // A button that shows a color and copies its hex value
@@ -124,6 +124,7 @@ const renderList = () => {
     (scheme) =>
       (state.mode === 'all' || (state.mode === 'dark') === scheme.dark) &&
       (state.kind === 'all' || state.kind === scheme.kind) &&
+      (state.tone === 'all' || scheme.tones.includes(state.tone)) &&
       (!query || scheme.name.toLowerCase().includes(query) || scheme.author.toLowerCase().includes(query)),
   )
 
@@ -165,9 +166,9 @@ const renderList = () => {
 }
 
 const bindFilters = () => {
-  for (const button of document.querySelectorAll('[data-mode], [data-kind]')) {
+  for (const button of document.querySelectorAll('[data-mode], [data-kind], [data-tone]')) {
     button.addEventListener('click', () => {
-      const field = button.dataset.mode ? 'mode' : 'kind'
+      const field = ['mode', 'kind', 'tone'].find((key) => key in button.dataset)
 
       state[field] = button.dataset[field]
 

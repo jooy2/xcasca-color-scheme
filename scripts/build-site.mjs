@@ -4,7 +4,7 @@
 //                 root, the others under /ko/, /ja/, /zh-hans/ and /zh-hant/, each with its own title,
 //                 description, hreflang links to the others, structured data, and a plain list of
 //                 the schemes a search engine reads without running the page
-//   schemes.json  every scheme with its colors and credit, which the pages read
+//   schemes.json  every scheme with its colors, color tones and credit, which the pages read
 //   llms.txt      a summary of the collection with a link to every file, for language models
 //   sitemap.xml   every page in every language, with the other languages of each
 //   404.html      the page for an address that does not exist
@@ -15,6 +15,7 @@ import { execFileSync } from 'node:child_process'
 import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { ROOT, SCHEMES_DIR, SCHEMES_PATH, checkSchemes } from './lib/schemes.mjs'
+import { tones } from './lib/tones.mjs'
 
 const SITE_URL = 'https://jooy2.github.io/xcasca-color-scheme/'
 const REPO_URL = 'https://github.com/jooy2/xcasca-color-scheme'
@@ -108,6 +109,7 @@ const list = schemes
     author: credit.author,
     url: credit.url,
     license: credit.license,
+    tones: tones(data),
     colors: data,
   }))
   .sort((a, b) => a.name.localeCompare(b.name))
@@ -290,7 +292,7 @@ const llms = [
   `- [README](${REPO_URL}#readme): what the collection is and how to apply a scheme on the desktop and on Android, with screenshots`,
   `- [Contributing](${REPO_URL}/blob/main/CONTRIBUTING.md): how to make a scheme in Xcasca, export it, and the rules every file follows`,
   `- [Credits](${REPO_URL}/blob/main/CREDITS.md): the author and license of every scheme`,
-  `- [Scheme index](${SITE_URL}schemes.json): every scheme as JSON, with its colors, author and license`,
+  `- [Scheme index](${SITE_URL}schemes.json): every scheme as JSON, with its colors, color tones, author and license`,
   '',
   '## Color schemes',
   '',
