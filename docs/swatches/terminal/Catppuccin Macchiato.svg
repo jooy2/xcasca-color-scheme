@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Catppuccin Macchiato">
+  <rect width="280" height="56" rx="8" fill="#24273A"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#CAD3F5">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#494D64"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#ED8796"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#A6DA95"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#EED49F"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#8AADF4"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#F5BDE6"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#8BD5CA"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#B8C0E0"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#5B6078"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#F2A7B2"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#BDE3B0"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#F4E3C1"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#ADC5F7"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#F493DA"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#A5DED6"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#A5ADCB"/>
+</svg>

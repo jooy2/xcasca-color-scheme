@@ -21,7 +21,7 @@ The colors were taken from the Windows Terminal versions of these schemes in [iT
 | Scheme | Author and project | License |
 |---|---|---|
 | Ayu Mirage | [ayu](https://github.com/ayu-theme/ayu-colors) | MIT |
-| Catppuccin Frappe, Catppuccin Latte, Catppuccin Mocha | [Catppuccin](https://github.com/catppuccin/catppuccin) | MIT |
+| Catppuccin Frappe, Catppuccin Latte, Catppuccin Macchiato, Catppuccin Mocha | [Catppuccin](https://github.com/catppuccin/catppuccin) | MIT |
 | Dracula | Zeno Rocha and contributors, [Dracula](https://github.com/dracula/dracula-theme) | MIT |
 | Everforest Dark | sainnhe, [Everforest](https://github.com/sainnhe/everforest) | MIT |
 | Flexoki Dark, Flexoki Light | Steph Ango, [Flexoki](https://github.com/kepano/flexoki) | MIT |
