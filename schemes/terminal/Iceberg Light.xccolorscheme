@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Iceberg Light",
+  "data": {
+    "foreground": "#33374C",
+    "background": "#E8E9EC",
+    "selection": "#33374C4D",
+    "black": "#DCDFE7",
+    "red": "#CC517A",
+    "green": "#668E3D",
+    "yellow": "#C57339",
+    "blue": "#2D539E",
+    "magenta": "#7759B4",
+    "cyan": "#3F83A6",
+    "white": "#33374C",
+    "brightBlack": "#8389A3",
+    "brightRed": "#CC3768",
+    "brightGreen": "#598030",
+    "brightYellow": "#B6662D",
+    "brightBlue": "#22478E",
+    "brightMagenta": "#6845AD",
+    "brightCyan": "#327698",
+    "brightWhite": "#262A3F",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

@@ -161,6 +161,12 @@
     "url": "https://github.com/cocopon/iceberg.vim",
     "license": "MIT"
   },
+  "Iceberg Light": {
+    "kind": "community",
+    "author": "cocopon",
+    "url": "https://github.com/cocopon/iceberg.vim",
+    "license": "MIT"
+  },
   "Kanagawa Dragon": {
     "kind": "community",
     "author": "rebelot",
