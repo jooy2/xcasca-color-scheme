@@ -28,7 +28,7 @@ The colors were taken from the Windows Terminal versions of these schemes in [iT
 | GitHub Dark Default, GitHub Light Default | GitHub, [GitHub VS Code Theme](https://github.com/primer/github-vscode-theme) | MIT |
 | Gruvbox Dark, Gruvbox Light | Pavel Pertsev, [gruvbox](https://github.com/morhetz/gruvbox) | MIT |
 | Iceberg Dark | cocopon, [Iceberg](https://github.com/cocopon/iceberg.vim) | MIT |
-| Kanagawa Wave | rebelot, [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim) | MIT |
+| Kanagawa Dragon, Kanagawa Wave | rebelot, [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim) | MIT |
 | Night Owl | Sarah Drasner, [Night Owl](https://github.com/sdras/night-owl-vscode-theme) | MIT |
 | Nightfox | EdenEast, [nightfox.nvim](https://github.com/EdenEast/nightfox.nvim) | MIT |
 | Nord | Sven Greb, [Nord](https://github.com/nordtheme/nord) | MIT |

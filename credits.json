@@ -119,6 +119,12 @@
     "url": "https://github.com/cocopon/iceberg.vim",
     "license": "MIT"
   },
+  "Kanagawa Dragon": {
+    "kind": "community",
+    "author": "rebelot",
+    "url": "https://github.com/rebelot/kanagawa.nvim",
+    "license": "MIT"
+  },
   "Kanagawa Wave": {
     "kind": "community",
     "author": "rebelot",
