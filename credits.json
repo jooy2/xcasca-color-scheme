@@ -17,6 +17,12 @@
     "url": "https://github.com/microsoft/terminal",
     "license": "MIT"
   },
+  "Catppuccin Frappe": {
+    "kind": "community",
+    "author": "Catppuccin",
+    "url": "https://github.com/catppuccin/catppuccin",
+    "license": "MIT"
+  },
   "Catppuccin Latte": {
     "kind": "community",
     "author": "Catppuccin",

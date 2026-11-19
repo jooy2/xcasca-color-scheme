@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Catppuccin Frappe",
+  "data": {
+    "foreground": "#C6D0F5",
+    "background": "#303446",
+    "selection": "#C6D0F54D",
+    "black": "#51576D",
+    "red": "#E78284",
+    "green": "#A6D189",
+    "yellow": "#E5C890",
+    "blue": "#8CAAEE",
+    "magenta": "#F4B8E4",
+    "cyan": "#81C8BE",
+    "white": "#B5BFE2",
+    "brightBlack": "#626880",
+    "brightRed": "#EDA0A2",
+    "brightGreen": "#B9DBA2",
+    "brightYellow": "#ECD7AE",
+    "brightBlue": "#ADC2F3",
+    "brightMagenta": "#F38ED8",
+    "brightCyan": "#98D2CA",
+    "brightWhite": "#A5ADCE",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
