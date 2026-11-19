@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Nvim Dark",
+  "data": {
+    "foreground": "#E0E2EA",
+    "background": "#14161B",
+    "selection": "#E0E2EA4D",
+    "black": "#07080D",
+    "red": "#FFC0B9",
+    "green": "#B3F6C0",
+    "yellow": "#FCE094",
+    "blue": "#A6DBFF",
+    "magenta": "#FFCAFF",
+    "cyan": "#8CF8F7",
+    "white": "#EEF1F8",
+    "brightBlack": "#4F5258",
+    "brightRed": "#FFC0B9",
+    "brightGreen": "#B3F6C0",
+    "brightYellow": "#FCE094",
+    "brightBlue": "#A6DBFF",
+    "brightMagenta": "#FFCAFF",
+    "brightCyan": "#8CF8F7",
+    "brightWhite": "#EEF1F8",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

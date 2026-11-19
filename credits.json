@@ -293,6 +293,12 @@
     "url": "https://github.com/nordtheme/nord",
     "license": "MIT"
   },
+  "Nvim Dark": {
+    "kind": "community",
+    "author": "Neovim contributors",
+    "url": "https://github.com/neovim/neovim",
+    "license": "Apache-2.0"
+  },
   "One Half Dark": {
     "kind": "built-in",
     "author": "Son A. Pham",
