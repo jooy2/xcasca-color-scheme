@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Tomorrow Night Eighties">
+  <rect width="280" height="56" rx="8" fill="#2D2D2D"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#CCCCCC">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#000000"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#F2777A"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#99CC99"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#FFCC66"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#6699CC"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#CC99CC"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#66CCCC"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#FFFFFF"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#595959"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#F2777A"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#99CC99"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#FFCC66"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#6699CC"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#CC99CC"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#66CCCC"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#FFFFFF"/>
+</svg>

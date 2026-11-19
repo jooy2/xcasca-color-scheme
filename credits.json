@@ -317,6 +317,12 @@
     "url": "https://github.com/chriskempson/tomorrow-theme",
     "license": "MIT"
   },
+  "Tomorrow Night Eighties": {
+    "kind": "community",
+    "author": "Chris Kempson",
+    "url": "https://github.com/chriskempson/tomorrow-theme",
+    "license": "MIT"
+  },
   "Vintage": {
     "kind": "built-in",
     "author": "Microsoft (Windows Terminal)",

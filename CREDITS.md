@@ -38,7 +38,7 @@ The colors were taken from the Windows Terminal versions of these schemes in [iT
 | Snazzy | Sindre Sorhus, [Hyper Snazzy](https://github.com/sindresorhus/hyper-snazzy) | MIT |
 | Sonokai | sainnhe, [Sonokai](https://github.com/sainnhe/sonokai) | MIT |
 | Tokyo Night, Tokyo Night Day, Tokyo Night Storm | Folke Lemaitre, [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) | Apache 2.0 |
-| Tomorrow, Tomorrow Night | Chris Kempson, [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) | MIT |
+| Tomorrow, Tomorrow Night, Tomorrow Night Eighties | Chris Kempson, [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) | MIT |
 
 Two things differ from the originals, because of how Xcasca draws a terminal:
 

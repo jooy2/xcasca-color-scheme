@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Tomorrow Night Eighties",
+  "data": {
+    "foreground": "#CCCCCC",
+    "background": "#2D2D2D",
+    "selection": "#CCCCCC4D",
+    "black": "#000000",
+    "red": "#F2777A",
+    "green": "#99CC99",
+    "yellow": "#FFCC66",
+    "blue": "#6699CC",
+    "magenta": "#CC99CC",
+    "cyan": "#66CCCC",
+    "white": "#FFFFFF",
+    "brightBlack": "#595959",
+    "brightRed": "#F2777A",
+    "brightGreen": "#99CC99",
+    "brightYellow": "#FFCC66",
+    "brightBlue": "#6699CC",
+    "brightMagenta": "#CC99CC",
+    "brightCyan": "#66CCCC",
+    "brightWhite": "#FFFFFF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

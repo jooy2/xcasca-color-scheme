@@ -146,6 +146,7 @@ Well-known schemes, under their original names and licenses.
 | <img src="docs/swatches/terminal/Tokyo%20Night%20Storm.svg" width="210" alt="Tokyo Night Storm"> | [Tokyo Night Storm](schemes/terminal/Tokyo%20Night%20Storm.xccolorscheme) | Dark | [Folke Lemaitre](https://github.com/folke/tokyonight.nvim) | Apache-2.0 |
 | <img src="docs/swatches/terminal/Tomorrow.svg" width="210" alt="Tomorrow"> | [Tomorrow](schemes/terminal/Tomorrow.xccolorscheme) | Light | [Chris Kempson](https://github.com/chriskempson/tomorrow-theme) | MIT |
 | <img src="docs/swatches/terminal/Tomorrow%20Night.svg" width="210" alt="Tomorrow Night"> | [Tomorrow Night](schemes/terminal/Tomorrow%20Night.xccolorscheme) | Dark | [Chris Kempson](https://github.com/chriskempson/tomorrow-theme) | MIT |
+| <img src="docs/swatches/terminal/Tomorrow%20Night%20Eighties.svg" width="210" alt="Tomorrow Night Eighties"> | [Tomorrow Night Eighties](schemes/terminal/Tomorrow%20Night%20Eighties.xccolorscheme) | Dark | [Chris Kempson](https://github.com/chriskempson/tomorrow-theme) | MIT |
 
 ### Originals
 
