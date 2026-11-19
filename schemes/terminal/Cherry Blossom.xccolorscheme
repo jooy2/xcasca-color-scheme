@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Cherry Blossom",
+  "data": {
+    "foreground": "#3B2730",
+    "background": "#FBEEF1",
+    "selection": "#3B27304D",
+    "black": "#3B2730",
+    "red": "#C2365A",
+    "green": "#567A30",
+    "yellow": "#9A5F14",
+    "blue": "#4A5DA8",
+    "magenta": "#A63F8E",
+    "cyan": "#2D7A80",
+    "white": "#E3CCD3",
+    "brightBlack": "#866A75",
+    "brightRed": "#D24F70",
+    "brightGreen": "#66893C",
+    "brightYellow": "#AC6F1E",
+    "brightBlue": "#5D70B8",
+    "brightMagenta": "#BA58A2",
+    "brightCyan": "#3A8A90",
+    "brightWhite": "#FFF8FA",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

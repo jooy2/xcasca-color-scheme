@@ -160,6 +160,7 @@ Made for this collection.
 | Preview | Scheme | Mode | Made by | License |
 |---|---|---|---|---|
 | <img src="docs/swatches/terminal/Celadon.svg" width="210" alt="Celadon"> | [Celadon](schemes/terminal/Celadon.xccolorscheme) | Light | [jooy2](https://github.com/jooy2) | MIT |
+| <img src="docs/swatches/terminal/Cherry%20Blossom.svg" width="210" alt="Cherry Blossom"> | [Cherry Blossom](schemes/terminal/Cherry%20Blossom.xccolorscheme) | Light | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Dancheong.svg" width="210" alt="Dancheong"> | [Dancheong](schemes/terminal/Dancheong.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Ember%20Glow.svg" width="210" alt="Ember Glow"> | [Ember Glow](schemes/terminal/Ember%20Glow.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Graphite.svg" width="210" alt="Graphite"> | [Graphite](schemes/terminal/Graphite.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |

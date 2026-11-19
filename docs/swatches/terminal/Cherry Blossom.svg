@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Cherry Blossom">
+  <rect width="280" height="56" rx="8" fill="#FBEEF1"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#3B2730">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#3B2730"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#C2365A"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#567A30"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#9A5F14"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#4A5DA8"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#A63F8E"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#2D7A80"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#E3CCD3"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#866A75"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#D24F70"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#66893C"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#AC6F1E"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#5D70B8"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#BA58A2"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#3A8A90"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#FFF8FA"/>
+</svg>
