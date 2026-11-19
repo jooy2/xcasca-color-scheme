@@ -353,6 +353,12 @@
     "url": "https://github.com/drcmda/poimandres-theme",
     "license": "MIT"
   },
+  "Primary": {
+    "kind": "community",
+    "author": "Google",
+    "url": "https://github.com/google/vim-colorscheme-primary",
+    "license": "Apache-2.0"
+  },
   "Rose Pine": {
     "kind": "community",
     "author": "Rose Pine",
