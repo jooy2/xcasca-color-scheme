@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Velvet Dusk",
+  "data": {
+    "foreground": "#F1E3E7",
+    "background": "#22131A",
+    "selection": "#F1E3E74D",
+    "black": "#331E27",
+    "red": "#F06A6A",
+    "green": "#9CCB82",
+    "yellow": "#EBC27A",
+    "blue": "#8AA5F0",
+    "magenta": "#E07FB5",
+    "cyan": "#7CCBC4",
+    "white": "#DCC9CF",
+    "brightBlack": "#7D5D69",
+    "brightRed": "#FF8C8A",
+    "brightGreen": "#B6DE9F",
+    "brightYellow": "#F5D59D",
+    "brightBlue": "#A9BEF7",
+    "brightMagenta": "#EFA0CA",
+    "brightCyan": "#9DDCD6",
+    "brightWhite": "#FBF2F5",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

@@ -359,6 +359,12 @@
     "url": "https://github.com/chriskempson/tomorrow-theme",
     "license": "MIT"
   },
+  "Velvet Dusk": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
   "Vintage": {
     "kind": "built-in",
     "author": "Microsoft (Windows Terminal)",
