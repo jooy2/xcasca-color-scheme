@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Everforest Light",
+  "data": {
+    "foreground": "#5C6A72",
+    "background": "#EFEBD4",
+    "selection": "#5C6A724D",
+    "black": "#7A8478",
+    "red": "#E67E80",
+    "green": "#9AB373",
+    "yellow": "#C1A266",
+    "blue": "#7FBBB3",
+    "magenta": "#D699B6",
+    "cyan": "#83C092",
+    "white": "#B2AF9F",
+    "brightBlack": "#A6B0A0",
+    "brightRed": "#F85552",
+    "brightGreen": "#8DA101",
+    "brightYellow": "#DFA000",
+    "brightBlue": "#3A94C5",
+    "brightMagenta": "#DF69BA",
+    "brightCyan": "#35A77C",
+    "brightWhite": "#FFFBEF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

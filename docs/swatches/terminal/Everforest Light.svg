@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Everforest Light">
+  <rect width="280" height="56" rx="8" fill="#EFEBD4"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#5C6A72">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#7A8478"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#E67E80"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#9AB373"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#C1A266"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#7FBBB3"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#D699B6"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#83C092"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#B2AF9F"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#A6B0A0"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#F85552"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#8DA101"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#DFA000"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#3A94C5"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#DF69BA"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#35A77C"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#FFFBEF"/>
+</svg>
