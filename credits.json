@@ -275,6 +275,12 @@
     "url": "https://github.com/jan-warchol/selenized",
     "license": "MIT"
   },
+  "Seoulbones Light": {
+    "kind": "community",
+    "author": "Michael Chris Lopez (Zenbones)",
+    "url": "https://github.com/zenbones-theme/zenbones.nvim",
+    "license": "MIT"
+  },
   "Snazzy": {
     "kind": "community",
     "author": "Sindre Sorhus",

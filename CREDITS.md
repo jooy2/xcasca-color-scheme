@@ -36,6 +36,7 @@ The colors were taken from the Windows Terminal versions of these schemes in [iT
 | Nord | Sven Greb, [Nord](https://github.com/nordtheme/nord) | MIT |
 | Rose Pine, Rose Pine Dawn, Rose Pine Moon | [Rosé Pine](https://github.com/rose-pine/rose-pine-theme) | MIT |
 | Selenized Dark, Selenized Light | Jan Warchoł, [Selenized](https://github.com/jan-warchol/selenized) | MIT |
+| Seoulbones Light | Michael Chris Lopez, [Zenbones](https://github.com/zenbones-theme/zenbones.nvim), after junegunn's [seoul256](https://github.com/junegunn/seoul256.vim) | MIT |
 | Snazzy | Sindre Sorhus, [Hyper Snazzy](https://github.com/sindresorhus/hyper-snazzy) | MIT |
 | Sonokai | sainnhe, [Sonokai](https://github.com/sainnhe/sonokai) | MIT |
 | Tokyo Night, Tokyo Night Day, Tokyo Night Storm | Folke Lemaitre, [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) | Apache 2.0 |
