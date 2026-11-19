@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Lemonade",
+  "data": {
+    "foreground": "#2A2200",
+    "background": "#FFF27A",
+    "selection": "#2A22004D",
+    "black": "#2A2200",
+    "red": "#B3001B",
+    "green": "#2F6B00",
+    "yellow": "#7A5A00",
+    "blue": "#0038A8",
+    "magenta": "#8A1A86",
+    "cyan": "#00666B",
+    "white": "#E0D060",
+    "brightBlack": "#6B5E20",
+    "brightRed": "#CC2A2A",
+    "brightGreen": "#3F7F0A",
+    "brightYellow": "#8F6C00",
+    "brightBlue": "#2052B8",
+    "brightMagenta": "#A0369A",
+    "brightCyan": "#0A7A7F",
+    "brightWhite": "#FFFAC8",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
