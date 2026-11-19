@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Tropical Punch",
+  "data": {
+    "foreground": "#F2FBF8",
+    "background": "#052A33",
+    "selection": "#F2FBF84D",
+    "black": "#0B3A45",
+    "red": "#FF5A5F",
+    "green": "#A8E03A",
+    "yellow": "#FFC93C",
+    "blue": "#3FA9F5",
+    "magenta": "#FF4FA3",
+    "cyan": "#2EE6D6",
+    "white": "#D2E8E4",
+    "brightBlack": "#5F8A93",
+    "brightRed": "#FF8587",
+    "brightGreen": "#C2F065",
+    "brightYellow": "#FFDA72",
+    "brightBlue": "#74C2F8",
+    "brightMagenta": "#FF85C0",
+    "brightCyan": "#6FF0E4",
+    "brightWhite": "#FFFFFF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
