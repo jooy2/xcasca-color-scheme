@@ -47,6 +47,12 @@
     "url": "https://github.com/catppuccin/catppuccin",
     "license": "MIT"
   },
+  "Dayfox": {
+    "kind": "community",
+    "author": "EdenEast",
+    "url": "https://github.com/EdenEast/nightfox.nvim",
+    "license": "MIT"
+  },
   "Default": {
     "kind": "built-in",
     "author": "Tango Desktop Project",
