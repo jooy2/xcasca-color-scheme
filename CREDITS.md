@@ -21,6 +21,7 @@ The colors were taken from the Windows Terminal versions of these schemes in [iT
 | Scheme | Author and project | License |
 |---|---|---|
 | Ayu Mirage | [ayu](https://github.com/ayu-theme/ayu-colors) | MIT |
+| Carbonfox, Nightfox | EdenEast, [nightfox.nvim](https://github.com/EdenEast/nightfox.nvim) | MIT |
 | Catppuccin Frappe, Catppuccin Latte, Catppuccin Macchiato, Catppuccin Mocha | [Catppuccin](https://github.com/catppuccin/catppuccin) | MIT |
 | Dracula | Zeno Rocha and contributors, [Dracula](https://github.com/dracula/dracula-theme) | MIT |
 | Everforest Dark | sainnhe, [Everforest](https://github.com/sainnhe/everforest) | MIT |
@@ -31,7 +32,6 @@ The colors were taken from the Windows Terminal versions of these schemes in [iT
 | Iceberg Dark | cocopon, [Iceberg](https://github.com/cocopon/iceberg.vim) | MIT |
 | Kanagawa Dragon, Kanagawa Wave | rebelot, [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim) | MIT |
 | Night Owl | Sarah Drasner, [Night Owl](https://github.com/sdras/night-owl-vscode-theme) | MIT |
-| Nightfox | EdenEast, [nightfox.nvim](https://github.com/EdenEast/nightfox.nvim) | MIT |
 | Nord | Sven Greb, [Nord](https://github.com/nordtheme/nord) | MIT |
 | Rose Pine, Rose Pine Dawn, Rose Pine Moon | [Rosé Pine](https://github.com/rose-pine/rose-pine-theme) | MIT |
 | Selenized Dark | Jan Warchoł, [Selenized](https://github.com/jan-warchol/selenized) | MIT |

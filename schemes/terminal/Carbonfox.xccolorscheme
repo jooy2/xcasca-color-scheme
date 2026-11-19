@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Carbonfox",
+  "data": {
+    "foreground": "#F2F4F8",
+    "background": "#161616",
+    "selection": "#F2F4F84D",
+    "black": "#282828",
+    "red": "#EE5396",
+    "green": "#25BE6A",
+    "yellow": "#08BDBA",
+    "blue": "#78A9FF",
+    "magenta": "#BE95FF",
+    "cyan": "#33B1FF",
+    "white": "#DFDFE0",
+    "brightBlack": "#484848",
+    "brightRed": "#F16DA6",
+    "brightGreen": "#46C880",
+    "brightYellow": "#2DC7C4",
+    "brightBlue": "#8CB6FF",
+    "brightMagenta": "#C8A5FF",
+    "brightCyan": "#52BDFF",
+    "brightWhite": "#E4E4E5",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

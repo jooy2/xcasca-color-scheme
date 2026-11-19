@@ -17,6 +17,12 @@
     "url": "https://github.com/microsoft/terminal",
     "license": "MIT"
   },
+  "Carbonfox": {
+    "kind": "community",
+    "author": "EdenEast",
+    "url": "https://github.com/EdenEast/nightfox.nvim",
+    "license": "MIT"
+  },
   "Catppuccin Frappe": {
     "kind": "community",
     "author": "Catppuccin",
