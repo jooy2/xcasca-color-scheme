@@ -341,6 +341,12 @@
     "url": "https://github.com/zenbones-theme/zenbones.nvim",
     "license": "MIT"
   },
+  "Shades of Purple": {
+    "kind": "community",
+    "author": "Ahmad Awais",
+    "url": "https://github.com/ahmadawais/shades-of-purple-vscode",
+    "license": "MIT"
+  },
   "Snazzy": {
     "kind": "community",
     "author": "Sindre Sorhus",

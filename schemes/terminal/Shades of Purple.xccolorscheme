@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Shades of Purple",
+  "data": {
+    "foreground": "#FFFFFF",
+    "background": "#1E1D40",
+    "selection": "#FFFFFF4D",
+    "black": "#000000",
+    "red": "#D90429",
+    "green": "#3AD900",
+    "yellow": "#FFE700",
+    "blue": "#6943FF",
+    "magenta": "#FF2C70",
+    "cyan": "#00C5C7",
+    "white": "#C7C7C7",
+    "brightBlack": "#686868",
+    "brightRed": "#F92A1C",
+    "brightGreen": "#43D426",
+    "brightYellow": "#F1D000",
+    "brightBlue": "#6871FF",
+    "brightMagenta": "#FF77FF",
+    "brightCyan": "#79E8FB",
+    "brightWhite": "#FFFFFF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
