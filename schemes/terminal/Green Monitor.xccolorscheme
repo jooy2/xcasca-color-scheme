@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Green Monitor",
+  "data": {
+    "foreground": "#41FF7E",
+    "background": "#031008",
+    "selection": "#41FF7E4D",
+    "black": "#0A2412",
+    "red": "#9BE86A",
+    "green": "#2EE56A",
+    "yellow": "#C6F57A",
+    "blue": "#2BC79A",
+    "magenta": "#7FE0A8",
+    "cyan": "#48F0C0",
+    "white": "#A8F0C0",
+    "brightBlack": "#2F7A4B",
+    "brightRed": "#B8F58E",
+    "brightGreen": "#5CFF95",
+    "brightYellow": "#DDFFA0",
+    "brightBlue": "#4FE0B5",
+    "brightMagenta": "#A3F0C4",
+    "brightCyan": "#7BFFD8",
+    "brightWhite": "#DFFFE9",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

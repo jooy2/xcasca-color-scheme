@@ -182,6 +182,7 @@ Made for this collection.
 | <img src="docs/swatches/terminal/Dancheong.svg" width="210" alt="Dancheong"> | [Dancheong](schemes/terminal/Dancheong.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Ember%20Glow.svg" width="210" alt="Ember Glow"> | [Ember Glow](schemes/terminal/Ember%20Glow.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Graphite.svg" width="210" alt="Graphite"> | [Graphite](schemes/terminal/Graphite.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
+| <img src="docs/swatches/terminal/Green%20Monitor.svg" width="210" alt="Green Monitor"> | [Green Monitor](schemes/terminal/Green%20Monitor.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Harbor%20Night.svg" width="210" alt="Harbor Night"> | [Harbor Night](schemes/terminal/Harbor%20Night.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Lapis.svg" width="210" alt="Lapis"> | [Lapis](schemes/terminal/Lapis.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Lavender%20Mist.svg" width="210" alt="Lavender Mist"> | [Lavender Mist](schemes/terminal/Lavender%20Mist.xccolorscheme) | Light | [jooy2](https://github.com/jooy2) | MIT |

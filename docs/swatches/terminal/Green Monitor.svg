@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Green Monitor">
+  <rect width="280" height="56" rx="8" fill="#031008"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#41FF7E">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#0A2412"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#9BE86A"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#2EE56A"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#C6F57A"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#2BC79A"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#7FE0A8"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#48F0C0"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#A8F0C0"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#2F7A4B"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#B8F58E"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#5CFF95"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#DDFFA0"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#4FE0B5"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#A3F0C4"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#7BFFD8"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#DFFFE9"/>
+</svg>
