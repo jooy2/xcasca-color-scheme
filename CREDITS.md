@@ -16,7 +16,7 @@ The schemes Xcasca ships with, exported from the app unchanged. Their colors com
 
 ## Community favorites
 
-The colors were taken from the Windows Terminal versions of these schemes in [iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes) (MIT, Mark Badolato and contributors), which credits each scheme to its author.
+The colors were taken from the Windows Terminal versions of these schemes in [iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes) (MIT, Mark Badolato and contributors), which credits each scheme to its author. The colors of xterm come from xterm's own `XTerm-col.ad` instead, with its default black text on a white background.
 
 | Scheme | Author and project | License |
 |---|---|---|
@@ -42,6 +42,7 @@ The colors were taken from the Windows Terminal versions of these schemes in [iT
 | Sonokai | sainnhe, [Sonokai](https://github.com/sainnhe/sonokai) | MIT |
 | Tokyo Night, Tokyo Night Day, Tokyo Night Storm | Folke Lemaitre, [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) | Apache 2.0 |
 | Tomorrow, Tomorrow Night, Tomorrow Night Eighties | Chris Kempson, [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) | MIT |
+| xterm | Thomas E. Dickey and the X Consortium, [xterm](https://invisible-island.net/xterm/) | X11 |
 
 Two things differ from the originals, because of how Xcasca draws a terminal:
 

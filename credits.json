@@ -424,5 +424,11 @@
     "author": "Microsoft (Windows Terminal)",
     "url": "https://github.com/microsoft/terminal",
     "license": "MIT"
+  },
+  "xterm": {
+    "kind": "community",
+    "author": "Thomas E. Dickey and the X Consortium",
+    "url": "https://invisible-island.net/xterm/",
+    "license": "X11"
   }
 }
