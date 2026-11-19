@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Onyx",
+  "data": {
+    "foreground": "#E8E8E8",
+    "background": "#000000",
+    "selection": "#E8E8E84D",
+    "black": "#1A1A1A",
+    "red": "#FF5F5A",
+    "green": "#4BE38A",
+    "yellow": "#FFD24D",
+    "blue": "#4DA3FF",
+    "magenta": "#F06BD0",
+    "cyan": "#3FE0E0",
+    "white": "#C8C8C8",
+    "brightBlack": "#6B6B6B",
+    "brightRed": "#FF8A85",
+    "brightGreen": "#7DF0A9",
+    "brightYellow": "#FFE180",
+    "brightBlue": "#80BDFF",
+    "brightMagenta": "#F79BE0",
+    "brightCyan": "#7CEDED",
+    "brightWhite": "#FFFFFF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

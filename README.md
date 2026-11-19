@@ -169,6 +169,7 @@ Made for this collection.
 | <img src="docs/swatches/terminal/Morning%20Fog.svg" width="210" alt="Morning Fog"> | [Morning Fog](schemes/terminal/Morning%20Fog.xccolorscheme) | Light | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Moss%20Garden.svg" width="210" alt="Moss Garden"> | [Moss Garden](schemes/terminal/Moss%20Garden.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Neon%20Drift.svg" width="210" alt="Neon Drift"> | [Neon Drift](schemes/terminal/Neon%20Drift.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
+| <img src="docs/swatches/terminal/Onyx.svg" width="210" alt="Onyx"> | [Onyx](schemes/terminal/Onyx.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Paper%20Ink.svg" width="210" alt="Paper Ink"> | [Paper Ink](schemes/terminal/Paper%20Ink.xccolorscheme) | Light | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Sandstone.svg" width="210" alt="Sandstone"> | [Sandstone](schemes/terminal/Sandstone.xccolorscheme) | Light | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Velvet%20Dusk.svg" width="210" alt="Velvet Dusk"> | [Velvet Dusk](schemes/terminal/Velvet%20Dusk.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
