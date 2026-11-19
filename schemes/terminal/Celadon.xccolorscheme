@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Celadon",
+  "data": {
+    "foreground": "#233630",
+    "background": "#E7EFE8",
+    "selection": "#2336304D",
+    "black": "#233630",
+    "red": "#B23A3A",
+    "green": "#2F7A4A",
+    "yellow": "#8C6510",
+    "blue": "#2B6390",
+    "magenta": "#9A4A8A",
+    "cyan": "#1E7B70",
+    "white": "#C3D1C7",
+    "brightBlack": "#5E7369",
+    "brightRed": "#C2504B",
+    "brightGreen": "#3B8656",
+    "brightYellow": "#9C7418",
+    "brightBlue": "#3F77A6",
+    "brightMagenta": "#A95C9A",
+    "brightCyan": "#2A8A7E",
+    "brightWhite": "#F5F9F5",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
