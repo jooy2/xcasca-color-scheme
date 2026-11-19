@@ -176,6 +176,7 @@ Made for this collection.
 |---|---|---|---|---|
 | <img src="docs/swatches/terminal/Amber%20Monitor.svg" width="210" alt="Amber Monitor"> | [Amber Monitor](schemes/terminal/Amber%20Monitor.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Aubergine.svg" width="210" alt="Aubergine"> | [Aubergine](schemes/terminal/Aubergine.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
+| <img src="docs/swatches/terminal/Blue%20Panel.svg" width="210" alt="Blue Panel"> | [Blue Panel](schemes/terminal/Blue%20Panel.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Celadon.svg" width="210" alt="Celadon"> | [Celadon](schemes/terminal/Celadon.xccolorscheme) | Light | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Cherry%20Blossom.svg" width="210" alt="Cherry Blossom"> | [Cherry Blossom](schemes/terminal/Cherry%20Blossom.xccolorscheme) | Light | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Citrus%20Grove.svg" width="210" alt="Citrus Grove"> | [Citrus Grove](schemes/terminal/Citrus%20Grove.xccolorscheme) | Light | [jooy2](https://github.com/jooy2) | MIT |

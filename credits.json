@@ -35,6 +35,12 @@
     "url": "https://github.com/ayu-theme/ayu-colors",
     "license": "MIT"
   },
+  "Blue Panel": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
   "Campbell": {
     "kind": "built-in",
     "author": "Microsoft (Windows Terminal)",

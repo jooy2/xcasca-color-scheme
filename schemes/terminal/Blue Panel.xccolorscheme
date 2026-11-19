@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Blue Panel",
+  "data": {
+    "foreground": "#F0F0F0",
+    "background": "#0000A8",
+    "selection": "#F0F0F04D",
+    "black": "#000000",
+    "red": "#FF5C5C",
+    "green": "#4CFF7A",
+    "yellow": "#FFFF55",
+    "blue": "#66A3FF",
+    "magenta": "#FF66FF",
+    "cyan": "#55FFFF",
+    "white": "#C8C8C8",
+    "brightBlack": "#8080D0",
+    "brightRed": "#FF8A8A",
+    "brightGreen": "#8AFFA8",
+    "brightYellow": "#FFFFA8",
+    "brightBlue": "#9CC4FF",
+    "brightMagenta": "#FF9CFF",
+    "brightCyan": "#A8FFFF",
+    "brightWhite": "#FFFFFF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
