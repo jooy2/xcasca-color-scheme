@@ -83,6 +83,12 @@
     "url": "https://github.com/primer/github-vscode-theme",
     "license": "MIT"
   },
+  "GitHub Dark Dimmed": {
+    "kind": "community",
+    "author": "GitHub (Primer)",
+    "url": "https://github.com/primer/github-vscode-theme",
+    "license": "MIT"
+  },
   "GitHub Light Default": {
     "kind": "community",
     "author": "GitHub (Primer)",

@@ -25,7 +25,7 @@ The colors were taken from the Windows Terminal versions of these schemes in [iT
 | Dracula | Zeno Rocha and contributors, [Dracula](https://github.com/dracula/dracula-theme) | MIT |
 | Everforest Dark | sainnhe, [Everforest](https://github.com/sainnhe/everforest) | MIT |
 | Flexoki Dark, Flexoki Light | Steph Ango, [Flexoki](https://github.com/kepano/flexoki) | MIT |
-| GitHub Dark Default, GitHub Light Default | GitHub, [GitHub VS Code Theme](https://github.com/primer/github-vscode-theme) | MIT |
+| GitHub Dark Default, GitHub Dark Dimmed, GitHub Light Default | GitHub, [GitHub VS Code Theme](https://github.com/primer/github-vscode-theme) | MIT |
 | Gruvbox Dark, Gruvbox Light | Pavel Pertsev, [gruvbox](https://github.com/morhetz/gruvbox) | MIT |
 | Iceberg Dark | cocopon, [Iceberg](https://github.com/cocopon/iceberg.vim) | MIT |
 | Kanagawa Dragon, Kanagawa Wave | rebelot, [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim) | MIT |

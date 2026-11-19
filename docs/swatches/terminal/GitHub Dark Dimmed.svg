@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="GitHub Dark Dimmed">
+  <rect width="280" height="56" rx="8" fill="#22272E"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#ADBAC7">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#545D68"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#F47067"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#57AB5A"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#C69026"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#539BF5"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#B083F0"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#39C5CF"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#909DAB"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#636E7B"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#FF938A"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#6BC46D"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#DAAA3F"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#6CB6FF"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#DCBDFB"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#56D4DD"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#CDD9E5"/>
+</svg>
