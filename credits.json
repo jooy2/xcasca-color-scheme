@@ -5,6 +5,12 @@
     "url": "https://github.com/tonsky/sublime-scheme-alabaster",
     "license": "MIT"
   },
+  "Amber Monitor": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
   "Atom One Dark": {
     "kind": "community",
     "author": "GitHub (Atom)",

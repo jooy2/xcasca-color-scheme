@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Amber Monitor",
+  "data": {
+    "foreground": "#FFB233",
+    "background": "#120A02",
+    "selection": "#FFB2334D",
+    "black": "#2A1A06",
+    "red": "#FF7A2E",
+    "green": "#E8C34A",
+    "yellow": "#FFD25E",
+    "blue": "#D9963A",
+    "magenta": "#FF9A6B",
+    "cyan": "#F2C88A",
+    "white": "#F5D3A0",
+    "brightBlack": "#8A5A20",
+    "brightRed": "#FF9A5C",
+    "brightGreen": "#F5D670",
+    "brightYellow": "#FFE38A",
+    "brightBlue": "#EBB060",
+    "brightMagenta": "#FFB894",
+    "brightCyan": "#FADDA8",
+    "brightWhite": "#FFF0D6",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

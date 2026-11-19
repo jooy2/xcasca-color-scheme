@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Amber Monitor">
+  <rect width="280" height="56" rx="8" fill="#120A02"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#FFB233">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#2A1A06"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#FF7A2E"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#E8C34A"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#FFD25E"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#D9963A"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#FF9A6B"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#F2C88A"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#F5D3A0"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#8A5A20"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#FF9A5C"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#F5D670"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#FFE38A"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#EBB060"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#FFB894"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#FADDA8"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#FFF0D6"/>
+</svg>
