@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Mint Chocolate",
+  "data": {
+    "foreground": "#EFE6DD",
+    "background": "#241914",
+    "selection": "#EFE6DD4D",
+    "black": "#34251D",
+    "red": "#E8806E",
+    "green": "#7EE0B5",
+    "yellow": "#E8C88A",
+    "blue": "#7FB8D8",
+    "magenta": "#D69AB8",
+    "cyan": "#5FE0CC",
+    "white": "#D8C8BA",
+    "brightBlack": "#7A6152",
+    "brightRed": "#F2A090",
+    "brightGreen": "#A6F0CF",
+    "brightYellow": "#F2DAA8",
+    "brightBlue": "#A2CEE6",
+    "brightMagenta": "#E6B8CF",
+    "brightCyan": "#8CF0E0",
+    "brightWhite": "#FBF5EF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

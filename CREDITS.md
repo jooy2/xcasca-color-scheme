@@ -62,7 +62,7 @@ Two things differ from the originals, because of how Xcasca draws a terminal:
 
 ## Originals
 
-Harbor Night, Ember Glow, Moss Garden, Neon Drift, Graphite, Midnight Plum, Paper Ink, Morning Fog, Sandstone, Dancheong, Velvet Dusk, Lapis, Monsoon, Onyx, Celadon, Cherry Blossom, Lavender Mist, Citrus Grove, Clear Sky, Aubergine, Green Monitor, Amber Monitor, Blue Panel, Crimson Eclipse, Lemonade, Tropical Punch, Apricot, Pencil Sketch, Olive Drab and Deep Indigo were made for this collection by [jooy2](https://github.com/jooy2) and are released under this repository's [MIT License](LICENSE). In each of them, the foreground stands out from the background by more than 10:1, and every other color by at least 3:1, apart from black on a dark background and white on a light one.
+Harbor Night, Ember Glow, Moss Garden, Neon Drift, Graphite, Midnight Plum, Paper Ink, Morning Fog, Sandstone, Dancheong, Velvet Dusk, Lapis, Monsoon, Onyx, Celadon, Cherry Blossom, Lavender Mist, Citrus Grove, Clear Sky, Aubergine, Green Monitor, Amber Monitor, Blue Panel, Crimson Eclipse, Lemonade, Tropical Punch, Apricot, Pencil Sketch, Olive Drab, Deep Indigo and Mint Chocolate were made for this collection by [jooy2](https://github.com/jooy2) and are released under this repository's [MIT License](LICENSE). In each of them, the foreground stands out from the background by more than 10:1, and every other color by at least 3:1, apart from black on a dark background and white on a light one.
 
 ## The gallery
 

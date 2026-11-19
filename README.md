@@ -193,6 +193,7 @@ Made for this collection.
 | <img src="docs/swatches/terminal/Lavender%20Mist.svg" width="210" alt="Lavender Mist"> | [Lavender Mist](schemes/terminal/Lavender%20Mist.xccolorscheme) | Light | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Lemonade.svg" width="210" alt="Lemonade"> | [Lemonade](schemes/terminal/Lemonade.xccolorscheme) | Light | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Midnight%20Plum.svg" width="210" alt="Midnight Plum"> | [Midnight Plum](schemes/terminal/Midnight%20Plum.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
+| <img src="docs/swatches/terminal/Mint%20Chocolate.svg" width="210" alt="Mint Chocolate"> | [Mint Chocolate](schemes/terminal/Mint%20Chocolate.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Monsoon.svg" width="210" alt="Monsoon"> | [Monsoon](schemes/terminal/Monsoon.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Morning%20Fog.svg" width="210" alt="Morning Fog"> | [Morning Fog](schemes/terminal/Morning%20Fog.xccolorscheme) | Light | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Moss%20Garden.svg" width="210" alt="Moss Garden"> | [Moss Garden](schemes/terminal/Moss%20Garden.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
