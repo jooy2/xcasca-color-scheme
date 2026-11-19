@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Gruvbox Material Light",
+  "data": {
+    "foreground": "#654735",
+    "background": "#FBF1C7",
+    "selection": "#6547354D",
+    "black": "#FBF1C7",
+    "red": "#C14A4A",
+    "green": "#6C782E",
+    "yellow": "#B47109",
+    "blue": "#45707A",
+    "magenta": "#945E80",
+    "cyan": "#4C7A5D",
+    "white": "#654735",
+    "brightBlack": "#A89984",
+    "brightRed": "#C14A4A",
+    "brightGreen": "#6C782E",
+    "brightYellow": "#B47109",
+    "brightBlue": "#45707A",
+    "brightMagenta": "#945E80",
+    "brightCyan": "#4C7A5D",
+    "brightWhite": "#4F3829",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

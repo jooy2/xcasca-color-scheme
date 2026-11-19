@@ -119,6 +119,12 @@
     "url": "https://github.com/sainnhe/gruvbox-material",
     "license": "MIT"
   },
+  "Gruvbox Material Light": {
+    "kind": "community",
+    "author": "sainnhe",
+    "url": "https://github.com/sainnhe/gruvbox-material",
+    "license": "MIT"
+  },
   "Harbor Night": {
     "kind": "original",
     "author": "jooy2",
