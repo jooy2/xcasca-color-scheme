@@ -136,6 +136,7 @@ Well-known schemes, under their original names and licenses.
 | <img src="docs/swatches/terminal/Iceberg%20Light.svg" width="210" alt="Iceberg Light"> | [Iceberg Light](schemes/terminal/Iceberg%20Light.xccolorscheme) | Light | [cocopon](https://github.com/cocopon/iceberg.vim) | MIT |
 | <img src="docs/swatches/terminal/Kanagawa%20Dragon.svg" width="210" alt="Kanagawa Dragon"> | [Kanagawa Dragon](schemes/terminal/Kanagawa%20Dragon.xccolorscheme) | Dark | [rebelot](https://github.com/rebelot/kanagawa.nvim) | MIT |
 | <img src="docs/swatches/terminal/Kanagawa%20Wave.svg" width="210" alt="Kanagawa Wave"> | [Kanagawa Wave](schemes/terminal/Kanagawa%20Wave.xccolorscheme) | Dark | [rebelot](https://github.com/rebelot/kanagawa.nvim) | MIT |
+| <img src="docs/swatches/terminal/Moonfly.svg" width="210" alt="Moonfly"> | [Moonfly](schemes/terminal/Moonfly.xccolorscheme) | Dark | [bluz71](https://github.com/bluz71/vim-moonfly-colors) | MIT |
 | <img src="docs/swatches/terminal/Night%20Owl.svg" width="210" alt="Night Owl"> | [Night Owl](schemes/terminal/Night%20Owl.xccolorscheme) | Dark | [Sarah Drasner](https://github.com/sdras/night-owl-vscode-theme) | MIT |
 | <img src="docs/swatches/terminal/Nightfox.svg" width="210" alt="Nightfox"> | [Nightfox](schemes/terminal/Nightfox.xccolorscheme) | Dark | [EdenEast](https://github.com/EdenEast/nightfox.nvim) | MIT |
 | <img src="docs/swatches/terminal/Nord.svg" width="210" alt="Nord"> | [Nord](schemes/terminal/Nord.xccolorscheme) | Dark | [Sven Greb (Nord)](https://github.com/nordtheme/nord) | MIT |

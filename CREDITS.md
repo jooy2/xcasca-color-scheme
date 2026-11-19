@@ -33,6 +33,7 @@ The colors were taken from the Windows Terminal versions of these schemes in [iT
 | Gruvbox Material Dark, Gruvbox Material Light | sainnhe, [Gruvbox Material](https://github.com/sainnhe/gruvbox-material) | MIT |
 | Iceberg Dark, Iceberg Light | cocopon, [Iceberg](https://github.com/cocopon/iceberg.vim) | MIT |
 | Kanagawa Dragon, Kanagawa Wave | rebelot, [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim) | MIT |
+| Moonfly | bluz71, [vim-moonfly-colors](https://github.com/bluz71/vim-moonfly-colors) | MIT |
 | Night Owl | Sarah Drasner, [Night Owl](https://github.com/sdras/night-owl-vscode-theme) | MIT |
 | Nord | Sven Greb, [Nord](https://github.com/nordtheme/nord) | MIT |
 | Oxocarbon | Nyoom Engineering, [oxocarbon.nvim](https://github.com/nyoom-engineering/oxocarbon.nvim) | MIT |

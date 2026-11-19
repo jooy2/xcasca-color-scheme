@@ -239,6 +239,12 @@
     "url": "https://github.com/jooy2",
     "license": "MIT"
   },
+  "Moonfly": {
+    "kind": "community",
+    "author": "bluz71",
+    "url": "https://github.com/bluz71/vim-moonfly-colors",
+    "license": "MIT"
+  },
   "Morning Fog": {
     "kind": "original",
     "author": "jooy2",

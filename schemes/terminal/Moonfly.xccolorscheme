@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Moonfly",
+  "data": {
+    "foreground": "#BDBDBD",
+    "background": "#080808",
+    "selection": "#BDBDBD4D",
+    "black": "#323437",
+    "red": "#FF5454",
+    "green": "#8CC85F",
+    "yellow": "#E3C78A",
+    "blue": "#80A0FF",
+    "magenta": "#CF87E8",
+    "cyan": "#79DAC8",
+    "white": "#C6C6C6",
+    "brightBlack": "#949494",
+    "brightRed": "#FF5189",
+    "brightGreen": "#36C692",
+    "brightYellow": "#C6C684",
+    "brightBlue": "#74B2FF",
+    "brightMagenta": "#AE81FF",
+    "brightCyan": "#85DC85",
+    "brightWhite": "#E4E4E4",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
