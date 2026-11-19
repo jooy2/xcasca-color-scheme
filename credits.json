@@ -1,4 +1,10 @@
 {
+  "Atom One Dark": {
+    "kind": "community",
+    "author": "GitHub (Atom)",
+    "url": "https://github.com/atom/atom",
+    "license": "MIT"
+  },
   "Atom One Light": {
     "kind": "community",
     "author": "GitHub (Atom)",

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Atom One Dark">
+  <rect width="280" height="56" rx="8" fill="#21252B"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#ABB2BF">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#21252B"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#E06C75"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#98C379"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#E5C07B"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#61AFEF"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#C678DD"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#56B6C2"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#ABB2BF"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#767676"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#E06C75"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#98C379"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#E5C07B"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#61AFEF"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#C678DD"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#56B6C2"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#ABB2BF"/>
+</svg>
