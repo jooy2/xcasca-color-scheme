@@ -111,6 +111,7 @@ Well-known schemes, under their original names and licenses.
 
 | Preview | Scheme | Mode | Made by | License |
 |---|---|---|---|---|
+| <img src="docs/swatches/terminal/Alabaster.svg" width="210" alt="Alabaster"> | [Alabaster](schemes/terminal/Alabaster.xccolorscheme) | Light | [Nikita Prokopov](https://github.com/tonsky/sublime-scheme-alabaster) | MIT |
 | <img src="docs/swatches/terminal/Atom%20One%20Dark.svg" width="210" alt="Atom One Dark"> | [Atom One Dark](schemes/terminal/Atom%20One%20Dark.xccolorscheme) | Dark | [GitHub (Atom)](https://github.com/atom/atom) | MIT |
 | <img src="docs/swatches/terminal/Atom%20One%20Light.svg" width="210" alt="Atom One Light"> | [Atom One Light](schemes/terminal/Atom%20One%20Light.xccolorscheme) | Light | [GitHub (Atom)](https://github.com/atom/atom) | MIT |
 | <img src="docs/swatches/terminal/Ayu%20Mirage.svg" width="210" alt="Ayu Mirage"> | [Ayu Mirage](schemes/terminal/Ayu%20Mirage.xccolorscheme) | Dark | [ayu-theme](https://github.com/ayu-theme/ayu-colors) | MIT |

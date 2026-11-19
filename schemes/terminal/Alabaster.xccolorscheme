@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Alabaster",
+  "data": {
+    "foreground": "#000000",
+    "background": "#F7F7F7",
+    "selection": "#0000004D",
+    "black": "#000000",
+    "red": "#AA3731",
+    "green": "#448C27",
+    "yellow": "#CB9000",
+    "blue": "#325CC0",
+    "magenta": "#7A3E9D",
+    "cyan": "#0083B2",
+    "white": "#B7B7B7",
+    "brightBlack": "#777777",
+    "brightRed": "#F05050",
+    "brightGreen": "#60CB00",
+    "brightYellow": "#F2AF50",
+    "brightBlue": "#007ACC",
+    "brightMagenta": "#E64CE6",
+    "brightCyan": "#00AACB",
+    "brightWhite": "#F7F7F7",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

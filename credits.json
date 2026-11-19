@@ -1,4 +1,10 @@
 {
+  "Alabaster": {
+    "kind": "community",
+    "author": "Nikita Prokopov",
+    "url": "https://github.com/tonsky/sublime-scheme-alabaster",
+    "license": "MIT"
+  },
   "Atom One Dark": {
     "kind": "community",
     "author": "GitHub (Atom)",
