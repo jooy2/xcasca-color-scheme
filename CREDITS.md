@@ -35,7 +35,7 @@ The colors were taken from the Windows Terminal versions of these schemes in [iT
 | Night Owl | Sarah Drasner, [Night Owl](https://github.com/sdras/night-owl-vscode-theme) | MIT |
 | Nord | Sven Greb, [Nord](https://github.com/nordtheme/nord) | MIT |
 | Rose Pine, Rose Pine Dawn, Rose Pine Moon | [Rosé Pine](https://github.com/rose-pine/rose-pine-theme) | MIT |
-| Selenized Dark | Jan Warchoł, [Selenized](https://github.com/jan-warchol/selenized) | MIT |
+| Selenized Dark, Selenized Light | Jan Warchoł, [Selenized](https://github.com/jan-warchol/selenized) | MIT |
 | Snazzy | Sindre Sorhus, [Hyper Snazzy](https://github.com/sindresorhus/hyper-snazzy) | MIT |
 | Sonokai | sainnhe, [Sonokai](https://github.com/sainnhe/sonokai) | MIT |
 | Tokyo Night, Tokyo Night Day, Tokyo Night Storm | Folke Lemaitre, [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) | Apache 2.0 |

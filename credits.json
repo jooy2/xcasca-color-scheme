@@ -269,6 +269,12 @@
     "url": "https://github.com/jan-warchol/selenized",
     "license": "MIT"
   },
+  "Selenized Light": {
+    "kind": "community",
+    "author": "Jan Warchol",
+    "url": "https://github.com/jan-warchol/selenized",
+    "license": "MIT"
+  },
   "Snazzy": {
     "kind": "community",
     "author": "Sindre Sorhus",
