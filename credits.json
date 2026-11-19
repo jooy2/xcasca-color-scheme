@@ -17,6 +17,12 @@
     "url": "https://github.com/atom/atom",
     "license": "MIT"
   },
+  "Aubergine": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
   "Ayu Mirage": {
     "kind": "community",
     "author": "ayu-theme",

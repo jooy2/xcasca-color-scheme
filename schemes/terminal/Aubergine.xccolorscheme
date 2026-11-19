@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Aubergine",
+  "data": {
+    "foreground": "#F7F3F5",
+    "background": "#300A24",
+    "selection": "#F7F3F54D",
+    "black": "#1F0618",
+    "red": "#EF5B45",
+    "green": "#7CC960",
+    "yellow": "#F5A93A",
+    "blue": "#6C9EF0",
+    "magenta": "#D77ACB",
+    "cyan": "#4FC4CF",
+    "white": "#D9CFD5",
+    "brightBlack": "#8E6584",
+    "brightRed": "#FF7E6B",
+    "brightGreen": "#9BE07F",
+    "brightYellow": "#FFC56A",
+    "brightBlue": "#92B9F7",
+    "brightMagenta": "#E89CDD",
+    "brightCyan": "#7AD9E1",
+    "brightWhite": "#FFFFFF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
