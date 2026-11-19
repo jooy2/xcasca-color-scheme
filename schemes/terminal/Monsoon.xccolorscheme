@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Monsoon",
+  "data": {
+    "foreground": "#E6ECF0",
+    "background": "#2B323A",
+    "selection": "#E6ECF04D",
+    "black": "#3A434D",
+    "red": "#E8807A",
+    "green": "#9BC98A",
+    "yellow": "#E6C77E",
+    "blue": "#82AEDD",
+    "magenta": "#C9A0DC",
+    "cyan": "#7FC6C8",
+    "white": "#CBD3DA",
+    "brightBlack": "#7D8B98",
+    "brightRed": "#F59B95",
+    "brightGreen": "#B5DCA6",
+    "brightYellow": "#F0D89E",
+    "brightBlue": "#A3C6EA",
+    "brightMagenta": "#DAB9E8",
+    "brightCyan": "#9FD8D9",
+    "brightWhite": "#F4F7F9",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
