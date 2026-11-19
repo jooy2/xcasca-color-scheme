@@ -135,6 +135,7 @@ Well-known schemes, under their original names and licenses.
 | <img src="docs/swatches/terminal/Selenized%20Dark.svg" width="210" alt="Selenized Dark"> | [Selenized Dark](schemes/terminal/Selenized%20Dark.xccolorscheme) | Dark | [Jan Warchol](https://github.com/jan-warchol/selenized) | MIT |
 | <img src="docs/swatches/terminal/Snazzy.svg" width="210" alt="Snazzy"> | [Snazzy](schemes/terminal/Snazzy.xccolorscheme) | Dark | [Sindre Sorhus](https://github.com/sindresorhus/hyper-snazzy) | MIT |
 | <img src="docs/swatches/terminal/Tokyo%20Night.svg" width="210" alt="Tokyo Night"> | [Tokyo Night](schemes/terminal/Tokyo%20Night.xccolorscheme) | Dark | [Folke Lemaitre](https://github.com/folke/tokyonight.nvim) | Apache-2.0 |
+| <img src="docs/swatches/terminal/Tokyo%20Night%20Day.svg" width="210" alt="Tokyo Night Day"> | [Tokyo Night Day](schemes/terminal/Tokyo%20Night%20Day.xccolorscheme) | Light | [Folke Lemaitre](https://github.com/folke/tokyonight.nvim) | Apache-2.0 |
 | <img src="docs/swatches/terminal/Tokyo%20Night%20Storm.svg" width="210" alt="Tokyo Night Storm"> | [Tokyo Night Storm](schemes/terminal/Tokyo%20Night%20Storm.xccolorscheme) | Dark | [Folke Lemaitre](https://github.com/folke/tokyonight.nvim) | Apache-2.0 |
 | <img src="docs/swatches/terminal/Tomorrow%20Night.svg" width="210" alt="Tomorrow Night"> | [Tomorrow Night](schemes/terminal/Tomorrow%20Night.xccolorscheme) | Dark | [Chris Kempson](https://github.com/chriskempson/tomorrow-theme) | MIT |
 

@@ -251,6 +251,12 @@
     "url": "https://github.com/folke/tokyonight.nvim",
     "license": "Apache-2.0"
   },
+  "Tokyo Night Day": {
+    "kind": "community",
+    "author": "Folke Lemaitre",
+    "url": "https://github.com/folke/tokyonight.nvim",
+    "license": "Apache-2.0"
+  },
   "Tokyo Night Storm": {
     "kind": "community",
     "author": "Folke Lemaitre",
