@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Apricot">
+  <rect width="280" height="56" rx="8" fill="#FCEADC"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#3A2418">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#3A2418"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#BC3A2C"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#5A7A1E"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#A35A00"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#2F5E9E"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#A63E6E"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#22777A"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#E5CBB8"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#8A6A58"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#CC5240"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#6A8C2A"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#B66A0C"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#4472B0"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#B85582"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#2F8A8C"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#FFF6EE"/>
+</svg>

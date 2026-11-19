@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Apricot",
+  "data": {
+    "foreground": "#3A2418",
+    "background": "#FCEADC",
+    "selection": "#3A24184D",
+    "black": "#3A2418",
+    "red": "#BC3A2C",
+    "green": "#5A7A1E",
+    "yellow": "#A35A00",
+    "blue": "#2F5E9E",
+    "magenta": "#A63E6E",
+    "cyan": "#22777A",
+    "white": "#E5CBB8",
+    "brightBlack": "#8A6A58",
+    "brightRed": "#CC5240",
+    "brightGreen": "#6A8C2A",
+    "brightYellow": "#B66A0C",
+    "brightBlue": "#4472B0",
+    "brightMagenta": "#B85582",
+    "brightCyan": "#2F8A8C",
+    "brightWhite": "#FFF6EE",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
