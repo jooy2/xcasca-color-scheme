@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Oxocarbon",
+  "data": {
+    "foreground": "#F2F4F8",
+    "background": "#161616",
+    "selection": "#F2F4F84D",
+    "black": "#161616",
+    "red": "#00DFDB",
+    "green": "#00B4FF",
+    "yellow": "#FF4297",
+    "blue": "#00C15A",
+    "magenta": "#C693FF",
+    "cyan": "#FF74B8",
+    "white": "#F2F4F8",
+    "brightBlack": "#585858",
+    "brightRed": "#00DFDB",
+    "brightGreen": "#00B4FF",
+    "brightYellow": "#FF4297",
+    "brightBlue": "#00C15A",
+    "brightMagenta": "#C693FF",
+    "brightCyan": "#FF74B8",
+    "brightWhite": "#F2F4F8",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

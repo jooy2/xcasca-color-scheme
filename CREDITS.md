@@ -35,6 +35,7 @@ The colors were taken from the Windows Terminal versions of these schemes in [iT
 | Kanagawa Dragon, Kanagawa Wave | rebelot, [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim) | MIT |
 | Night Owl | Sarah Drasner, [Night Owl](https://github.com/sdras/night-owl-vscode-theme) | MIT |
 | Nord | Sven Greb, [Nord](https://github.com/nordtheme/nord) | MIT |
+| Oxocarbon | Nyoom Engineering, [oxocarbon.nvim](https://github.com/nyoom-engineering/oxocarbon.nvim) | MIT |
 | Rose Pine, Rose Pine Dawn, Rose Pine Moon | [Rosé Pine](https://github.com/rose-pine/rose-pine-theme) | MIT |
 | Selenized Dark, Selenized Light | Jan Warchoł, [Selenized](https://github.com/jan-warchol/selenized) | MIT |
 | Seoulbones Light | Michael Chris Lopez, [Zenbones](https://github.com/zenbones-theme/zenbones.nvim), after junegunn's [seoul256](https://github.com/junegunn/seoul256.vim) | MIT |

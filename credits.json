@@ -293,6 +293,12 @@
     "url": "https://github.com/jooy2",
     "license": "MIT"
   },
+  "Oxocarbon": {
+    "kind": "community",
+    "author": "Nyoom Engineering",
+    "url": "https://github.com/nyoom-engineering/oxocarbon.nvim",
+    "license": "MIT"
+  },
   "Paper Ink": {
     "kind": "original",
     "author": "jooy2",
