@@ -281,6 +281,12 @@
     "url": "https://github.com/rebelot/kanagawa.nvim",
     "license": "MIT"
   },
+  "Kraft Paper": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
   "Lapis": {
     "kind": "original",
     "author": "jooy2",

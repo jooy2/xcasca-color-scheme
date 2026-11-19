@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Kraft Paper",
+  "data": {
+    "foreground": "#1A1209",
+    "background": "#D8C3A0",
+    "selection": "#1A12094D",
+    "black": "#1A1209",
+    "red": "#8E2418",
+    "green": "#3D5214",
+    "yellow": "#6A4400",
+    "blue": "#23427A",
+    "magenta": "#752A5E",
+    "cyan": "#1C5650",
+    "white": "#B8A27E",
+    "brightBlack": "#5A4630",
+    "brightRed": "#9E3020",
+    "brightGreen": "#4A6018",
+    "brightYellow": "#775000",
+    "brightBlue": "#2E5088",
+    "brightMagenta": "#84366C",
+    "brightCyan": "#24625C",
+    "brightWhite": "#EADBC2",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
