@@ -95,6 +95,12 @@
     "url": "https://github.com/jooy2",
     "license": "MIT"
   },
+  "Dark Modern": {
+    "kind": "community",
+    "author": "Microsoft (Visual Studio Code)",
+    "url": "https://github.com/microsoft/vscode",
+    "license": "MIT"
+  },
   "Dayfox": {
     "kind": "community",
     "author": "EdenEast",

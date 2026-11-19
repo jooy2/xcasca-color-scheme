@@ -25,6 +25,7 @@ The colors were taken from the Windows Terminal versions of these schemes in [iT
 | Carbonfox, Dayfox, Nightfox | EdenEast, [nightfox.nvim](https://github.com/EdenEast/nightfox.nvim) | MIT |
 | Catppuccin Frappe, Catppuccin Latte, Catppuccin Macchiato, Catppuccin Mocha | [Catppuccin](https://github.com/catppuccin/catppuccin) | MIT |
 | CGA | John Hodges, [CGA](https://github.com/jdhmtl/cga-theme) | MIT |
+| Dark Modern | Microsoft, [Visual Studio Code](https://github.com/microsoft/vscode) | MIT |
 | Dracula | Zeno Rocha and contributors, [Dracula](https://github.com/dracula/dracula-theme) | MIT |
 | Everforest Dark, Everforest Light | sainnhe, [Everforest](https://github.com/sainnhe/everforest) | MIT |
 | Flexoki Dark, Flexoki Light | Steph Ango, [Flexoki](https://github.com/kepano/flexoki) | MIT |
