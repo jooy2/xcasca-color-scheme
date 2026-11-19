@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Overcast",
+  "data": {
+    "foreground": "#1E2328",
+    "background": "#D5DADF",
+    "selection": "#1E23284D",
+    "black": "#1E2328",
+    "red": "#A3302B",
+    "green": "#2E6B3A",
+    "yellow": "#7A5600",
+    "blue": "#2552A0",
+    "magenta": "#85407F",
+    "cyan": "#1D6670",
+    "white": "#B4BBC2",
+    "brightBlack": "#5A636D",
+    "brightRed": "#B23F38",
+    "brightGreen": "#387A45",
+    "brightYellow": "#886200",
+    "brightBlue": "#3463AF",
+    "brightMagenta": "#954E8F",
+    "brightCyan": "#24737E",
+    "brightWhite": "#E9EDF0",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
