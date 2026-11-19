@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Lavender Mist",
+  "data": {
+    "foreground": "#2D2840",
+    "background": "#F1EEF8",
+    "selection": "#2D28404D",
+    "black": "#2D2840",
+    "red": "#B8404F",
+    "green": "#3F7D4E",
+    "yellow": "#8F6A10",
+    "blue": "#3D5FB0",
+    "magenta": "#8A4BB0",
+    "cyan": "#2C7A8C",
+    "white": "#D6D0E6",
+    "brightBlack": "#6E6890",
+    "brightRed": "#C75565",
+    "brightGreen": "#4D8B5C",
+    "brightYellow": "#A07A1C",
+    "brightBlue": "#5170BE",
+    "brightMagenta": "#9A5FC0",
+    "brightCyan": "#3A889A",
+    "brightWhite": "#FBFAFE",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Lavender Mist">
+  <rect width="280" height="56" rx="8" fill="#F1EEF8"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#2D2840">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#2D2840"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#B8404F"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#3F7D4E"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#8F6A10"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#3D5FB0"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#8A4BB0"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#2C7A8C"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#D6D0E6"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#6E6890"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#C75565"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#4D8B5C"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#A07A1C"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#5170BE"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#9A5FC0"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#3A889A"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#FBFAFE"/>
+</svg>
