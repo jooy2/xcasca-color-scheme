@@ -185,6 +185,12 @@
     "url": "https://github.com/rebelot/kanagawa.nvim",
     "license": "MIT"
   },
+  "Lapis": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
   "Midnight Plum": {
     "kind": "original",
     "author": "jooy2",

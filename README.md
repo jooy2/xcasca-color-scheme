@@ -163,6 +163,7 @@ Made for this collection.
 | <img src="docs/swatches/terminal/Ember%20Glow.svg" width="210" alt="Ember Glow"> | [Ember Glow](schemes/terminal/Ember%20Glow.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Graphite.svg" width="210" alt="Graphite"> | [Graphite](schemes/terminal/Graphite.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Harbor%20Night.svg" width="210" alt="Harbor Night"> | [Harbor Night](schemes/terminal/Harbor%20Night.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
+| <img src="docs/swatches/terminal/Lapis.svg" width="210" alt="Lapis"> | [Lapis](schemes/terminal/Lapis.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Midnight%20Plum.svg" width="210" alt="Midnight Plum"> | [Midnight Plum](schemes/terminal/Midnight%20Plum.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Morning%20Fog.svg" width="210" alt="Morning Fog"> | [Morning Fog](schemes/terminal/Morning%20Fog.xccolorscheme) | Light | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Moss%20Garden.svg" width="210" alt="Moss Garden"> | [Moss Garden](schemes/terminal/Moss%20Garden.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |

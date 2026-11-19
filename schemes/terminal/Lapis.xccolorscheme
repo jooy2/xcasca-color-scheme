@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Lapis",
+  "data": {
+    "foreground": "#E8EEFA",
+    "background": "#12204A",
+    "selection": "#E8EEFA4D",
+    "black": "#1C2D5C",
+    "red": "#FF6B6B",
+    "green": "#7BD88F",
+    "yellow": "#FFC94A",
+    "blue": "#6FA3FF",
+    "magenta": "#E68AE0",
+    "cyan": "#5ED4E6",
+    "white": "#D3DCF0",
+    "brightBlack": "#5F74AC",
+    "brightRed": "#FF8F8F",
+    "brightGreen": "#A0E8AE",
+    "brightYellow": "#FFDB7D",
+    "brightBlue": "#9CC0FF",
+    "brightMagenta": "#F2AEEC",
+    "brightCyan": "#8CE4F0",
+    "brightWhite": "#F5F8FF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
