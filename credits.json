@@ -257,6 +257,12 @@
     "url": "https://github.com/altercation/solarized",
     "license": "MIT"
   },
+  "Sonokai": {
+    "kind": "community",
+    "author": "sainnhe",
+    "url": "https://github.com/sainnhe/sonokai",
+    "license": "MIT"
+  },
   "Tango Dark": {
     "kind": "built-in",
     "author": "Tango Desktop Project",
