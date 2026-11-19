@@ -32,6 +32,7 @@ The colors were taken from the Windows Terminal versions of these schemes in [iT
 | Night Owl | Sarah Drasner, [Night Owl](https://github.com/sdras/night-owl-vscode-theme) | MIT |
 | Nightfox | EdenEast, [nightfox.nvim](https://github.com/EdenEast/nightfox.nvim) | MIT |
 | Nord | Sven Greb, [Nord](https://github.com/nordtheme/nord) | MIT |
+| Rose Pine | [Rosé Pine](https://github.com/rose-pine/rose-pine-theme) | MIT |
 | Selenized Dark | Jan Warchoł, [Selenized](https://github.com/jan-warchol/selenized) | MIT |
 | Snazzy | Sindre Sorhus, [Hyper Snazzy](https://github.com/sindresorhus/hyper-snazzy) | MIT |
 | Tokyo Night | Folke Lemaitre, [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) | Apache 2.0 |

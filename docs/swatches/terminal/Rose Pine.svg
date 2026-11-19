@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Rose Pine">
+  <rect width="280" height="56" rx="8" fill="#191724"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#E0DEF4">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#26233A"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#EB6F92"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#31748F"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#F6C177"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#9CCFD8"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#C4A7E7"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#EBBCBA"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#E0DEF4"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#6E6A86"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#EB6F92"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#31748F"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#F6C177"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#9CCFD8"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#C4A7E7"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#EBBCBA"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#E0DEF4"/>
+</svg>

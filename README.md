@@ -127,6 +127,7 @@ Well-known schemes, under their original names and licenses.
 | <img src="docs/swatches/terminal/Night%20Owl.svg" width="210" alt="Night Owl"> | [Night Owl](schemes/terminal/Night%20Owl.xccolorscheme) | Dark | [Sarah Drasner](https://github.com/sdras/night-owl-vscode-theme) | MIT |
 | <img src="docs/swatches/terminal/Nightfox.svg" width="210" alt="Nightfox"> | [Nightfox](schemes/terminal/Nightfox.xccolorscheme) | Dark | [EdenEast](https://github.com/EdenEast/nightfox.nvim) | MIT |
 | <img src="docs/swatches/terminal/Nord.svg" width="210" alt="Nord"> | [Nord](schemes/terminal/Nord.xccolorscheme) | Dark | [Sven Greb (Nord)](https://github.com/nordtheme/nord) | MIT |
+| <img src="docs/swatches/terminal/Rose%20Pine.svg" width="210" alt="Rose Pine"> | [Rose Pine](schemes/terminal/Rose%20Pine.xccolorscheme) | Dark | [Rose Pine](https://github.com/rose-pine/rose-pine-theme) | MIT |
 | <img src="docs/swatches/terminal/Selenized%20Dark.svg" width="210" alt="Selenized Dark"> | [Selenized Dark](schemes/terminal/Selenized%20Dark.xccolorscheme) | Dark | [Jan Warchol](https://github.com/jan-warchol/selenized) | MIT |
 | <img src="docs/swatches/terminal/Snazzy.svg" width="210" alt="Snazzy"> | [Snazzy](schemes/terminal/Snazzy.xccolorscheme) | Dark | [Sindre Sorhus](https://github.com/sindresorhus/hyper-snazzy) | MIT |
 | <img src="docs/swatches/terminal/Tokyo%20Night.svg" width="210" alt="Tokyo Night"> | [Tokyo Night](schemes/terminal/Tokyo%20Night.xccolorscheme) | Dark | [Folke Lemaitre](https://github.com/folke/tokyonight.nvim) | Apache-2.0 |
