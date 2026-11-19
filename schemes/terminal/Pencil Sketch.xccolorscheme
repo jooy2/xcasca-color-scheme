@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Pencil Sketch",
+  "data": {
+    "foreground": "#2B2B2B",
+    "background": "#ECEBE8",
+    "selection": "#2B2B2B4D",
+    "black": "#2B2B2B",
+    "red": "#B8322A",
+    "green": "#4A5A4A",
+    "yellow": "#6E6452",
+    "blue": "#44505E",
+    "magenta": "#5E4C5A",
+    "cyan": "#4A5C5E",
+    "white": "#C9C8C4",
+    "brightBlack": "#7A7976",
+    "brightRed": "#CC4A40",
+    "brightGreen": "#5E705E",
+    "brightYellow": "#857A64",
+    "brightBlue": "#5A6878",
+    "brightMagenta": "#766472",
+    "brightCyan": "#607476",
+    "brightWhite": "#F7F6F3",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
