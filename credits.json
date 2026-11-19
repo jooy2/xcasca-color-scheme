@@ -431,6 +431,12 @@
     "url": "https://github.com/jooy2",
     "license": "MIT"
   },
+  "Vesper": {
+    "kind": "community",
+    "author": "Rauno Freiberg",
+    "url": "https://github.com/raunofreiberg/vesper",
+    "license": "MIT"
+  },
   "Vintage": {
     "kind": "built-in",
     "author": "Microsoft (Windows Terminal)",

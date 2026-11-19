@@ -155,6 +155,7 @@ Well-known schemes, under their original names and licenses.
 | <img src="docs/swatches/terminal/Tomorrow.svg" width="210" alt="Tomorrow"> | [Tomorrow](schemes/terminal/Tomorrow.xccolorscheme) | Light | [Chris Kempson](https://github.com/chriskempson/tomorrow-theme) | MIT |
 | <img src="docs/swatches/terminal/Tomorrow%20Night.svg" width="210" alt="Tomorrow Night"> | [Tomorrow Night](schemes/terminal/Tomorrow%20Night.xccolorscheme) | Dark | [Chris Kempson](https://github.com/chriskempson/tomorrow-theme) | MIT |
 | <img src="docs/swatches/terminal/Tomorrow%20Night%20Eighties.svg" width="210" alt="Tomorrow Night Eighties"> | [Tomorrow Night Eighties](schemes/terminal/Tomorrow%20Night%20Eighties.xccolorscheme) | Dark | [Chris Kempson](https://github.com/chriskempson/tomorrow-theme) | MIT |
+| <img src="docs/swatches/terminal/Vesper.svg" width="210" alt="Vesper"> | [Vesper](schemes/terminal/Vesper.xccolorscheme) | Dark | [Rauno Freiberg](https://github.com/raunofreiberg/vesper) | MIT |
 | <img src="docs/swatches/terminal/xterm.svg" width="210" alt="xterm"> | [xterm](schemes/terminal/xterm.xccolorscheme) | Light | [Thomas E. Dickey and the X Consortium](https://invisible-island.net/xterm/) | X11 |
 
 ### Originals

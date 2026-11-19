@@ -44,6 +44,7 @@ The colors were taken from the Windows Terminal versions of these schemes in [iT
 | Sonokai | sainnhe, [Sonokai](https://github.com/sainnhe/sonokai) | MIT |
 | Tokyo Night, Tokyo Night Day, Tokyo Night Storm | Folke Lemaitre, [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) | Apache 2.0 |
 | Tomorrow, Tomorrow Night, Tomorrow Night Eighties | Chris Kempson, [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) | MIT |
+| Vesper | Rauno Freiberg, [Vesper](https://github.com/raunofreiberg/vesper) | MIT |
 | xterm | Thomas E. Dickey and the X Consortium, [xterm](https://invisible-island.net/xterm/) | X11 |
 
 Two things differ from the originals, because of how Xcasca draws a terminal:

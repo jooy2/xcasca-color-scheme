@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Vesper">
+  <rect width="280" height="56" rx="8" fill="#101010"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#FFFFFF">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#101010"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#F5A191"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#90B99F"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#E6B99D"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#ACA1CF"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#E29ECA"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#EA83A5"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#A0A0A0"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#7E7E7E"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#FF8080"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#99FFE4"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#FFC799"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#B9AEDA"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#ECAAD6"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#F591B2"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#FFFFFF"/>
+</svg>
