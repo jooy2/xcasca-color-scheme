@@ -239,6 +239,12 @@
     "url": "https://github.com/jooy2",
     "license": "MIT"
   },
+  "Melange Light": {
+    "kind": "community",
+    "author": "savq",
+    "url": "https://github.com/savq/melange-nvim",
+    "license": "MIT"
+  },
   "Midnight Plum": {
     "kind": "original",
     "author": "jooy2",
