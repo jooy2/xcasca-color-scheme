@@ -305,6 +305,12 @@
     "url": "https://github.com/folke/tokyonight.nvim",
     "license": "Apache-2.0"
   },
+  "Tomorrow": {
+    "kind": "community",
+    "author": "Chris Kempson",
+    "url": "https://github.com/chriskempson/tomorrow-theme",
+    "license": "MIT"
+  },
   "Tomorrow Night": {
     "kind": "community",
     "author": "Chris Kempson",

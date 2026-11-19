@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Tomorrow",
+  "data": {
+    "foreground": "#4D4D4C",
+    "background": "#FFFFFF",
+    "selection": "#4D4D4C4D",
+    "black": "#000000",
+    "red": "#C82829",
+    "green": "#718C00",
+    "yellow": "#EAB700",
+    "blue": "#4271AE",
+    "magenta": "#8959A8",
+    "cyan": "#3E999F",
+    "white": "#BFBFBF",
+    "brightBlack": "#000000",
+    "brightRed": "#C82829",
+    "brightGreen": "#718C00",
+    "brightYellow": "#EAB700",
+    "brightBlue": "#4271AE",
+    "brightMagenta": "#8959A8",
+    "brightCyan": "#3E999F",
+    "brightWhite": "#FFFFFF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
