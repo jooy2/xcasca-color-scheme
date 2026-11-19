@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Olive Drab">
+  <rect width="280" height="56" rx="8" fill="#22251A"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#E9E6D2">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#30341F"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#E07A5F"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#A9C25D"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#E8C468"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#8FA8C8"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#C9A0B4"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#8CC4A8"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#CFCBB4"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#6E7458"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#EE9A82"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#C2D882"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#F2D68E"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#ADC1DA"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#DDBACB"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#AEDAC2"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#F6F3E4"/>
+</svg>

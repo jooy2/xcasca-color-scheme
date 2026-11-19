@@ -365,6 +365,12 @@
     "url": "https://github.com/neovim/neovim",
     "license": "Apache-2.0"
   },
+  "Olive Drab": {
+    "kind": "original",
+    "author": "jooy2",
+    "url": "https://github.com/jooy2",
+    "license": "MIT"
+  },
   "One Half Dark": {
     "kind": "built-in",
     "author": "Son A. Pham",

@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Olive Drab",
+  "data": {
+    "foreground": "#E9E6D2",
+    "background": "#22251A",
+    "selection": "#E9E6D24D",
+    "black": "#30341F",
+    "red": "#E07A5F",
+    "green": "#A9C25D",
+    "yellow": "#E8C468",
+    "blue": "#8FA8C8",
+    "magenta": "#C9A0B4",
+    "cyan": "#8CC4A8",
+    "white": "#CFCBB4",
+    "brightBlack": "#6E7458",
+    "brightRed": "#EE9A82",
+    "brightGreen": "#C2D882",
+    "brightYellow": "#F2D68E",
+    "brightBlue": "#ADC1DA",
+    "brightMagenta": "#DDBACB",
+    "brightCyan": "#AEDAC2",
+    "brightWhite": "#F6F3E4",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
