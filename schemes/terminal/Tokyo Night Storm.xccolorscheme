@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Tokyo Night Storm",
+  "data": {
+    "foreground": "#C0CAF5",
+    "background": "#24283B",
+    "selection": "#C0CAF54D",
+    "black": "#1D202F",
+    "red": "#F7768E",
+    "green": "#9ECE6A",
+    "yellow": "#E0AF68",
+    "blue": "#7AA2F7",
+    "magenta": "#BB9AF7",
+    "cyan": "#7DCFFF",
+    "white": "#A9B1D6",
+    "brightBlack": "#4E5575",
+    "brightRed": "#F7768E",
+    "brightGreen": "#9ECE6A",
+    "brightYellow": "#E0AF68",
+    "brightBlue": "#7AA2F7",
+    "brightMagenta": "#BB9AF7",
+    "brightCyan": "#7DCFFF",
+    "brightWhite": "#C0CAF5",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
