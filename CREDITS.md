@@ -28,6 +28,7 @@ The colors were taken from the Windows Terminal versions of these schemes in [iT
 | CGA | John Hodges, [CGA](https://github.com/jdhmtl/cga-theme) | MIT |
 | Dark Modern | Microsoft, [Visual Studio Code](https://github.com/microsoft/vscode) | MIT |
 | Dracula | Zeno Rocha and contributors, [Dracula](https://github.com/dracula/dracula-theme) | MIT |
+| Edge Light | sainnhe, [Edge](https://github.com/sainnhe/edge) | MIT |
 | Everforest Dark, Everforest Light | sainnhe, [Everforest](https://github.com/sainnhe/everforest) | MIT |
 | Flexoki Dark, Flexoki Light | Steph Ango, [Flexoki](https://github.com/kepano/flexoki) | MIT |
 | GitHub Dark Default, GitHub Dark Dimmed, GitHub Light Default | GitHub, [GitHub VS Code Theme](https://github.com/primer/github-vscode-theme) | MIT |

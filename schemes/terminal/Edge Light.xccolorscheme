@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Edge Light",
+  "data": {
+    "foreground": "#4B505B",
+    "background": "#FAFAFA",
+    "selection": "#4B505B4D",
+    "black": "#FAFAFA",
+    "red": "#D05858",
+    "green": "#608E32",
+    "yellow": "#BE7E05",
+    "blue": "#5079BE",
+    "magenta": "#B05CCC",
+    "cyan": "#3A8B84",
+    "white": "#8790A0",
+    "brightBlack": "#AFB8C2",
+    "brightRed": "#E17373",
+    "brightGreen": "#76AF6F",
+    "brightYellow": "#DEB974",
+    "brightBlue": "#6996E0",
+    "brightMagenta": "#BF75D6",
+    "brightCyan": "#5DBBC1",
+    "brightWhite": "#7E869B",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

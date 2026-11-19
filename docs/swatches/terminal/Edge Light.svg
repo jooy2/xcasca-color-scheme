@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Edge Light">
+  <rect width="280" height="56" rx="8" fill="#FAFAFA"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#4B505B">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#FAFAFA"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#D05858"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#608E32"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#BE7E05"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#5079BE"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#B05CCC"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#3A8B84"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#8790A0"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#AFB8C2"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#E17373"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#76AF6F"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#DEB974"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#6996E0"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#BF75D6"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#5DBBC1"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#7E869B"/>
+</svg>

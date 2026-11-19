@@ -125,6 +125,12 @@
     "url": "https://github.com/dracula/dracula-theme",
     "license": "MIT"
   },
+  "Edge Light": {
+    "kind": "community",
+    "author": "sainnhe",
+    "url": "https://github.com/sainnhe/edge",
+    "license": "MIT"
+  },
   "Ember Glow": {
     "kind": "original",
     "author": "jooy2",
