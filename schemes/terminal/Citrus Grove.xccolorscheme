@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Citrus Grove",
+  "data": {
+    "foreground": "#2E3320",
+    "background": "#F3F6DE",
+    "selection": "#2E33204D",
+    "black": "#2E3320",
+    "red": "#C0471E",
+    "green": "#4B7F12",
+    "yellow": "#946000",
+    "blue": "#2D6690",
+    "magenta": "#A6447A",
+    "cyan": "#1D7A66",
+    "white": "#D5D9B8",
+    "brightBlack": "#6C7254",
+    "brightRed": "#D25E2E",
+    "brightGreen": "#5A9019",
+    "brightYellow": "#A87000",
+    "brightBlue": "#3F79A3",
+    "brightMagenta": "#B8588D",
+    "brightCyan": "#288B76",
+    "brightWhite": "#FCFDF2",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

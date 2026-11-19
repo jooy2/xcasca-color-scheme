@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Citrus Grove">
+  <rect width="280" height="56" rx="8" fill="#F3F6DE"/>
+  <text x="16" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#2E3320">~$</text>
+  <rect x="72" y="12" width="21" height="14" rx="3" fill="#2E3320"/>
+  <rect x="97" y="12" width="21" height="14" rx="3" fill="#C0471E"/>
+  <rect x="122" y="12" width="21" height="14" rx="3" fill="#4B7F12"/>
+  <rect x="147" y="12" width="21" height="14" rx="3" fill="#946000"/>
+  <rect x="172" y="12" width="21" height="14" rx="3" fill="#2D6690"/>
+  <rect x="197" y="12" width="21" height="14" rx="3" fill="#A6447A"/>
+  <rect x="222" y="12" width="21" height="14" rx="3" fill="#1D7A66"/>
+  <rect x="247" y="12" width="21" height="14" rx="3" fill="#D5D9B8"/>
+  <rect x="72" y="30" width="21" height="14" rx="3" fill="#6C7254"/>
+  <rect x="97" y="30" width="21" height="14" rx="3" fill="#D25E2E"/>
+  <rect x="122" y="30" width="21" height="14" rx="3" fill="#5A9019"/>
+  <rect x="147" y="30" width="21" height="14" rx="3" fill="#A87000"/>
+  <rect x="172" y="30" width="21" height="14" rx="3" fill="#3F79A3"/>
+  <rect x="197" y="30" width="21" height="14" rx="3" fill="#B8588D"/>
+  <rect x="222" y="30" width="21" height="14" rx="3" fill="#288B76"/>
+  <rect x="247" y="30" width="21" height="14" rx="3" fill="#FCFDF2"/>
+</svg>
