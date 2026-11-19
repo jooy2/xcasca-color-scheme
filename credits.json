@@ -305,6 +305,12 @@
     "url": "https://github.com/jooy2",
     "license": "MIT"
   },
+  "Poimandres": {
+    "kind": "community",
+    "author": "drcmda",
+    "url": "https://github.com/drcmda/poimandres-theme",
+    "license": "MIT"
+  },
   "Rose Pine": {
     "kind": "community",
     "author": "Rose Pine",

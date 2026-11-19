@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Poimandres",
+  "data": {
+    "foreground": "#A6ACCD",
+    "background": "#1A1E28",
+    "selection": "#A6ACCD4D",
+    "black": "#1A1E28",
+    "red": "#D0679D",
+    "green": "#5DE4C7",
+    "yellow": "#FFFAC2",
+    "blue": "#89DDFF",
+    "magenta": "#FCC5E9",
+    "cyan": "#ADD7FF",
+    "white": "#FFFFFF",
+    "brightBlack": "#A6ACCD",
+    "brightRed": "#D0679D",
+    "brightGreen": "#5DE4C7",
+    "brightYellow": "#FFFAC2",
+    "brightBlue": "#ADD7FF",
+    "brightMagenta": "#FAE4FC",
+    "brightCyan": "#89DDFF",
+    "brightWhite": "#FFFFFF",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}
