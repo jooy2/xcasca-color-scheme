@@ -1,0 +1,30 @@
+{
+  "app": "xcasca",
+  "type": "terminalColor",
+  "version": 1,
+  "name": "Crimson Eclipse",
+  "data": {
+    "foreground": "#F5DCD5",
+    "background": "#1A0606",
+    "selection": "#F5DCD54D",
+    "black": "#2E0D0D",
+    "red": "#FF4040",
+    "green": "#B8B26E",
+    "yellow": "#FFB060",
+    "blue": "#B585D6",
+    "magenta": "#FF5C8A",
+    "cyan": "#E3968C",
+    "white": "#E3C2BA",
+    "brightBlack": "#96544D",
+    "brightRed": "#FF7070",
+    "brightGreen": "#D2CC8C",
+    "brightYellow": "#FFC98A",
+    "brightBlue": "#CDA5EA",
+    "brightMagenta": "#FF8AAA",
+    "brightCyan": "#F0B5AC",
+    "brightWhite": "#FFF0EC",
+    "searchHitBackground": "#FFFF2B",
+    "searchHitBackgroundCurrent": "#31FF26",
+    "searchHitForeground": "#000000"
+  }
+}

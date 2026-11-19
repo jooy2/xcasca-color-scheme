@@ -181,6 +181,7 @@ Made for this collection.
 | <img src="docs/swatches/terminal/Cherry%20Blossom.svg" width="210" alt="Cherry Blossom"> | [Cherry Blossom](schemes/terminal/Cherry%20Blossom.xccolorscheme) | Light | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Citrus%20Grove.svg" width="210" alt="Citrus Grove"> | [Citrus Grove](schemes/terminal/Citrus%20Grove.xccolorscheme) | Light | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Clear%20Sky.svg" width="210" alt="Clear Sky"> | [Clear Sky](schemes/terminal/Clear%20Sky.xccolorscheme) | Light | [jooy2](https://github.com/jooy2) | MIT |
+| <img src="docs/swatches/terminal/Crimson%20Eclipse.svg" width="210" alt="Crimson Eclipse"> | [Crimson Eclipse](schemes/terminal/Crimson%20Eclipse.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Dancheong.svg" width="210" alt="Dancheong"> | [Dancheong](schemes/terminal/Dancheong.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Ember%20Glow.svg" width="210" alt="Ember Glow"> | [Ember Glow](schemes/terminal/Ember%20Glow.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
 | <img src="docs/swatches/terminal/Graphite.svg" width="210" alt="Graphite"> | [Graphite](schemes/terminal/Graphite.xccolorscheme) | Dark | [jooy2](https://github.com/jooy2) | MIT |
